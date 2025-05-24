@@ -1,4 +1,4 @@
-# A quick guide to installing R, RStudio and cd2030 RMNCAH
+# A Quick Guide
 
 ```{r}
 #| echo: false

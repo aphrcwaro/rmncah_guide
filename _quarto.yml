@@ -9,8 +9,6 @@ book:
   page-footer: 
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
-  cover-image: cover.png
-  favicon: cover.png
   site-url: https://aphrcwaro.github.io/rmncah_guide/
   repo-url: https://github.com/aphrcwaro/cd2030.rmncah/
   repo-branch: main
