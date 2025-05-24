@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Installing the Countdown2030 RMNCAH Application",
+    "section": "",
+    "text": "1 A Quick Guide\nInitially, Countdown2030 analyses were conducted using Stata. These scripts have now been translated into R to support the development and deployment of a Shiny-based dashboard.\nWe extend our appreciation to the team that compiled the original Stata codebase.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#installing-r-and-rstudio",
+    "href": "index.html#installing-r-and-rstudio",
+    "title": "Installing the Countdown2030 RMNCAH Application",
+    "section": "1.1 Installing R and RStudio",
+    "text": "1.1 Installing R and RStudio\nTo begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.\n\n1.1.1 Download and Install R (Step 1)\nR is distributed via The Comprehensive R Archive Network (CRAN). Select your operating system from the homepage: Windows, Mac, or Linux.\n\n1.1.1.1 Windows\n\nNavigate to “Download R for Windows” and select the “base” option.\nClick the first link (e.g., “Download R x.x.x for Windows”) to download the installer.\nRun the installer and follow the prompts. Administrator privileges may be required.\nR will be installed in your system’s Program Files, with a shortcut added to the Start menu.\n\n\n\n1.1.1.2 Mac\n\nClick “Download R for Mac” on the CRAN homepage.\nDownload the latest release package and run the installer.\nThe default installation settings are typically sufficient. You may be prompted to enter your system password.\n\n\nR is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.\n\n\n\n\n1.1.2 Install RStudio (Step 2)\nRStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.\nDownload RStudio from Posit Website\nDo I still need to download R? Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.\nAfter installation, launch RStudio and begin interacting with R through its console and script windows.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#installing-the-countdown2030-rmncah-application",
+    "href": "index.html#installing-the-countdown2030-rmncah-application",
+    "title": "Installing the Countdown2030 RMNCAH Application",
+    "section": "1.2 Installing the Countdown2030 RMNCAH Application",
+    "text": "1.2 Installing the Countdown2030 RMNCAH Application\nAfter installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository cd2030.rnncah. The application is implemented as an R package and supports interactive dashboard generation via Shiny.\n\n1.2.1 Installation via R Console\nStable Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\nDevelopment Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah\")\n\n\n\n1.2.2 Launching the Application\n\nlibrary(cd2030.rmncah)\ndashboard()\n\nThe Shiny dashboard will launch automatically in your default web browser.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#alternative-installation-via-github-desktop-or-git-or-direct-download",
+    "href": "index.html#alternative-installation-via-github-desktop-or-git-or-direct-download",
+    "title": "Installing the Countdown2030 RMNCAH Application",
+    "section": "1.3 Alternative Installation via GitHub Desktop or Git or direct download",
+    "text": "1.3 Alternative Installation via GitHub Desktop or Git or direct download\nAdvanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:\n\nVersion control\nContribution to the codebase\nInspection of the package structure\nOnce cloned, open the .Rproj file in RStudio to set the working directory.\n\n\n\n\nGithub\nLocal Folder\n\n\n\n\n\n\n\n\n\nTo install and run:\n\ndevtools::install()\n\nlibrary(cd2030.rmncah)\ndashboard()",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#rtools-for-windows",
+    "href": "index.html#rtools-for-windows",
+    "title": "Installing the Countdown2030 RMNCAH Application",
+    "section": "1.4 RTools for Windows",
+    "text": "1.4 RTools for Windows\nTo compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nRTools can be downloaded from CRAN",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+    ]
+  }
+]
