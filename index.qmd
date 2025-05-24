@@ -20,18 +20,18 @@ R is distributed via The [Comprehensive R Archive Network (CRAN)](https://cran.r
 
 #### Windows
 
-1.  Navigate to “Download R for Windows” and select the “base” option.
+1.  Navigate to ***Download R for Windows*** and select the “base” option.
 2.  Click the first link (e.g., “Download R x.x.x for Windows”) to download the installer.
 3.  Run the installer and follow the prompts. ***Administrator privileges may be required***.
 4.  R will be installed in your system's Program Files, with a shortcut added to the Start menu.
 
 #### Mac
 
-1.  Click “Download R for Mac” on the CRAN homepage.
+1.  Click ***Download R for Mac*** on the CRAN homepage.
 2.  Download the latest release package and run the installer.
 3.  The default installation settings are typically sufficient. You may be prompted to enter your system password.
 
-> R is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.
+> **R is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.**
 
 ### Install RStudio (Step 2)
 
@@ -98,8 +98,8 @@ dashboard()
 
 To compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:
 
--   R 4.2.0 → Rtools42
--   R 4.4.0 → Rtools44
--   R 4.5.0 → Rtools45
+-   **R 4.2.0** → Rtools42
+-   **R 4.4.0** → Rtools44
+-   **R 4.5.0** → Rtools45
 
 RTools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
