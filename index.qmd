@@ -1,0 +1,105 @@
+# A quick guide to installing R, RStudio and cd2030 RMNCAH
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+Initially, Countdown2030 analyses were conducted using Stata. These scripts have now been translated into R to support the development and deployment of a Shiny-based dashboard.
+
+We extend our appreciation to the team that compiled the original Stata codebase.
+
+## Installing R and RStudio
+
+To begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.
+
+### Download and Install R (Step 1)
+
+R is distributed via The [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Select your operating system from the homepage: Windows, Mac, or Linux.
+
+#### Windows
+
+1.  Navigate to “Download R for Windows” and select the “base” option.
+2.  Click the first link (e.g., “Download R x.x.x for Windows”) to download the installer.
+3.  Run the installer and follow the prompts. ***Administrator privileges may be required***.
+4.  R will be installed in your system's Program Files, with a shortcut added to the Start menu.
+
+#### Mac
+
+1.  Click “Download R for Mac” on the CRAN homepage.
+2.  Download the latest release package and run the installer.
+3.  The default installation settings are typically sufficient. You may be prompted to enter your system password.
+
+> R is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.
+
+### Install RStudio (Step 2)
+
+RStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.
+
+Download RStudio from [Posit Website](https://posit.co/downloads/)
+
+**Do I still need to download R?** Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.
+
+After installation, launch RStudio and begin interacting with R through its console and script windows. ![](images/rstudio.png)
+
+## Installing the Countdown2030 RMNCAH Application
+
+After installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository [`cd2030.rnncah`](https://github.com/aphrcwaro/cd2030.rmncah). The application is implemented as an R package and supports interactive dashboard generation via Shiny.
+
+### Installation via R Console
+
+**Stable Version**
+
+```{r, eval=FALSE}
+devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
+```
+
+**Development Version**
+
+```{r, eval=FALSE}
+devtools::install_github("aphrcwaro/cd2030.rmncah")
+```
+
+### Launching the Application
+
+```{r, eval=FALSE}
+library(cd2030.rmncah)
+dashboard()
+```
+
+The Shiny dashboard will launch automatically in your default web browser.
+
+![](images/dashboard.jpg)
+
+## Alternative Installation via GitHub Desktop or Git or direct download
+
+Advanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:
+
+-   Version control
+-   Contribution to the codebase
+-   Inspection of the package structure
+-   Once cloned, open the .Rproj file in RStudio to set the working directory.
+
+| Github                      | Local Folder                 |
+|-----------------------------|------------------------------|
+| ![](images/github-repo.png) | ![](images/project-file.png) |
+
+To install and run:
+
+```{r, eval=FALSE}
+devtools::install()
+
+library(cd2030.rmncah)
+dashboard()
+```
+
+## RTools for Windows
+
+To compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:
+
+-   R 4.2.0 → Rtools42
+-   R 4.4.0 → Rtools44
+-   R 4.5.0 → Rtools45
+
+RTools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
