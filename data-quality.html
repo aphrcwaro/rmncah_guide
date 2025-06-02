@@ -8,7 +8,7 @@
 
 <meta name="author" content="Peter Kaberia">
 
-<title>CAM 2025 Analysis Guide</title>
+<title>5&nbsp; Section 1: Health facility data quality assessment – CAM 2025 Analysis Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./general-intro.html" rel="next">
+<link href="./national-analyses.html" rel="next">
+<link href="./loading-data.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Countdown to 2030</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Section 1: Health facility data quality assessment</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -117,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Countdown to 2030</span></span></a>
   </div>
 </li>
@@ -141,7 +142,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./data-quality.html" class="sidebar-item-text sidebar-link">
+  <a href="./data-quality.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Section 1: Health facility data quality assessment</span></span></a>
   </div>
 </li>
@@ -191,20 +192,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#introduction-to-countdown-to-2030" id="toc-introduction-to-countdown-to-2030" class="nav-link active" data-scroll-target="#introduction-to-countdown-to-2030"><span class="header-section-number">1</span> Introduction to Countdown to 2030</a>
+  <li><a href="#numerators-assessment" id="toc-numerators-assessment" class="nav-link active" data-scroll-target="#numerators-assessment"><span class="header-section-number">5.1</span> Numerators Assessment</a>
   <ul class="collapse">
-  <li><a href="#overview-of-the-countdown-to-2030-the-countdown" id="toc-overview-of-the-countdown-to-2030-the-countdown" class="nav-link" data-scroll-target="#overview-of-the-countdown-to-2030-the-countdown"><span class="header-section-number">1.1</span> Overview of the Countdown to 2030 (The Countdown)</a></li>
-  <li><a href="#about-the-cd2030.rmncah-r-package" id="toc-about-the-cd2030.rmncah-r-package" class="nav-link" data-scroll-target="#about-the-cd2030.rmncah-r-package"><span class="header-section-number">1.2</span> About the <code>cd2030.rmncah</code> R Package</a></li>
+  <li><a href="#rationale-scientific-basis-for-the-analysis" id="toc-rationale-scientific-basis-for-the-analysis" class="nav-link" data-scroll-target="#rationale-scientific-basis-for-the-analysis"><span class="header-section-number">5.1.1</span> Rationale: Scientific basis for the analysis</a></li>
+  <li><a href="#approach-description-of-analytical-steps" id="toc-approach-description-of-analytical-steps" class="nav-link" data-scroll-target="#approach-description-of-analytical-steps"><span class="header-section-number">5.1.2</span> Approach: Description of analytical steps</a></li>
   </ul></li>
+  <li><a href="#implementation-conducting-analysis-in-the-shiny-app" id="toc-implementation-conducting-analysis-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app"><span class="header-section-number">5.2</span> Implementation: Conducting analysis in the Shiny App</a></li>
+  <li><a href="#table-1-health-facility-data-quality-assessment-numerators" id="toc-table-1-health-facility-data-quality-assessment-numerators" class="nav-link" data-scroll-target="#table-1-health-facility-data-quality-assessment-numerators"><span class="header-section-number">5.3</span> Table 1: Health facility data quality assessment: numerators</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/data-quality.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">CAM 2025 Analysis Guide</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Section 1: Health facility data quality assessment</span></h1>
 </div>
 
 
@@ -221,26 +224,298 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="introduction-to-countdown-to-2030" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Introduction to Countdown to 2030</h1>
-<section id="overview-of-the-countdown-to-2030-the-countdown" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="overview-of-the-countdown-to-2030-the-countdown"><span class="header-section-number">1.1</span> Overview of the Countdown to 2030 (The Countdown)</h2>
-<p>The Countdown to 2030 for Women’s, Children’s and Adolescents’ Health (The Countdown) initiative is a global collaboration involving academics from national, regional, and international institutions, UN agencies, the World Bank, and civil society organizations. The initiative tracks progress in Reproductive, Maternal, Newborn, Child, and Adolescent Health and Nutrition (RMNCAH+N), fostering advocacy and accountability through rigorous data analysis.</p>
-<p><strong>Key objectives include:</strong></p>
+<hr>
+<p>This section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score.</p>
+<section id="numerators-assessment" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="numerators-assessment"><span class="header-section-number">5.1</span> Numerators Assessment</h2>
+<section id="rationale-scientific-basis-for-the-analysis" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="rationale-scientific-basis-for-the-analysis"><span class="header-section-number">5.1.1</span> Rationale: Scientific basis for the analysis</h3>
+<p>Routinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.</p>
+</section>
+<section id="approach-description-of-analytical-steps" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="approach-description-of-analytical-steps"><span class="header-section-number">5.1.2</span> Approach: Description of analytical steps</h3>
+<p>The analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators:</p>
+<p><strong>Table 1: Health facility data quality assessment: numerators</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: left;"><strong>Indicator</strong></th>
+<th style="text-align: left;"><strong>Numerator</strong></th>
+<th style="text-align: left;"><strong>Denominator</strong></th>
+<th style="text-align: left;"><strong>Interpretation</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td style="text-align: left;">{: colspan=“3”} <strong>Completeness of monthly facility reporting</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td style="text-align: left;"><strong>Completeness of monthly facility reporting</strong></td>
+<td style="text-align: left;">Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">Essential indicator for all analyses</td>
+</tr>
+<tr class="even">
+<td>1a</td>
+<td style="text-align: left;">% of expected monthly facility reports (national)</td>
+<td style="text-align: left;">N of monthly facility reports received</td>
+<td style="text-align: left;">Total N of facility reports expected (usually 12* N of facilities with the service)</td>
+<td style="text-align: left;">Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis</td>
+</tr>
+<tr class="odd">
+<td>1b</td>
+<td style="text-align: left;">% of districts with completeness of facility reporting &gt;= 90%</td>
+<td style="text-align: left;">N of districts with at least 90% monthly reporting completeness in a year</td>
+<td style="text-align: left;">Total N of districts</td>
+<td style="text-align: left;">Can be used to identify districts with low reporting rates in multiple years</td>
+</tr>
+<tr class="even">
+<td>1c</td>
+<td style="text-align: left;">% of districts with no missing monthly values in a year for any of the 4 forms</td>
+<td style="text-align: left;">N of districts with no missing values for any of the 4 forms in a year</td>
+<td style="text-align: left;">Total N of districts</td>
+<td style="text-align: left;">Additional indicator, is not used to compute the overall data quality score</td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td style="text-align: left;"><strong>Extreme outliers</strong></td>
+<td style="text-align: left;">The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">N of indicators included in the mean may vary according to countries</td>
+</tr>
+<tr class="even">
+<td>2a</td>
+<td style="text-align: left;">% of monthly values that are not extreme outliers<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> (national)</td>
+<td style="text-align: left;">N of monthly values that are not extreme outliers in a specific year</td>
+<td style="text-align: left;">Total N of monthly values (usually 12 * N years to be analyzed)</td>
+<td style="text-align: left;">At least 99% of monthly data expected <strong>not</strong> to be an extreme outlier; consider reasons</td>
+</tr>
+<tr class="odd">
+<td>2b</td>
+<td style="text-align: left;">% of districts with no extreme outliers in a year</td>
+<td style="text-align: left;">N of districts with no extreme outliers in a specific year</td>
+<td style="text-align: left;">Total N of districts</td>
+<td style="text-align: left;">At least 90% of districts should have no extreme outliers at all; consider reasons</td>
+</tr>
+<tr class="even">
+<td><strong>3</strong></td>
+<td style="text-align: left;"><strong>Consistency of annual reporting</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td>3a</td>
+<td style="text-align: left;">ANC1 to penta1 ratio in the reported data (national)</td>
+<td style="text-align: left;">N of ANC1 reported</td>
+<td style="text-align: left;">N of penta1 reported</td>
+<td style="text-align: left;">National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)</td>
+</tr>
+<tr class="even">
+<td>3b</td>
+<td style="text-align: left;">Penta1 to penta3 ratio in the reported data (national)</td>
+<td style="text-align: left;">N of penta1 reported</td>
+<td style="text-align: left;">N of penta3 reported</td>
+<td style="text-align: left;">National ratio within an expected range, based on the survey results (see below)</td>
+</tr>
+<tr class="odd">
+<td>3c</td>
+<td style="text-align: left;">% of districts with ANC1-penta1 ratio between 1.0 and 1.5</td>
+<td style="text-align: left;">N of districts with ratios within the expected range</td>
+<td style="text-align: left;">Total N of districts</td>
+<td style="text-align: left;">For districts there is more variation in the ratio: a wider range is considered</td>
+</tr>
+<tr class="even">
+<td>3d</td>
+<td style="text-align: left;">% of districts with penta1-penta3 ratio between 1.0 and 1.5</td>
+<td style="text-align: left;">N of districts within the expected range</td>
+<td style="text-align: left;">Total N of districts</td>
+<td style="text-align: left;">For districts there is more variation in the ratio: a wider range is considered</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td style="text-align: left;"><strong>Summary of performance</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td></td>
+<td style="text-align: left;">Annual data quality score (mean 1a, 1b, 2a,2b, 3c,3d)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>There is often an inconsistency between antenatal and immunization data, even though we can argue that the two should be consistent. To examine the association between ANC1 and penta1 is particularly informative. To compute and interpret indicators 3a and 3b the following considerations need to be made:</p>
+<p><strong><em>ANC1 to penta1 ratio</em></strong></p>
+<p>We can compute an expected ratio ANC1 to penta1 based on assumptions about mortality between early to mid pregnancy and early infancy and survey data on coverage of ANC1 and penta1 in the population:</p>
 <ul>
-<li>Strengthening country-led data analysis and monitoring</li>
-<li>Fostering innovation and evidence generation through multi-country collaboration</li>
-<li>Enhancing global measurement and monitoring Improving policy and program communication</li>
+<li>Consider the mortality between the first ANC visit and the first pentavalent vaccination.</li>
 </ul>
-<p>For more on Countdown to 2030 initiative, visit: <a href="https://www.countdown2030.org/about">The Countdown website</a></p>
+<blockquote class="blockquote">
+<p>Assuming that ANC1 takes place at about 20 weeks or 4-5 months of pregnancy and penta1 at 6-8 weeks postpartum, we assume a pregnancy loss (abortion) after the ANC1 visit of 3%, a stillbirth rate of 2%, a twinning rate of 1.5% and neonatal mortality rate before the penta1 of 3% then the difference between the numbers of ANC1 and penta1 should be: 1 – 0.03 – 0.02 + 0.015 – 0.03 = 0.935. This corresponds with a ANC1 to penta1 ratio of 1/0.935 = 1.07.</p>
+</blockquote>
+<ul>
+<li>Actual population coverage of ANC1 and penta1 will also need to be considered, using the surveys.</li>
+</ul>
+<blockquote class="blockquote">
+<p>The expected ratio (the number of ANC1/ number of penta1 in facilities) is 1.07 * (ANC1 coverage in the survey/penta1 coverage in the survey).</p>
+<p>If coverage for ANC1 and penta1 are the same, then the ratio is 1.07 (1.07 * 1/1). But if, for example, the last survey shows that ANC1 coverage was 90% and penta1 coverage was 95%, then the expected ratio becomes 1.07 * (.90/.95) = 1.01.</p>
+</blockquote>
+<ul>
+<li>For the national ANC1 to penta1 ratio a range of plus or minus 0.05 outside this computed ratio is considered acceptable. If the ratio is outside this range, this should be flagged, and possible explanations discussed.</li>
+</ul>
+<p><strong><em>Penta1 to penta3 ratio</em></strong></p>
+<p>We can compute an expected penta1 to penta3 ratio based on the most recent survey:</p>
+<ul>
+<li><p>The main factor determining the penta1 to penta3 ratio, which are recommended at 6 and at 14 weeks of age, is the actual drop-out rate between penta1 and penta3, as mortality plays a limited role.</p></li>
+<li><p>Population coverage rates from the latest survey are used to determine the expected penta1 to penta3 ratio in the facility data. For instance, if penta1 coverage is 95% and penta3 coverage is 85%, we expect that ratio to be 0.95/0.85 = 1.12.</p></li>
+<li><p>Also, here a range of plus or minus 0.05 is considered acceptable for the assessment of the facility data.</p></li>
+</ul>
+<p><strong>Report:</strong></p>
+<p>Points to consider for the interpretation</p>
+<ul>
+<li><p>Is there a data quality pattern by year for which there is an &gt; explanation? (include the explanation)</p></li>
+<li><p>Are there certain regions or other subnational units that are &gt; particularly problematic?</p></li>
+<li><p>Are there certain reporting forms or services (e.g., antenatal care, &gt; labour and delivery, immunization) that are problematic?</p></li>
+<li><p>Is there good consistency between reported numbers of ANC1 and &gt; penta1?</p></li>
+</ul>
+<p>The Figure below produced in the ShinyApp shows the ratios for all six years (2019-2024) and the expected value. It will be important to reflect on large differences (e.g., more than 0.10 or 10%.).</p>
+<p><img src="images/1-dqa_ratios.png" class="img-fluid"></p>
 </section>
-<section id="about-the-cd2030.rmncah-r-package" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="about-the-cd2030.rmncah-r-package"><span class="header-section-number">1.2</span> About the <code>cd2030.rmncah</code> R Package</h2>
-<p>The cd2030.rmncah R package and Shiny App were developed to support evidence generation and analysis of RMNCAH indicators.</p>
-<p>Key features include: User-friendly interface for data management and analysis Tools for visualization and statistical summarization Automated report generation</p>
+</section>
+<section id="implementation-conducting-analysis-in-the-shiny-app" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app"><span class="header-section-number">5.2</span> Implementation: Conducting analysis in the Shiny App</h2>
+<p>The various data quality aspects ( <strong><em>Reporting completeness</em></strong>, <strong><em>Outlier detection</em></strong>,<strong><em>Internal Consistency</em></strong> <strong><em>Data completeness</em></strong>, <strong><em>Ratios calculation</em></strong>, <strong><em>Overall quality score</em></strong>) are are assessed in the Data quality section of the Shiny App. The app will automatically compute the overall data quality score based on the indicators described above.</p>
+</section>
+<section id="table-1-health-facility-data-quality-assessment-numerators" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="table-1-health-facility-data-quality-assessment-numerators"><span class="header-section-number">5.3</span> Table 1: Health facility data quality assessment: numerators</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Indicator</th>
+<th>Numerator</th>
+<th>Denominator</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>1</strong></td>
+<td><strong>Completeness of monthly facility reporting</strong></td>
+<td>{: colspan=“2”} <em>Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>1a</td>
+<td>% of expected monthly facility reports (national)</td>
+<td>N of monthly facility reports received</td>
+<td>Total N of facility reports expected (usually 12 × N of facilities with the service)</td>
+</tr>
+<tr class="odd">
+<td>1b</td>
+<td>% of districts with completeness of facility reporting ≥ 90%</td>
+<td>N of districts with at least 90% monthly reporting completeness in a year</td>
+<td>Total N of districts</td>
+</tr>
+<tr class="even">
+<td>1c</td>
+<td>% of districts with no missing monthly values in a year for any of the 4 forms</td>
+<td>N of districts with no missing values for any of the 4 forms in a year</td>
+<td>Total N of districts</td>
+</tr>
+<tr class="odd">
+<td><strong>2</strong></td>
+<td><strong>Extreme outliers</strong></td>
+<td>{: colspan=“2”} <em>The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD, and IPD indicators. (Note: Number of indicators included in the mean may vary according to countries)</em></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2a</td>
+<td>% of monthly values that are not extreme outliers (national)</td>
+<td>N of monthly values that are not extreme outliers in a specific year</td>
+<td>Total N of monthly values (usually 12 × N years to be analyzed)</td>
+</tr>
+<tr class="odd">
+<td>2b</td>
+<td>% of districts with no extreme outliers in a year</td>
+<td>N of districts with no extreme outliers in a specific year</td>
+<td>Total N of districts</td>
+</tr>
+<tr class="even">
+<td><strong>3</strong></td>
+<td><strong>Consistency of annual reporting</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3a</td>
+<td>ANC1 to penta1 ratio in the reported data (national)</td>
+<td>N of ANC1 reported</td>
+<td>N of penta1 reported</td>
+</tr>
+<tr class="even">
+<td>3b</td>
+<td>Penta1 to penta3 ratio in the reported data (national)</td>
+<td>N of penta1 reported</td>
+<td>N of penta3 reported</td>
+</tr>
+<tr class="odd">
+<td>3c</td>
+<td>% of districts with ANC1-penta1 ratio between 1.0 and 1.5</td>
+<td>N of districts with ratios within the expected range</td>
+<td>Total N of districts</td>
+</tr>
+<tr class="even">
+<td>3d</td>
+<td>% of districts with penta1-penta3 ratio between 1.0 and 1.5</td>
+<td>N of districts within the expected range</td>
+<td>Total N of districts</td>
+</tr>
+<tr class="odd">
+<td><strong>4</strong></td>
+<td><strong>Summary of performance</strong></td>
+<td>{: colspan=“2”} <em>Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)</em></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -645,10 +920,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./loading-data.html" class="pagination-link" aria-label="Loading Health facility data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Loading Health facility data</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./general-intro.html" class="pagination-link" aria-label="General Introduction to CD2030 CAM Approach">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./national-analyses.html" class="pagination-link" aria-label="national-analyses.html">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">national-analyses.html</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -660,7 +938,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/data-quality.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

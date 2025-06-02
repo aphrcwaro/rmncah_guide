@@ -2,51 +2,221 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Installing the Countdown2030 RMNCAH Application",
+    "title": "CAM 2025 Analysis Guide",
     "section": "",
-    "text": "1 A Quick Guide\nInitially, Countdown2030 analyses were conducted using Stata. These scripts have now been translated into R to support the development and deployment of a Shiny-based dashboard.\nWe extend our appreciation to the team that compiled the original Stata codebase.",
+    "text": "1 Introduction to Countdown to 2030",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Countdown to 2030</span>"
     ]
   },
   {
-    "objectID": "index.html#installing-r-and-rstudio",
-    "href": "index.html#installing-r-and-rstudio",
-    "title": "Installing the Countdown2030 RMNCAH Application",
-    "section": "1.1 Installing R and RStudio",
-    "text": "1.1 Installing R and RStudio\nTo begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.\n\n1.1.1 Download and Install R (Step 1)\nR is distributed via The Comprehensive R Archive Network (CRAN). Select your operating system from the homepage: Windows, Mac, or Linux.\n\n1.1.1.1 Windows\n\nNavigate to Download R for Windows and select the “base” option.\nClick the first link (e.g., “Download R x.x.x for Windows”) to download the installer.\nRun the installer and follow the prompts. Administrator privileges may be required.\nR will be installed in your system’s Program Files, with a shortcut added to the Start menu.\n\n\n\n1.1.1.2 Mac\n\nClick Download R for Mac on the CRAN homepage.\nDownload the latest release package and run the installer.\nThe default installation settings are typically sufficient. You may be prompted to enter your system password.\n\n\nR is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.\n\n\n\n\n1.1.2 Install RStudio (Step 2)\nRStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.\nDownload RStudio from Posit Website\nDo I still need to download R? Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.\nAfter installation, launch RStudio and begin interacting with R through its console and script windows.",
+    "objectID": "index.html#overview-of-the-countdown-to-2030-the-countdown",
+    "href": "index.html#overview-of-the-countdown-to-2030-the-countdown",
+    "title": "CAM 2025 Analysis Guide",
+    "section": "1.1 Overview of the Countdown to 2030 (The Countdown)",
+    "text": "1.1 Overview of the Countdown to 2030 (The Countdown)\nThe Countdown to 2030 for Women’s, Children’s and Adolescents’ Health (The Countdown) initiative is a global collaboration involving academics from national, regional, and international institutions, UN agencies, the World Bank, and civil society organizations. The initiative tracks progress in Reproductive, Maternal, Newborn, Child, and Adolescent Health and Nutrition (RMNCAH+N), fostering advocacy and accountability through rigorous data analysis.\nKey objectives include:\n\nStrengthening country-led data analysis and monitoring\nFostering innovation and evidence generation through multi-country collaboration\nEnhancing global measurement and monitoring Improving policy and program communication\n\nFor more on Countdown to 2030 initiative, visit: The Countdown website",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Countdown to 2030</span>"
     ]
   },
   {
-    "objectID": "index.html#installing-the-countdown2030-rmncah-application",
-    "href": "index.html#installing-the-countdown2030-rmncah-application",
-    "title": "Installing the Countdown2030 RMNCAH Application",
-    "section": "1.2 Installing the Countdown2030 RMNCAH Application",
-    "text": "1.2 Installing the Countdown2030 RMNCAH Application\nAfter installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository cd2030.rnncah. The application is implemented as an R package and supports interactive dashboard generation via Shiny.\n\n1.2.1 Installation via R Console\nStable Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\nDevelopment Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah\")\n\n\n\n1.2.2 Launching the Application\n\nlibrary(cd2030.rmncah)\ndashboard()\n\nThe Shiny dashboard will launch automatically in your default web browser.",
+    "objectID": "index.html#about-the-cd2030.rmncah-r-package",
+    "href": "index.html#about-the-cd2030.rmncah-r-package",
+    "title": "CAM 2025 Analysis Guide",
+    "section": "1.2 About the cd2030.rmncah R Package",
+    "text": "1.2 About the cd2030.rmncah R Package\nThe cd2030.rmncah R package and Shiny App were developed to support evidence generation and analysis of RMNCAH indicators.\nKey features include: User-friendly interface for data management and analysis Tools for visualization and statistical summarization Automated report generation",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to Countdown to 2030</span>"
     ]
   },
   {
-    "objectID": "index.html#alternative-installation-via-github-desktop-or-git-or-direct-download",
-    "href": "index.html#alternative-installation-via-github-desktop-or-git-or-direct-download",
-    "title": "Installing the Countdown2030 RMNCAH Application",
-    "section": "1.3 Alternative Installation via GitHub Desktop or Git or direct download",
-    "text": "1.3 Alternative Installation via GitHub Desktop or Git or direct download\nAdvanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:\n\nVersion control\nContribution to the codebase\nInspection of the package structure\nOnce cloned, open the .Rproj file in RStudio to set the working directory.\n\n\n\n\nGithub\nLocal Folder\n\n\n\n\n\n\n\n\n\nTo install and run:\n\ndevtools::install()\n\nlibrary(cd2030.rmncah)\ndashboard()",
+    "objectID": "general-intro.html",
+    "href": "general-intro.html",
+    "title": "2  General Introduction to CD2030 CAM Approach",
+    "section": "",
+    "text": "2.1 General Introduction to CD2030 CAM Approach\nThe CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.\nMuch attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>General Introduction to CD2030 CAM Approach</span>"
     ]
   },
   {
-    "objectID": "index.html#rtools-for-windows",
-    "href": "index.html#rtools-for-windows",
-    "title": "Installing the Countdown2030 RMNCAH Application",
-    "section": "1.4 RTools for Windows",
-    "text": "1.4 RTools for Windows\nTo compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nRTools can be downloaded from CRAN",
+    "objectID": "general-intro.html#organization-of-the-guidebook",
+    "href": "general-intro.html#organization-of-the-guidebook",
+    "title": "2  General Introduction to CD2030 CAM Approach",
+    "section": "2.2 Organization of the Guidebook",
+    "text": "2.2 Organization of the Guidebook\nThis guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:\n\nSection 1: Health facility data quality assessment\nSection 2: National  Analyses (Coverage & Equity)\nSection 3: Subnational analysis (Coverage & Inequality)\nSection 4: Maternal mortality, stillbirths and neonatal mortality\nSection5: Curative health services utilization for sick children\nSection 6: Health systems progress and performance\nSection 7: Planning ahead for data use\n\nThese sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.\nEach section has:\n\nWhy/Rationale - the scientific basis for the analysis;\nApproach- a step-by-step guide on how to conduct the analysis; and the\nImplementation - the use of the R Shiny App for data visualization and interpretation.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>A Quick Guide</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>General Introduction to CD2030 CAM Approach</span>"
+    ]
+  },
+  {
+    "objectID": "general-intro.html#data-sources",
+    "href": "general-intro.html#data-sources",
+    "title": "2  General Introduction to CD2030 CAM Approach",
+    "section": "2.3 Data Sources",
+    "text": "2.3 Data Sources\nThe Countdown CAM approach uses a variety of data sources, including:\n\nHealth facility data: Routine health data collected from health facilities, including service coverage, health systems performance, and health service utilization.\nSurveys: Nationally representative surveys, such as the Demographic and Health Surveys (DHS) and Multiple Indicator Cluster Surveys (MICS), which provide data on health indicators, equity, and health service utilization.\nAdministrative data: Data collected by government agencies, such as vital registration systems and health management information systems (HMIS), which provide information on health outcomes and service delivery.\nOther data sources: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>General Introduction to CD2030 CAM Approach</span>"
+    ]
+  },
+  {
+    "objectID": "general-intro.html#expected-outputs",
+    "href": "general-intro.html#expected-outputs",
+    "title": "2  General Introduction to CD2030 CAM Approach",
+    "section": "2.4 Expected outputs",
+    "text": "2.4 Expected outputs\n\nFull country report (national/subnational) (.pdf, .doc files)\nSynthesis/poster reports (.pdf, .doc files)\nCountry analytical reproducible files (.rds files)\nAdjusted and or summarized data files (.csv. .dta, xlsx files)\n\nCountry analytical reproducible files (.rds files) are the final output of the analysis, which can be used for further analysis and visualization. These files contain the cleaned and processed data, country specific analysis parameters as well as the results of the analysis, including coverage, equity, and health systems performance indicators.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>General Introduction to CD2030 CAM Approach</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html",
+    "href": "getting-started.html",
+    "title": "3  Getting started",
+    "section": "",
+    "text": "3.1 Installing R and RStudio\nInitially, Countdown2030 analyses were conducted using Stata. These scripts have now been translated into R to support the development and deployment of a Shiny-based dashboard.\nWe extend our appreciation to the team that compiled the original Stata codebase.\nTo begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms. &gt; Note: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier. &gt;To ensure smooth installation and functionality, it is recommended to install R first, followed by RStudio. This order is important as RStudio relies on R to function properly.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#R-and-rstudio",
+    "href": "getting-started.html#R-and-rstudio",
+    "title": "3  Getting started",
+    "section": "",
+    "text": "3.1.1 Download and Install R (Step 1)\nR is distributed via The Comprehensive R Archive Network (CRAN). Select your operating system from the homepage: Windows, Mac, or Linux.\n\n3.1.1.1 Windows\n\nNavigate to Download R for Windows and select the “base” option.\nClick the first link (e.g., “Download R x.x.x for Windows”) to download the installer.\nRun the installer and follow the prompts. Administrator privileges may be required.\nR will be installed in your system’s Program Files, with a shortcut added to the Start menu.\n\n\n\n3.1.1.2 Mac\n\nClick Download R for Mac on the CRAN homepage.\nDownload the latest release package and run the installer.\nThe default installation settings are typically sufficient. You may be prompted to enter your system password.\n\nR is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.\n\n\n\n3.1.2 Install RStudio (Step 2)\nRStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.\nDownload RStudio from Posit Website\nDo I still need to download R? Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.\nAfter installation, launch RStudio and begin interacting with R through its console and script windows.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#installing-the-countdown2030-rmncah-application",
+    "href": "getting-started.html#installing-the-countdown2030-rmncah-application",
+    "title": "3  Getting started",
+    "section": "3.2 Installing the Countdown2030 RMNCAH Application",
+    "text": "3.2 Installing the Countdown2030 RMNCAH Application\nAfter installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository cd2030.rnncah. The application is implemented as an R package and supports interactive dashboard generation via Shiny.\n\n3.2.1 Installation via R Console\nStable Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\nDevelopment Version\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah\")\n\n\n\n3.2.2 Launching the Application\n\nlibrary(cd2030.rmncah)\ndashboard()\n\nThe Shiny dashboard will launch automatically in your default web browser.\n\n\n\n3.2.3 Alternative Installation via GitHub Desktop or Git or direct download\nAdvanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:\n\nVersion control\nContribution to the codebase\nInspection of the package structure\nOnce cloned, open the .Rproj file in RStudio to set the working directory.\n\n\n\n\nGithub\nLocal Folder\n\n\n\n\n\n\n\n\n\nTo install and run:\n\ndevtools::install()\n\nlibrary(cd2030.rmncah)\ndashboard()\n\n\n\n3.2.4 RTools for Windows\nTo compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nRTools can be downloaded from CRAN",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "getting-started.html#data-requirements",
+    "href": "getting-started.html#data-requirements",
+    "title": "3  Getting started",
+    "section": "3.3 Data requirements",
+    "text": "3.3 Data requirements\n\n3.3.1 Datasets required\nTo run the analysis efficiently, each country team will require to have a folder containing the following datasets:\n\nHealth facility data (.xlsx file)\nUN\nSurvey data\nUN mortality data\nxxxx data These datasets will be provided by the Countdown2030 team.\n\n\n\n3.3.2 Country specific analysis parameters",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting started</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html",
+    "href": "loading-data.html",
+    "title": "4  Loading Health facility data",
+    "section": "",
+    "text": "4.1 Supported File Formats\nThis section explains how to structure and upload data into the app, ensuring compatibility with the Countdown Health facility data format\nPlease note that should you update your data during the workshop, ensure it is in the correct format before uploading to avoid errors.\nThe app supports uploading the following file types:",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html#supported-file-formats",
+    "href": "loading-data.html#supported-file-formats",
+    "title": "4  Loading Health facility data",
+    "section": "",
+    "text": ".xls, .xlsx (Excel files)- The raw health facility dataset in the Countdown format\n.dta (Stata files) - Master dataset downloaded from the app after validation/adjustment\n.rds (R Cached datafile) - The file containing the preloaded dataset, user adjustments and analysis parameters that has been &gt; saved in the Cache directory. This will be the last saved file.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html#how-to-upload-data",
+    "href": "loading-data.html#how-to-upload-data",
+    "title": "4  Loading Health facility data",
+    "section": "4.2 How to Upload Data",
+    "text": "4.2 How to Upload Data\nStep 1: Prepare Your data file\nEnsure your data is cleaned and structured according to the The Countdown Health facility data format by:\n\nUsing the provided HFD Standardized Template to format your data &gt; correctly.\nSaving the file in a supported format: .xls, .xlsx, .dta, or .rds.\n\nStep 2: Upload the File\n\nNavigate to the Upload Data section of the app.\nDrag and drop your file into the upload box, or click Browse &gt; to select it manually in your directory.\nFor subsequent re-uploads (after the initial uploading of the .xls, &gt; .xlsx, .dta files and saving your progress in .rds file using the &gt; Cache Directory button), do not reupload the .xls, .xlsx, .dta but &gt; the saved .rds file if you want to retain any changes made in your &gt; analytical files\nThe app will validate your file against the Countdown format.\n\nIf successful, a confirmation message will appear: “Upload &gt; successful: Your file is ready for analysis.”\nIf errors are detected, an error message will indicate the &gt; issue.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html#common-errors-and-how-to-fix-them",
+    "href": "loading-data.html#common-errors-and-how-to-fix-them",
+    "title": "4  Loading Health facility data",
+    "section": "4.3 Common Errors and How to Fix Them",
+    "text": "4.3 Common Errors and How to Fix Them\n\n\n\n\n\n\n\n\nError Message\nCause\nSolution\n\n\n\n\n“Unsupported file format”\nFile type not supported\nSave your file as .xls, .xlsx, .dta, or .rds.\n\n\n“The following required columns are missing from the data: opv1”\nMissing essential columns in the data\nAdd the missing column(s) to your dataset and ensure their values are valid.\n\n\n“The following sheets are missing: Service_data_1, Service_data_2, Service_data_3, Reporting_completeness, Population_data, Admin_data”\nMissing one or more required sheets in the file\nAdd the missing sheets to your file and ensure they conform to the template.\n\n\n“Sheet Service_data_3 is empty”\nThe sheet exists but contains no data\nPopulate the sheet with valid data or remove the empty sheet.\n\n\n“Key Columns”month” missing in Service_data_3”\nA key column district, year, or month, is missing from the specified sheet\nAdd the missing column(s) to the sheet and ensure the data is structured correctly.\n\n\n“Column name month must not be duplicated. Use .name_repair to specify repair.”\nDuplicate column names in the dataset\nEnsure all column names are unique. Rename or remove duplicate columns.\n\n\n\nNote: If a key column (district, year, or month) is missing data in a row, that row will be excluded from the resulting dataset.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
+    ]
+  },
+  {
+    "objectID": "loading-data.html#tips-for-a-successful-upload",
+    "href": "loading-data.html#tips-for-a-successful-upload",
+    "title": "4  Loading Health facility data",
+    "section": "4.4 Tips for a Successful Upload",
+    "text": "4.4 Tips for a Successful Upload\n\nAlways use the latest The Countdown Health facility data format &gt; template to structure your data.\nDouble-check column names, formats, and content before uploading.\nSave your file in a supported format and ensure it is UTF-8 encoded",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
+    ]
+  },
+  {
+    "objectID": "data-quality.html",
+    "href": "data-quality.html",
+    "title": "5  Section 1: Health facility data quality assessment",
+    "section": "",
+    "text": "5.1 Numerators Assessment\nThis section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+    ]
+  },
+  {
+    "objectID": "data-quality.html#numerators-assessment",
+    "href": "data-quality.html#numerators-assessment",
+    "title": "5  Section 1: Health facility data quality assessment",
+    "section": "",
+    "text": "5.1.1 Rationale: Scientific basis for the analysis\nRoutinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.\n\n\n5.1.2 Approach: Description of analytical steps\nThe analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators:\nTable 1: Health facility data quality assessment: numerators\n\n\n\n\n\n\n\n\n\n\n\nIndicator\nNumerator\nDenominator\nInterpretation\n\n\n\n\n1\n{: colspan=“3”} Completeness of monthly facility reporting\n\n\n\n\n\n\n\n\n\n\n\n\n1\nCompleteness of monthly facility reporting\nStatistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)\n\nEssential indicator for all analyses\n\n\n1a\n% of expected monthly facility reports (national)\nN of monthly facility reports received\nTotal N of facility reports expected (usually 12* N of facilities with the service)\nReporting rates over 90% are good; changes in reporting completeness over time affects trend analysis\n\n\n1b\n% of districts with completeness of facility reporting &gt;= 90%\nN of districts with at least 90% monthly reporting completeness in a year\nTotal N of districts\nCan be used to identify districts with low reporting rates in multiple years\n\n\n1c\n% of districts with no missing monthly values in a year for any of the 4 forms\nN of districts with no missing values for any of the 4 forms in a year\nTotal N of districts\nAdditional indicator, is not used to compute the overall data quality score\n\n\n2\nExtreme outliers\nThe statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators\n\nN of indicators included in the mean may vary according to countries\n\n\n2a\n% of monthly values that are not extreme outliers1 (national)\nN of monthly values that are not extreme outliers in a specific year\nTotal N of monthly values (usually 12 * N years to be analyzed)\nAt least 99% of monthly data expected not to be an extreme outlier; consider reasons\n\n\n2b\n% of districts with no extreme outliers in a year\nN of districts with no extreme outliers in a specific year\nTotal N of districts\nAt least 90% of districts should have no extreme outliers at all; consider reasons\n\n\n3\nConsistency of annual reporting\n\n\n\n\n\n3a\nANC1 to penta1 ratio in the reported data (national)\nN of ANC1 reported\nN of penta1 reported\nNational ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)\n\n\n3b\nPenta1 to penta3 ratio in the reported data (national)\nN of penta1 reported\nN of penta3 reported\nNational ratio within an expected range, based on the survey results (see below)\n\n\n3c\n% of districts with ANC1-penta1 ratio between 1.0 and 1.5\nN of districts with ratios within the expected range\nTotal N of districts\nFor districts there is more variation in the ratio: a wider range is considered\n\n\n3d\n% of districts with penta1-penta3 ratio between 1.0 and 1.5\nN of districts within the expected range\nTotal N of districts\nFor districts there is more variation in the ratio: a wider range is considered\n\n\n4\nSummary of performance\n\n\n\n\n\n\nAnnual data quality score (mean 1a, 1b, 2a,2b, 3c,3d)\n\n\n\n\n\n\nThere is often an inconsistency between antenatal and immunization data, even though we can argue that the two should be consistent. To examine the association between ANC1 and penta1 is particularly informative. To compute and interpret indicators 3a and 3b the following considerations need to be made:\nANC1 to penta1 ratio\nWe can compute an expected ratio ANC1 to penta1 based on assumptions about mortality between early to mid pregnancy and early infancy and survey data on coverage of ANC1 and penta1 in the population:\n\nConsider the mortality between the first ANC visit and the first pentavalent vaccination.\n\n\nAssuming that ANC1 takes place at about 20 weeks or 4-5 months of pregnancy and penta1 at 6-8 weeks postpartum, we assume a pregnancy loss (abortion) after the ANC1 visit of 3%, a stillbirth rate of 2%, a twinning rate of 1.5% and neonatal mortality rate before the penta1 of 3% then the difference between the numbers of ANC1 and penta1 should be: 1 – 0.03 – 0.02 + 0.015 – 0.03 = 0.935. This corresponds with a ANC1 to penta1 ratio of 1/0.935 = 1.07.\n\n\nActual population coverage of ANC1 and penta1 will also need to be considered, using the surveys.\n\n\nThe expected ratio (the number of ANC1/ number of penta1 in facilities) is 1.07 * (ANC1 coverage in the survey/penta1 coverage in the survey).\nIf coverage for ANC1 and penta1 are the same, then the ratio is 1.07 (1.07 * 1/1). But if, for example, the last survey shows that ANC1 coverage was 90% and penta1 coverage was 95%, then the expected ratio becomes 1.07 * (.90/.95) = 1.01.\n\n\nFor the national ANC1 to penta1 ratio a range of plus or minus 0.05 outside this computed ratio is considered acceptable. If the ratio is outside this range, this should be flagged, and possible explanations discussed.\n\nPenta1 to penta3 ratio\nWe can compute an expected penta1 to penta3 ratio based on the most recent survey:\n\nThe main factor determining the penta1 to penta3 ratio, which are recommended at 6 and at 14 weeks of age, is the actual drop-out rate between penta1 and penta3, as mortality plays a limited role.\nPopulation coverage rates from the latest survey are used to determine the expected penta1 to penta3 ratio in the facility data. For instance, if penta1 coverage is 95% and penta3 coverage is 85%, we expect that ratio to be 0.95/0.85 = 1.12.\nAlso, here a range of plus or minus 0.05 is considered acceptable for the assessment of the facility data.\n\nReport:\nPoints to consider for the interpretation\n\nIs there a data quality pattern by year for which there is an &gt; explanation? (include the explanation)\nAre there certain regions or other subnational units that are &gt; particularly problematic?\nAre there certain reporting forms or services (e.g., antenatal care, &gt; labour and delivery, immunization) that are problematic?\nIs there good consistency between reported numbers of ANC1 and &gt; penta1?\n\nThe Figure below produced in the ShinyApp shows the ratios for all six years (2019-2024) and the expected value. It will be important to reflect on large differences (e.g., more than 0.10 or 10%.).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+    ]
+  },
+  {
+    "objectID": "data-quality.html#implementation-conducting-analysis-in-the-shiny-app",
+    "href": "data-quality.html#implementation-conducting-analysis-in-the-shiny-app",
+    "title": "5  Section 1: Health facility data quality assessment",
+    "section": "5.2 Implementation: Conducting analysis in the Shiny App",
+    "text": "5.2 Implementation: Conducting analysis in the Shiny App\nThe various data quality aspects ( Reporting completeness, Outlier detection,Internal Consistency Data completeness, Ratios calculation, Overall quality score) are are assessed in the Data quality section of the Shiny App. The app will automatically compute the overall data quality score based on the indicators described above.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+    ]
+  },
+  {
+    "objectID": "data-quality.html#table-1-health-facility-data-quality-assessment-numerators",
+    "href": "data-quality.html#table-1-health-facility-data-quality-assessment-numerators",
+    "title": "5  Section 1: Health facility data quality assessment",
+    "section": "5.3 Table 1: Health facility data quality assessment: numerators",
+    "text": "5.3 Table 1: Health facility data quality assessment: numerators\n\n\n\n\n\n\n\n\n\nIndicator\nNumerator\nDenominator\nInterpretation\n\n\n\n\n1\nCompleteness of monthly facility reporting\n{: colspan=“2”} Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)\n\n\n\n1a\n% of expected monthly facility reports (national)\nN of monthly facility reports received\nTotal N of facility reports expected (usually 12 × N of facilities with the service)\n\n\n1b\n% of districts with completeness of facility reporting ≥ 90%\nN of districts with at least 90% monthly reporting completeness in a year\nTotal N of districts\n\n\n1c\n% of districts with no missing monthly values in a year for any of the 4 forms\nN of districts with no missing values for any of the 4 forms in a year\nTotal N of districts\n\n\n2\nExtreme outliers\n{: colspan=“2”} The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD, and IPD indicators. (Note: Number of indicators included in the mean may vary according to countries)\n\n\n\n2a\n% of monthly values that are not extreme outliers (national)\nN of monthly values that are not extreme outliers in a specific year\nTotal N of monthly values (usually 12 × N years to be analyzed)\n\n\n2b\n% of districts with no extreme outliers in a year\nN of districts with no extreme outliers in a specific year\nTotal N of districts\n\n\n3\nConsistency of annual reporting\n\n\n\n\n3a\nANC1 to penta1 ratio in the reported data (national)\nN of ANC1 reported\nN of penta1 reported\n\n\n3b\nPenta1 to penta3 ratio in the reported data (national)\nN of penta1 reported\nN of penta3 reported\n\n\n3c\n% of districts with ANC1-penta1 ratio between 1.0 and 1.5\nN of districts with ratios within the expected range\nTotal N of districts\n\n\n3d\n% of districts with penta1-penta3 ratio between 1.0 and 1.5\nN of districts within the expected range\nTotal N of districts\n\n\n4\nSummary of performance\n{: colspan=“2”} Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+    ]
+  },
+  {
+    "objectID": "data-quality.html#footnotes",
+    "href": "data-quality.html#footnotes",
+    "title": "5  Section 1: Health facility data quality assessment",
+    "section": "",
+    "text": "An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+    ]
+  },
+  {
+    "objectID": "subnational-analyses.html",
+    "href": "subnational-analyses.html",
+    "title": "7  subnational-analyses",
+    "section": "",
+    "text": "#| echo: false #|",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>subnational-analyses</span>"
     ]
   }
 ]

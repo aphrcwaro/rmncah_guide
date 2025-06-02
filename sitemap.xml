@@ -2,6 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/index.html</loc>
-    <lastmod>2025-05-24T09:15:18.634Z</lastmod>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/general-intro.html</loc>
+    <lastmod>2025-06-02T07:09:47.250Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/getting-started.html</loc>
+    <lastmod>2025-06-02T07:09:47.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/loading-data.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/data-quality.html</loc>
+    <lastmod>2025-06-02T07:09:47.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/national-analyses.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/subnational-analyses.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/maternal-mortality.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/service-utilization.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/health-systems.html</loc>
+    <lastmod>2025-06-02T07:09:47.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/planning-ahead.html</loc>
+    <lastmod>2025-06-02T07:09:47.261Z</lastmod>
   </url>
 </urlset>
