@@ -1,0 +1,54 @@
+---
+title: "Health Facility Data Quality Assessment"
+format:
+  html: default
+  pdf: default
+  docx: default
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+
+# Data preparation
+
+```
+
+```{r , echo=FALSE}
+
+df <- data.frame(
+  Indicator = c("1", "1a", "1b", "1c", "2", "2a"),
+  Numerator = c(
+    "Completeness of monthly facility reporting\nStatistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)",
+    "% of expected monthly facility reports (national)",
+    "% of districts with completeness of facility reporting >= 90%",
+    "% of districts with no missing monthly values in a year for any of the 4 forms",
+    "Extreme outliers\nThe statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators\n(Note: Number of indicators included in the mean may vary according to countries)",
+    "% of monthly values that are not extreme outliers¹ (national)"
+  ),
+  Denominator = c(
+    "", 
+    "Total N of facility reports expected (usually 12 * N of facilities with the service)",
+    "Total N of districts",
+    "Total N of districts",
+    "", 
+    "Total N of monthly values (usually 12 * N years to be analyzed)"
+  ),
+  Interpretation = c(
+    "",
+    "Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis",
+    "Can be used to identify districts with low reporting rates in multiple years",
+    "Additional indicator, is not used to compute the overall data quality score",
+    "",
+    "At least 99% of monthly data expected **not** to be an extreme outlier; consider reasons"
+  )
+)
+
+# Create table
+kable(df, "pipe", col.names = c("Indicator", "Numerator", "Denominator", "Interpretation"), escape = FALSE) %>%
+  kable_styling(full_width = TRUE, position = "center") %>%
+  collapse_rows(columns = 1, valign = "top") %>%
+  row_spec(1, bold = TRUE) %>%
+  row_spec(5, bold = TRUE) %>%
+  footnote(general = "¹ An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.", general_title = "")
+```

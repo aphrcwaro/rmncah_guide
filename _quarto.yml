@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "Installing the Countdown2030 RMNCAH Application"
+  title: "CAM 2025 Analysis Guide"
   reader-mode: true
   
   page-footer: 
@@ -15,6 +15,16 @@ book:
   repo-actions: [edit, issue]
   chapters:
     - index.qmd
+    - general-intro.qmd
+    - getting-started.qmd
+    - loading-data.qmd
+    - data-quality.qmd
+    - national-analyses.qmd
+    - subnational-analyses.qmd
+    - maternal-mortality.qmd
+    - service-utilization.qmd
+    - health-systems.qmd
+    - planning-ahead.qmd
 
 format:
   html:
@@ -23,7 +33,7 @@ format:
       - cd2030.scss
     code-link: true
     
-    author-meta: "David Kariuki"
+    author-meta: "Peter Kaberia"
     callout-appearance: simple
 
 editor: visual
