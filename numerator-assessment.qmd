@@ -8,7 +8,6 @@ title: "Numerator Assessment"
 source("_common.R")
 ```
 
-
 ## Numerators Assessment {#numerators-assessment}
 
 ### Rationale: Scientific basis for the analysis {#rationale-scientific-basis-for-the-analysis}
@@ -21,11 +20,7 @@ The analysis of the monthly data by district for 2019-2024 is used to assess ann
 
 ## Implementation: Conducting analysis in the Shiny App
 
-The various data quality aspects ( ***Reporting completeness***, ***Outlier detection***,***Internal Consistency*** ***Data completeness***, ***Ratios calculation***, ***Overall quality score***) are are assessed in the **Data quality** section of the Shiny App.
-![](images/1-dqa_reporting_rates.png)
-The app will automatically compute the overall data quality score based on the metrics described above. The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score. \[\]
-
-
+The various data quality aspects ( ***Reporting completeness***, ***Outlier detection***,***Internal Consistency*** ***Data completeness***, ***Ratios calculation***, ***Overall quality score***) are are assessed in the **Data quality** section of the Shiny App. ![](images/1-dqa_reporting_rates.png) The app will automatically compute the overall data quality score based on the metrics described above. The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score. \[\]
 
 There is often an inconsistency between antenatal and immunization data, even though we can argue that the two should be consistent. To examine the association between ANC1 and penta1 is particularly informative. To compute and interpret indicators 3a and 3b the following considerations need to be made:
 
