@@ -204,6 +204,6 @@ The interpretation should describe, based on the graphs:
 
 -   Which denominator methods performed best at the national level for the two indicators?
 
--   Which denominator performed best at the subnational level for the two indicators?
+-   Which denominator performed best at the sub-national level for the two indicators?
 
 -   What selection is made for the indicators in the coverage analyses?
