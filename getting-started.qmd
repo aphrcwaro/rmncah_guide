@@ -12,10 +12,7 @@ We extend our appreciation to the team that compiled the original Stata codebase
 
 ## Installing R and RStudio {#R-and-rstudio}
 
-To begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.
-> **Note**: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier. 
->To ensure smooth installation and functionality, it is recommended to install **R** first, followed by **RStudio**. This order is important as RStudio relies on R to function properly.
-
+To begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms. \> **Note**: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier. \>To ensure smooth installation and functionality, it is recommended to install **R** first, followed by **RStudio**. This order is important as RStudio relies on R to function properly.
 
 ### Download and Install R (Step 1)
 
@@ -108,19 +105,21 @@ To compile packages from source, especially development versions, RTools must be
 RTools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
 
 ## Data requirements
+
 ### Datasets required
 
 To run the analysis efficiently, each country team will require to have a folder containing the following datasets:
 
 1.  Health facility data (.xlsx file)
 
-2.  UN
+2.  UN Estimates
 
 3.  Survey data
 
 4.  UN mortality data
 
-5.  xxxx data
-These datasets will be provided by the Countdown2030 team.
+5.  FPET data These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.
 
 ### Country specific analysis parameters
+
+The following parameters will be required to run the analysis see

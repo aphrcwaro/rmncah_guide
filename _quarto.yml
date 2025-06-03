@@ -57,7 +57,9 @@ book:
 
 format:
   html:
-    theme: cosmo
+    theme: 
+    - cosmo
+    - cd2030.scss
     code-link: true
     author-meta: "Peter Kaberia"
     callout-appearance: simple
@@ -65,5 +67,6 @@ format:
   pdf: default
 
   docx:
+    reference-doc: reference.docx
     toc: true
-    number-sections: true
+    number-sections: false
