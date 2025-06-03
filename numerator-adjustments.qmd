@@ -52,7 +52,7 @@ Extreme outliers, as defined in the previous section, will be corrected by imput
 **Table 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis**
 
 | **Problem** | **Action** | **Adjustment** |
-|:-----------------|:----------------------|:------------------------------|
+|:------------------|:----------------------|:-----------------------------|
 | Low reporting rates: identifying low rates that were adjusted | If below 75% (default), data were imputed | Median monthly value for the district year was imputed for the month with low reporting |
 | Incomplete reporting by districts, variable over time, affecting trend assessment | If reporting rates were \>=75% and \<= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities | Adjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms) |
 | Extreme outliers can greatly affect coverage trend assessments | If a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made | Extreme monthly outliers are corrected and given the district median value for the same year |
@@ -62,20 +62,18 @@ Extreme outliers, as defined in the previous section, will be corrected by imput
 
 -   The outputs for this analysis can be obtained through the **Data adjustment** section of the Shiny App
 
+    ![](images/1-dqa_adjustments.png)
+
 > **Note:**
 >
 > The ***Remove Years*** section before this, allows you to remove any years with no data or whose data has been determined to be not fit for analysis by the country team due to quality issues).
 >
-> ![](vertopal_f4f609e4c40f4b16b7a99c641e5be419/media/image1.png){width="6.5in" height="2.875in"}
+> ![](images/1-dqa_remove_years.png)
 
 -   This Section produces a master adjusted dataset (.dta) ready for analysis and plots for different indicators showing data adjustment changes.
 
 **Report**
 
--   The interpretation should include the selected adjustment factor \> (factor k) that was used to adjust for incomplete reporting (if \> necessary, by service). If the default factor is used, then report \> this and explain what this means for the reader.
+-   The interpretation should include the selected adjustment factor (factor k) that was used to adjust for incomplete reporting (if necessary, by service). If the default factor is used, then report this and explain what this means for the reader.
 
--   Report the percent change that the adjustment made in reported \> numbers of institutional deliveries and in penta1 (average of the \> 5-year period); you may want to highlight the year with the \> greatest impact of the adjustment if there is one; interpret if \> the impact of the adjustment on coverage rates is large or small; \> Make the same description and interpretations for penta1 \> vaccinations.
-
-> ![](vertopal_f4f609e4c40f4b16b7a99c641e5be419/media/image7.png){width="6.5in" height="3.0833333333333335in"}
->
-> an excel file "*adjustment comparison.xlsx*" which has a table with the years and the number of ANC1, institutional deliveries, penta1, penta3, OPD visits before (raw) and after adjustment.
+-   Report the percent change that the adjustment made in reported numbers of institutional deliveries and in penta1 (average of the 6-year period); you may want to highlight the year with the greatest impact of the adjustment if there is one; interpret if the impact of the adjustment on coverage rates is large or small; Make the same description and interpretations for penta1 vaccinations.
