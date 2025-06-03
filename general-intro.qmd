@@ -12,7 +12,7 @@ source ("_common.R")
 
 The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.
 
-Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach ![CAM Approach Overview](images/0-overview_cam.png)
+Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach ![](images/0-overview_cam.png)
 
 ## Organization of the Guidebook
 

@@ -5,7 +5,6 @@ project:
 book:
   title: "CAM 2025 Analysis Guide"
   reader-mode: true
-  
   page-footer: 
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
@@ -13,28 +12,58 @@ book:
   repo-url: https://github.com/aphrcwaro/cd2030.rmncah/
   repo-branch: main
   repo-actions: [edit, issue]
+  description: "A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. This version was updated last in June 2025."
   chapters:
     - index.qmd
     - general-intro.qmd
     - getting-started.qmd
     - loading-data.qmd
-    - data-quality.qmd
-    - national-analyses.qmd
-    - subnational-analyses.qmd
-    - maternal-mortality.qmd
-    - service-utilization.qmd
-    - health-systems.qmd
+
+    - part: data-quality.qmd
+      chapters:
+        - numerator-assessment.qmd
+        - numerator-adjustments.qmd
+        - denominator-assessment.qmd
+
+    - part: national-analyses.qmd
+      chapters:
+        - national-coverage.qmd
+        - national-inequality.qmd
+        - national-global-coverage.qmd
+        - national-subnational-mapping.qmd
+        - national-equity-assessment.qmd
+
+    - part: subnational-analyses.qmd
+      chapters:
+        - subnational-coverage.qmd
+        - subnational-inequality.qmd
+        - subnational-global-coverage.qmd
+
+    - part: maternal-mortality-analyses.qmd
+      chapters: 
+        - maternal-mortality.qmd
+
+    - part: service-utilization-analyses.qmd
+      chapters: 
+        - service-utilization.qmd
+
+    - part: health-systems-analyses.qmd
+      chapters:
+        - health-systems-inputs.qmd
+        - health-systems-outputs.qmd
+        - private-sector-analyses.qmd
+
     - planning-ahead.qmd
 
 format:
   html:
-    theme: 
-      - cosmo
-      - cd2030.scss
+    theme: cosmo
     code-link: true
-    
     author-meta: "Peter Kaberia"
     callout-appearance: simple
 
-editor: visual
+  pdf: default
 
+  docx:
+    toc: true
+    number-sections: true
