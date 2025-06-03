@@ -52,3 +52,179 @@ kable(df, "pipe", col.names = c("Indicator", "Numerator", "Denominator", "Interp
   row_spec(5, bold = TRUE) %>%
   footnote(general = "¹ An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.", general_title = "")
 ```
+
+```{r setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+```
+
+```{r}
+df <- data.frame(
+  Indicator = c("1", "1a", "1b", "1c", "2", "2a", "2b", "3", "3a", "3b", "3c", "3d", "4"),
+  Numerator = c(
+    "**Completeness of monthly facility reporting**<br>Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)",
+    "% of expected monthly facility reports (national)",
+    "% of districts with completeness of facility reporting >= 90%",
+    "% of districts with no missing monthly values in a year for any of the 4 forms",
+    "**Extreme outliers**<br>The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators.<br><em>(Note: Number of indicators included in the mean may vary according to countries)</em>",
+    "% of monthly values that are not extreme outliers¹ (national)",
+    "% of districts with no extreme outliers in a year",
+    "**Consistency of annual reporting**",
+    "ANC1 to penta1 ratio in the reported data (national)",
+    "Penta1 to penta3 ratio in the reported data (national)",
+    "% of districts with ANC1-penta1 ratio between 1.0 and 1.5",
+    "% of districts with penta1-penta3 ratio between 1.0 and 1.5",
+    "**Summary of performance**<br>Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)"
+  ),
+  Denominator = c(
+    "",
+    "N of monthly facility reports received",
+    "N of districts with at least 90% monthly reporting completeness in a year",
+    "N of districts with no missing values for any of the 4 forms in a year",
+    "",
+    "Total N of monthly values (usually 12 * N years to be analyzed)",
+    "Total N of districts",
+    "",
+    "N of ANC1 reported",
+    "N of penta1 reported",
+    "N of districts with ratios within the expected range",
+    "N of districts within the expected range",
+    ""
+  ),
+  Interpretation = c(
+    "",
+    "Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis",
+    "Can be used to identify districts with low reporting rates in multiple years",
+    "Additional indicator, is not used to compute the overall data quality score",
+    "",
+    "At least 99% of monthly data expected <strong>not</strong> to be an extreme outlier; consider reasons",
+    "At least 90% of districts should have no extreme outliers at all; consider reasons",
+    "",
+    "National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)",
+    "National ratio within an expected range, based on the survey results (see below)",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    ""
+  )
+)
+
+kable(df, "html", escape = FALSE, col.names = c("Indicator", "Numerator", "Denominator", "Interpretation")) %>%
+  kable_styling(full_width = TRUE, position = "center", bootstrap_options = c("striped", "bordered")) %>%
+  collapse_rows(columns = 1, valign = "top") %>%
+  footnote(general = "¹ An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.", general_title = "")
+```
+
+---
+title: "Health Facility Data Quality Assessment"
+format:
+  html: default
+  pdf: default
+  docx: default
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(kableExtra)
+```
+
+```{r}
+df <- data.frame(
+  Indicator = c("", "1a", "1b", "1c", "2", "2a", "2b", "3", "3a", "3b", "3c", "3d", "4"),
+  Numerator = c(
+    "**Completeness of monthly facility reporting**<br>Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)",
+    "% of expected monthly facility reports (national)",
+    "% of districts with completeness of facility reporting >= 90%",
+    "% of districts with no missing monthly values in a year for any of the 4 forms",
+    "**Extreme outliers**<br>The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators.<br><em>(Note: Number of indicators included in the mean may vary according to countries)</em>",
+    "% of monthly values that are not extreme outliers¹ (national)",
+    "% of districts with no extreme outliers in a year",
+    "**Consistency of annual reporting**",
+    "ANC1 to penta1 ratio in the reported data (national)",
+    "Penta1 to penta3 ratio in the reported data (national)",
+    "% of districts with ANC1-penta1 ratio between 1.0 and 1.5",
+    "% of districts with penta1-penta3 ratio between 1.0 and 1.5",
+    "**Summary of performance**<br>Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)"
+  ),
+  Denominator = c(
+    "",
+    "N of monthly facility reports received",
+    "N of districts with at least 90% monthly reporting completeness in a year",
+    "N of districts with no missing values for any of the 4 forms in a year",
+    "",
+    "Total N of monthly values (usually 12 * N years to be analyzed)",
+    "Total N of districts",
+    "",
+    "N of ANC1 reported",
+    "N of penta1 reported",
+    "N of districts with ratios within the expected range",
+    "N of districts within the expected range",
+    ""
+  ),
+  Interpretation = c(
+    "",
+    "Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis",
+    "Can be used to identify districts with low reporting rates in multiple years",
+    "Additional indicator, is not used to compute the overall data quality score",
+    "",
+    "At least 99% of monthly data expected <strong>not</strong> to be an extreme outlier; consider reasons",
+    "At least 90% of districts should have no extreme outliers at all; consider reasons",
+    "",
+    "National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)",
+    "National ratio within an expected range, based on the survey results (see below)",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    ""
+  )
+),
+  Numerator = c(
+    "**Completeness of monthly facility reporting**<br>Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)",
+    "% of expected monthly facility reports (national)",
+    "% of districts with completeness of facility reporting >= 90%",
+    "% of districts with no missing monthly values in a year for any of the 4 forms",
+    "**Extreme outliers**<br>The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators.<br><em>(Note: Number of indicators included in the mean may vary according to countries)</em>",
+    "% of monthly values that are not extreme outliers¹ (national)",
+    "% of districts with no extreme outliers in a year",
+    "**Consistency of annual reporting**",
+    "ANC1 to penta1 ratio in the reported data (national)",
+    "Penta1 to penta3 ratio in the reported data (national)",
+    "% of districts with ANC1-penta1 ratio between 1.0 and 1.5",
+    "% of districts with penta1-penta3 ratio between 1.0 and 1.5",
+    "**Summary of performance**<br>Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)"
+  ),
+  Denominator = c(
+    "",
+    "N of monthly facility reports received",
+    "N of districts with at least 90% monthly reporting completeness in a year",
+    "N of districts with no missing values for any of the 4 forms in a year",
+    "",
+    "Total N of monthly values (usually 12 * N years to be analyzed)",
+    "Total N of districts",
+    "",
+    "N of ANC1 reported",
+    "N of penta1 reported",
+    "N of districts with ratios within the expected range",
+    "N of districts within the expected range",
+    ""
+  ),
+  Interpretation = c(
+    "",
+    "Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis",
+    "Can be used to identify districts with low reporting rates in multiple years",
+    "Additional indicator, is not used to compute the overall data quality score",
+    "",
+    "At least 99% of monthly data expected <strong>not</strong> to be an extreme outlier; consider reasons",
+    "At least 90% of districts should have no extreme outliers at all; consider reasons",
+    "",
+    "National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)",
+    "National ratio within an expected range, based on the survey results (see below)",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    "For districts there is more variation in the ratio: a wider range is considered",
+    ""
+  )
+)
+
+kable(df, "html", escape = FALSE, col.names = c("Indicator", "Numerator", "Denominator", "Interpretation")) %>%
+  kable_styling(full_width = TRUE, position = "center", bootstrap_options = c("striped", "bordered")) %>%
+  collapse_rows(columns = 1, valign = "top") %>%
+  footnote(general = "¹ An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.", general_title = "")
+```
