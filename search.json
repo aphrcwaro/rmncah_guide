@@ -104,7 +104,7 @@
     "href": "getting-started.html#data-requirements",
     "title": "3  Getting started",
     "section": "3.3 Data requirements",
-    "text": "3.3 Data requirements\n\n3.3.1 Datasets required\nTo run the analysis efficiently, each country team will require to have a folder containing the following datasets:\n\nHealth facility data (.xlsx file)\nUN\nSurvey data\nUN mortality data\nxxxx data These datasets will be provided by the Countdown2030 team.\n\n\n\n3.3.2 Country specific analysis parameters",
+    "text": "3.3 Data requirements\n\n3.3.1 Datasets required\nTo run the analysis efficiently, each country team will require to have a folder containing the following datasets:\n\nHealth facility data (.xlsx file)\nUN Estimates\nSurvey data\nUN mortality data\nFPET data These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.\n\n\n\n3.3.2 Country specific analysis parameters\nThe following parameters will be required to run the analysis see",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Getting started</span>"
     ]
@@ -162,61 +162,326 @@
   {
     "objectID": "data-quality.html",
     "href": "data-quality.html",
-    "title": "5  Section 1: Health facility data quality assessment",
+    "title": "Section 1: Health facility data quality assessment",
     "section": "",
-    "text": "5.1 Numerators Assessment\nThis section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score.",
+    "text": "html: default pdf: default docx: default\nThis section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+      "Section 1: Health facility data quality assessment"
     ]
   },
   {
-    "objectID": "data-quality.html#numerators-assessment",
-    "href": "data-quality.html#numerators-assessment",
-    "title": "5  Section 1: Health facility data quality assessment",
+    "objectID": "numerator-assessment.html",
+    "href": "numerator-assessment.html",
+    "title": "5  Numerator Assessment",
     "section": "",
-    "text": "5.1.1 Rationale: Scientific basis for the analysis\nRoutinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.\n\n\n5.1.2 Approach: Description of analytical steps\nThe analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators:\nTable 1: Health facility data quality assessment: numerators\n\n\n\n\n\n\n\n\n\n\n\nIndicator\nNumerator\nDenominator\nInterpretation\n\n\n\n\n1\n{: colspan=“3”} Completeness of monthly facility reporting\n\n\n\n\n\n\n\n\n\n\n\n\n1\nCompleteness of monthly facility reporting\nStatistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)\n\nEssential indicator for all analyses\n\n\n1a\n% of expected monthly facility reports (national)\nN of monthly facility reports received\nTotal N of facility reports expected (usually 12* N of facilities with the service)\nReporting rates over 90% are good; changes in reporting completeness over time affects trend analysis\n\n\n1b\n% of districts with completeness of facility reporting &gt;= 90%\nN of districts with at least 90% monthly reporting completeness in a year\nTotal N of districts\nCan be used to identify districts with low reporting rates in multiple years\n\n\n1c\n% of districts with no missing monthly values in a year for any of the 4 forms\nN of districts with no missing values for any of the 4 forms in a year\nTotal N of districts\nAdditional indicator, is not used to compute the overall data quality score\n\n\n2\nExtreme outliers\nThe statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators\n\nN of indicators included in the mean may vary according to countries\n\n\n2a\n% of monthly values that are not extreme outliers1 (national)\nN of monthly values that are not extreme outliers in a specific year\nTotal N of monthly values (usually 12 * N years to be analyzed)\nAt least 99% of monthly data expected not to be an extreme outlier; consider reasons\n\n\n2b\n% of districts with no extreme outliers in a year\nN of districts with no extreme outliers in a specific year\nTotal N of districts\nAt least 90% of districts should have no extreme outliers at all; consider reasons\n\n\n3\nConsistency of annual reporting\n\n\n\n\n\n3a\nANC1 to penta1 ratio in the reported data (national)\nN of ANC1 reported\nN of penta1 reported\nNational ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same – see below)\n\n\n3b\nPenta1 to penta3 ratio in the reported data (national)\nN of penta1 reported\nN of penta3 reported\nNational ratio within an expected range, based on the survey results (see below)\n\n\n3c\n% of districts with ANC1-penta1 ratio between 1.0 and 1.5\nN of districts with ratios within the expected range\nTotal N of districts\nFor districts there is more variation in the ratio: a wider range is considered\n\n\n3d\n% of districts with penta1-penta3 ratio between 1.0 and 1.5\nN of districts within the expected range\nTotal N of districts\nFor districts there is more variation in the ratio: a wider range is considered\n\n\n4\nSummary of performance\n\n\n\n\n\n\nAnnual data quality score (mean 1a, 1b, 2a,2b, 3c,3d)\n\n\n\n\n\n\nThere is often an inconsistency between antenatal and immunization data, even though we can argue that the two should be consistent. To examine the association between ANC1 and penta1 is particularly informative. To compute and interpret indicators 3a and 3b the following considerations need to be made:\nANC1 to penta1 ratio\nWe can compute an expected ratio ANC1 to penta1 based on assumptions about mortality between early to mid pregnancy and early infancy and survey data on coverage of ANC1 and penta1 in the population:\n\nConsider the mortality between the first ANC visit and the first pentavalent vaccination.\n\n\nAssuming that ANC1 takes place at about 20 weeks or 4-5 months of pregnancy and penta1 at 6-8 weeks postpartum, we assume a pregnancy loss (abortion) after the ANC1 visit of 3%, a stillbirth rate of 2%, a twinning rate of 1.5% and neonatal mortality rate before the penta1 of 3% then the difference between the numbers of ANC1 and penta1 should be: 1 – 0.03 – 0.02 + 0.015 – 0.03 = 0.935. This corresponds with a ANC1 to penta1 ratio of 1/0.935 = 1.07.\n\n\nActual population coverage of ANC1 and penta1 will also need to be considered, using the surveys.\n\n\nThe expected ratio (the number of ANC1/ number of penta1 in facilities) is 1.07 * (ANC1 coverage in the survey/penta1 coverage in the survey).\nIf coverage for ANC1 and penta1 are the same, then the ratio is 1.07 (1.07 * 1/1). But if, for example, the last survey shows that ANC1 coverage was 90% and penta1 coverage was 95%, then the expected ratio becomes 1.07 * (.90/.95) = 1.01.\n\n\nFor the national ANC1 to penta1 ratio a range of plus or minus 0.05 outside this computed ratio is considered acceptable. If the ratio is outside this range, this should be flagged, and possible explanations discussed.\n\nPenta1 to penta3 ratio\nWe can compute an expected penta1 to penta3 ratio based on the most recent survey:\n\nThe main factor determining the penta1 to penta3 ratio, which are recommended at 6 and at 14 weeks of age, is the actual drop-out rate between penta1 and penta3, as mortality plays a limited role.\nPopulation coverage rates from the latest survey are used to determine the expected penta1 to penta3 ratio in the facility data. For instance, if penta1 coverage is 95% and penta3 coverage is 85%, we expect that ratio to be 0.95/0.85 = 1.12.\nAlso, here a range of plus or minus 0.05 is considered acceptable for the assessment of the facility data.\n\nReport:\nPoints to consider for the interpretation\n\nIs there a data quality pattern by year for which there is an &gt; explanation? (include the explanation)\nAre there certain regions or other subnational units that are &gt; particularly problematic?\nAre there certain reporting forms or services (e.g., antenatal care, &gt; labour and delivery, immunization) that are problematic?\nIs there good consistency between reported numbers of ANC1 and &gt; penta1?\n\nThe Figure below produced in the ShinyApp shows the ratios for all six years (2019-2024) and the expected value. It will be important to reflect on large differences (e.g., more than 0.10 or 10%.).",
+    "text": "5.1 Numerators Assessment",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Numerator Assessment</span>"
     ]
   },
   {
-    "objectID": "data-quality.html#implementation-conducting-analysis-in-the-shiny-app",
-    "href": "data-quality.html#implementation-conducting-analysis-in-the-shiny-app",
-    "title": "5  Section 1: Health facility data quality assessment",
+    "objectID": "numerator-assessment.html#numerators-assessment",
+    "href": "numerator-assessment.html#numerators-assessment",
+    "title": "5  Numerator Assessment",
+    "section": "",
+    "text": "5.1.1 Rationale: Scientific basis for the analysis\nRoutinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.\n\n\n5.1.2 Approach: Description of analytical steps\nThe analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators:",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Numerator Assessment</span>"
+    ]
+  },
+  {
+    "objectID": "numerator-assessment.html#implementation-conducting-analysis-in-the-shiny-app",
+    "href": "numerator-assessment.html#implementation-conducting-analysis-in-the-shiny-app",
+    "title": "5  Numerator Assessment",
     "section": "5.2 Implementation: Conducting analysis in the Shiny App",
-    "text": "5.2 Implementation: Conducting analysis in the Shiny App\nThe various data quality aspects ( Reporting completeness, Outlier detection,Internal Consistency Data completeness, Ratios calculation, Overall quality score) are are assessed in the Data quality section of the Shiny App. The app will automatically compute the overall data quality score based on the indicators described above.",
+    "text": "5.2 Implementation: Conducting analysis in the Shiny App\nThe various data quality aspects ( Reporting completeness, Outlier detection,Internal Consistency Data completeness, Ratios calculation, Overall quality score) are are assessed in the Data quality section of the Shiny App.  The app will automatically compute the overall data quality score based on the metrics described above. The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score. []\nThere is often an inconsistency between antenatal and immunization data, even though we can argue that the two should be consistent. To examine the association between ANC1 and penta1 is particularly informative. To compute and interpret indicators 3a and 3b the following considerations need to be made:\nANC1 to penta1 ratio\nWe can compute an expected ratio ANC1 to penta1 based on assumptions about mortality between early to mid pregnancy and early infancy and survey data on coverage of ANC1 and penta1 in the population:\n\nConsider the mortality between the first ANC visit and the first pentavalent vaccination.\n\n\nAssuming that ANC1 takes place at about 20 weeks or 4-5 months of pregnancy and penta1 at 6-8 weeks postpartum, we assume a pregnancy loss (abortion) after the ANC1 visit of 3%, a stillbirth rate of 2%, a twinning rate of 1.5% and neonatal mortality rate before the penta1 of 3% then the difference between the numbers of ANC1 and penta1 should be: 1 – 0.03 – 0.02 + 0.015 – 0.03 = 0.935. This corresponds with a ANC1 to penta1 ratio of 1/0.935 = 1.07.\n\n\nActual population coverage of ANC1 and penta1 will also need to be considered, using the surveys.\n\n\nThe expected ratio (the number of ANC1/ number of penta1 in facilities) is 1.07 * (ANC1 coverage in the survey/penta1 coverage in the survey).\nIf coverage for ANC1 and penta1 are the same, then the ratio is 1.07 (1.07 * 1/1). But if, for example, the last survey shows that ANC1 coverage was 90% and penta1 coverage was 95%, then the expected ratio becomes 1.07 * (.90/.95) = 1.01.\n\n\nFor the national ANC1 to penta1 ratio a range of plus or minus 0.05 outside this computed ratio is considered acceptable. If the ratio is outside this range, this should be flagged, and possible explanations discussed.\n\nPenta1 to penta3 ratio\nWe can compute an expected penta1 to penta3 ratio based on the most recent survey:\n\nThe main factor determining the penta1 to penta3 ratio, which are recommended at 6 and at 14 weeks of age, is the actual drop-out rate between penta1 and penta3, as mortality plays a limited role.\nPopulation coverage rates from the latest survey are used to determine the expected penta1 to penta3 ratio in the facility data. For instance, if penta1 coverage is 95% and penta3 coverage is 85%, we expect that ratio to be 0.95/0.85 = 1.12.\nAlso, here a range of plus or minus 0.05 is considered acceptable for the assessment of the facility data.\n\nReport:\nPoints to consider for the interpretation\n\nIs there a data quality pattern by year for which there is an &gt; explanation? (include the explanation)\nAre there certain regions or other subnational units that are &gt; particularly problematic?\nAre there certain reporting forms or services (e.g., antenatal care, &gt; labour and delivery, immunization) that are problematic?\nIs there good consistency between reported numbers of ANC1 and &gt; penta1?\n\nThe Figure below produced in the ShinyApp shows the ratios for all six years (2019-2024) and the expected value. It will be important to reflect on large differences (e.g., more than 0.10 or 10%.).",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Numerator Assessment</span>"
     ]
   },
   {
-    "objectID": "data-quality.html#table-1-health-facility-data-quality-assessment-numerators",
-    "href": "data-quality.html#table-1-health-facility-data-quality-assessment-numerators",
-    "title": "5  Section 1: Health facility data quality assessment",
+    "objectID": "numerator-assessment.html#table-1-health-facility-data-quality-assessment-numerators",
+    "href": "numerator-assessment.html#table-1-health-facility-data-quality-assessment-numerators",
+    "title": "5  Numerator Assessment",
     "section": "5.3 Table 1: Health facility data quality assessment: numerators",
-    "text": "5.3 Table 1: Health facility data quality assessment: numerators\n\n\n\n\n\n\n\n\n\nIndicator\nNumerator\nDenominator\nInterpretation\n\n\n\n\n1\nCompleteness of monthly facility reporting\n{: colspan=“2”} Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)\n\n\n\n1a\n% of expected monthly facility reports (national)\nN of monthly facility reports received\nTotal N of facility reports expected (usually 12 × N of facilities with the service)\n\n\n1b\n% of districts with completeness of facility reporting ≥ 90%\nN of districts with at least 90% monthly reporting completeness in a year\nTotal N of districts\n\n\n1c\n% of districts with no missing monthly values in a year for any of the 4 forms\nN of districts with no missing values for any of the 4 forms in a year\nTotal N of districts\n\n\n2\nExtreme outliers\n{: colspan=“2”} The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD, and IPD indicators. (Note: Number of indicators included in the mean may vary according to countries)\n\n\n\n2a\n% of monthly values that are not extreme outliers (national)\nN of monthly values that are not extreme outliers in a specific year\nTotal N of monthly values (usually 12 × N years to be analyzed)\n\n\n2b\n% of districts with no extreme outliers in a year\nN of districts with no extreme outliers in a specific year\nTotal N of districts\n\n\n3\nConsistency of annual reporting\n\n\n\n\n3a\nANC1 to penta1 ratio in the reported data (national)\nN of ANC1 reported\nN of penta1 reported\n\n\n3b\nPenta1 to penta3 ratio in the reported data (national)\nN of penta1 reported\nN of penta3 reported\n\n\n3c\n% of districts with ANC1-penta1 ratio between 1.0 and 1.5\nN of districts with ratios within the expected range\nTotal N of districts\n\n\n3d\n% of districts with penta1-penta3 ratio between 1.0 and 1.5\nN of districts within the expected range\nTotal N of districts\n\n\n4\nSummary of performance\n{: colspan=“2”} Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)",
+    "text": "5.3 Table 1: Health facility data quality assessment: numerators\n\n\n\nIndicator\nNumerator\nDenominator\nInterpretation\n\n\n\n\n\n**Completeness of monthly facility reporting** Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)\n|\n|\n\n\n1a\n% of expected monthly facility reports (national)\nNumber of monthly facility reports received\nReporting rates over 90% are good; changes in reporting completeness over time affect trend analysis.\n\n\n1b\n% of districts with completeness of facility reporting &gt;= 90%\nNumber of districts with at least 90% monthly reporting completeness in a year\nCan be used to identify districts with low reporting rates in multiple years.\n\n\n1c\n% of districts with no missing monthly values in a year for any of the 4 forms\nNumber of districts with no missing values for any of the 4 forms in a year\nAdditional indicator; not used to compute the overall data quality score.\n\n\n2\n**Extreme outliers** The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators. *Note: Number of indicators included in the mean may vary according to countries\n|\n|\n\n\n2a\n% of monthly values that are not extreme outliers¹ (national)\nTotal number of monthly values (usually 12 × number of years to be analyzed)\nAt least 99% of monthly data are expected *not* to be an extreme outlier; consider reasons.\n\n\n2b\n% of districts with no extreme outliers in a year\nTotal number of districts\nAt least 90% of districts should have no extreme outliers at all; consider reasons.\n\n\n3\n**Consistency of annual reporting**\n\n\n\n\n3a\nANC1 to penta1 ratio in the reported data (national)\nNumber of ANC1 reported\nNational ratio within an expected range (1.05 to 1.10 if survey coverage for ANC1 and penta1 are the same).\n\n\n3b\nPenta1 to penta3 ratio in the reported data (national)\nNumber of penta1 reported\nNational ratio within an expected range, based on the survey results.\n\n\n3c\n% of districts with ANC1-penta1 ratio between 1.0 and 1.5\nNumber of districts with ratios within the expected range\nFor districts, there is more variation in the ratio: a wider range is considered.\n\n\n3d\n% of districts with penta1-penta3 ratio between 1.0 and 1.5\nNumber of districts within the expected range\nFor districts, there is more variation in the ratio: a wider range is considered.\n\n\n4\n**Summary of performance** Annual data quality score (mean 1a, 1b, 2a, 2b, 3c, 3d)\n|\n|\n\n\n\n¹ An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from the monthly median value for a particular year.",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Numerator Assessment</span>"
     ]
   },
   {
-    "objectID": "data-quality.html#footnotes",
-    "href": "data-quality.html#footnotes",
-    "title": "5  Section 1: Health facility data quality assessment",
+    "objectID": "numerator-adjustments.html",
+    "href": "numerator-adjustments.html",
+    "title": "6  Numerator Adjustments",
     "section": "",
-    "text": "An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.↩︎",
+    "text": "6.1 Numerator adjustments",
     "crumbs": [
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Section 1: Health facility data quality assessment</span>"
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Numerator Adjustments</span>"
+    ]
+  },
+  {
+    "objectID": "numerator-adjustments.html#numerator-adjustments",
+    "href": "numerator-adjustments.html#numerator-adjustments",
+    "title": "6  Numerator Adjustments",
+    "section": "",
+    "text": "6.1.1 Rationale: Scientific basis for the analysis\nThe completeness of reporting may affect the analysis, especially if completeness is low or varies between years. Extreme outliers, such as an accidental extra zero in a number, can have a large impact, especially on subnational numbers. Following the assessments, several steps are necessary to obtain a clean data set for analysis. This implies adjusting for incomplete reporting and correcting for extreme outliers.\n\n\n6.1.2 Approach: Description of analytical steps\nIf we do not consider reporting completeness that means we assume all non-reporting facilities provided zero services, which is not likely to be true. Adjustments depend on how much services (e.g., pregnancy care, vaccinations) were provided at non-reporting facilities compared to those that reported. The adjustment factor k - defined as the ratio of the volume of services provided by non-reporting facilities to the volume of services provided by reporting facilities - is used to adjust the reported numbers for incomplete reporting.",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Numerator Adjustments</span>"
+    ]
+  },
+  {
+    "objectID": "numerator-adjustments.html#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio",
+    "href": "numerator-adjustments.html#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio",
+    "title": "6  Numerator Adjustments",
+    "section": "6.2 Adjusting the Numerator Using Completeness and Facility Reporting Ratio",
+    "text": "6.2 Adjusting the Numerator Using Completeness and Facility Reporting Ratio\nTo account for incomplete reporting, the reported number of events can be adjusted using the following formula:\n\\[\nN_{\\text{adjusted}} = N_{\\text{reported}} + N_{\\text{reported}} \\times \\left( \\frac{1}{c} - 1 \\right) \\times k\n\\]\nWhere: - ( N_{} ): Total number of events adjusted for incomplete reporting - ( N_{} ): Number of events reported\n- ( c ): Reporting completeness (e.g., proportion of facilities that reported)\n- ( k ): Adjustment factor to account for lower service volume in non-reporting facilities\nAs a default value, we use k=0.25, which means the non-reporting facilities provided services but only at a volume which was a quarter of the reporting health facilities. The factor k can be different for different services. For instance, if private facility reporting is poor but they are in the national system and they provide a considerable number of deliveries, k maybe greater than 0.25 or even as high as 1.0.\nThe following k-values are used depending on the reporting used to adjust the reported numbers for incomplete reporting:\n\nk=0 - No services in non-reporting facilities (default k-value)\nk=0.25 - Some services, but much lower than reporting facilities\nk=0.50 - Half the rate compared to reporting facilities\nk=0.75 - Nearly as much as reporting facilities\nk= 1.0 - Same rate of services as reporting facilities\n\nIf the facility reporting rate is below 75%, it becomes more difficult to impute district data. Therefore, no adjustments are made if reporting is lower than 75%. In that case, further analysis to determine coverage with the facility data is not considered sufficiently reliable.\nExtreme outliers, as defined in the previous section, will be corrected by imputing the median monthly value of the same year. The table summarizes the adjustments.\nTable 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis\n\n\n\n\n\n\n\n\nProblem\nAction\nAdjustment\n\n\n\n\nLow reporting rates: identifying low rates that were adjusted\nIf below 75% (default), data were imputed\nMedian monthly value for the district year was imputed for the month with low reporting\n\n\nIncomplete reporting by districts, variable over time, affecting trend assessment\nIf reporting rates were &gt;=75% and &lt;= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities\nAdjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms)\n\n\nExtreme outliers can greatly affect coverage trend assessments\nIf a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made\nExtreme monthly outliers are corrected and given the district median value for the same year\n\n\nMissing values\nIf there is a missing value, data were imputed\nDistrict median monthly value for the year was imputed for the month with missing value\n\n\n\n\n6.2.1 Implementation: Conducting analysis in the Shiny App\n\nThe outputs for this analysis can be obtained through the Data adjustment section of the Shiny App\n\n\n\nNote:\nThe Remove Years section before this, allows you to remove any years with no data or whose data has been determined to be not fit for analysis by the country team due to quality issues).\n\n\n\nThis Section produces a master adjusted dataset (.dta) ready for analysis and plots for different indicators showing data adjustment changes.\n\nReport\n\nThe interpretation should include the selected adjustment factor (factor k) that was used to adjust for incomplete reporting (if necessary, by service). If the default factor is used, then report this and explain what this means for the reader.\nReport the percent change that the adjustment made in reported numbers of institutional deliveries and in penta1 (average of the 6-year period); you may want to highlight the year with the greatest impact of the adjustment if there is one; interpret if the impact of the adjustment on coverage rates is large or small; Make the same description and interpretations for penta1 vaccinations.",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Numerator Adjustments</span>"
+    ]
+  },
+  {
+    "objectID": "denominator-assessment.html",
+    "href": "denominator-assessment.html",
+    "title": "7  Denominator Assessment and selection",
+    "section": "",
+    "text": "7.1 Rationale: Scientific basis for the analysis\nService coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions/provinces and districts).",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denominator Assessment and selection</span>"
+    ]
+  },
+  {
+    "objectID": "denominator-assessment.html#approach-description-of-analytical-steps",
+    "href": "denominator-assessment.html#approach-description-of-analytical-steps",
+    "title": "7  Denominator Assessment and selection",
+    "section": "7.2 Approach: Description of analytical steps",
+    "text": "7.2 Approach: Description of analytical steps\nThe objective of the health facility denominator analysis is twofold. First, we assess the quality of the population projections in DHIS2 by comparison with the UN projections and the internal consistency. Then, we assess the performance of multiple denominators options for the computation of population-based service coverage indicators from the health facility data. This should lead to a final decision on denominators that are used for the analyses of population-based coverage indicators based on health facility data.\nEach indicator has its own denominator, as shown in the table below.\nTable 3: Selected indicators with numerators and denominators\n\n\n\n\n\n\n\n\nIndicators\nNumerator\nDenominator\n\n\n\n\nSERVICE UTILIZATION\n\n\n\n\nOutpatient visits, children under 5, per year (N)\nN of OPD visits for under-5\nTotal mid-year population under 5\n\n\nInpatient admissions, children under 5, per year (N)\nN of admissions for under-5\nTotal mid-year population under 5\n\n\nPREVENTIVE INTERVENTIONS\n\n\n\n\n% of pregnant women with 4 antenatal care visits\nN of women with ANC 4th visit\nTotal N of pregnant women in the whole population\n\n\n% of live births in health facilities\nN of live births in health facilities\nTotal N of live births in the whole population\n\n\n% of infants receiving 3 doses of pentavalent vaccine\nN of infants receiving 3 doses\nN of infants eligible for 3 doses of the vaccine\n\n\nCURATIVE INTERVENTIONS\n\n\n\n\n% of children under 5 with malaria who receive ACT\nN of children under 5 with malaria receiving ACT\nTotal N of children who had malaria in the last year\n\n\n% of deliveries that were by C-section (population)\nN of C-sections reported\nTotal N of deliveries in the population\n\n\n% of deliveries that were by C-section (institutional)\nN of C-sections reported\nTotal N of deliveries in health facilities\n\n\nMORTALITY\n\n\n\n\nInstitutional maternal mortality ratio\nN of maternal deaths in health facilities\nTotal number of live births in health facilities\n\n\nStillbirth rate\nN of stillbirths in health facilities\nTotal N of births in health facilities\n\n\nNeonatal mortality before discharge\nN of neonatal deaths before discharge (after birth)\nTotal N of live births in the health facilities\n\n\nFAMILY PLANNING (FP)\n\n\n\n\nRatio FP visits to women of reproductive age\nN of FP new and revisits\nTotal N of women 15-49 years\n\n\nEstimated modern use of contraceptives\nCouple years of protection\nTotal N of women 15-49 years\n\n\nFP coverage (demand satisfied)\nN of women using modern methods\nTotal N of women in need of FP\n\n\n\nIn the first part, we assess the quality of the DHIS2 population projections at national level:\n\nCheck the internal consistency of the DHIS2 population growth over time:\n\nCompute the population growth rate:\n\\[\n\\frac{\\text{pop}_{2024} - \\text{pop}_{2023}}{\\text{pop}_{2023}}\n\\]\nCompute the crude birth rate (CBR), defined as the number of live births per 1,000 population.\nExpect both growth rate and CBR to be consistent over time (e.g., less than 2 per 1,000 difference between years).\n\nCompare the population data in DHIS2 with the UN population projections at the national level:\n\nDifferences may occur, but large discrepancies suggest issues with DHIS2 population projections.\nThe comparison is done for four indicators. Abnormal values are flagged:\n\nPopulation size:\nA relative difference between DHIS2 and UN-projected population size greater than 5% indicates a data quality issue.\n\\[\n\\left| \\frac{\\text{pop}_{\\text{DHIS2}} - \\text{pop}_{\\text{UN}}}{\\text{pop}_{\\text{UN}}} \\right|\n\\]\nPopulation growth during 2023–2024:\nAnnual growth is computed using the natural logarithm:\n\\[\n\\ln \\left( \\frac{\\text{pop}_{2024}}{\\text{pop}_{2023}} \\right)\n\\]\nA difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.\nCrude birth rate (CBR):\nDefined as: \\[\n\\frac{\\text{projected live births}}{\\text{total population}} \\times 1000\n\\]\nA difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.\nCrude death rate (CDR):\nDefined as:\n\\[\n\\text{CBR} - \\text{population growth rate}\n\\]\n(both expressed per 1,000 population). A negative CDR or a CDR &lt; 5 per 1,000 indicates inconsistency and potential data problems.\n\n\n\nThe second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.\nFor the national level, we evaluate 4 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional two are facility data- based methods ( ANC1-derived and penta1-derived denominators).\nNote\n\nFor the sub-national level, no UN projections are available, so we will use 3 methods only.\n\nThe maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.\nStarting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the WHO website. The default assumptions are as follows:\n\nPregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.\nStillbirths or pregnancy loss between 28 weeks and birth: 2%.\nTwinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.\nNeonatal mortality: 3% (or 30 per 1,000 live births).\nPost neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).\n\nThe selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: institutional live births and penta3. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys – the results will be the same).\n\n7.2.1 Facility data derived denominators\nThe basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).\nThis approach requires the following:\nA recent population-based survey is used to obtain an estimate of population level coverage of ANC1 or penta1. For example, ANC1 coverage is 95% of pregnant women.\nThe DHIS2 data on the number of ANC1 and penta1 visits need to be considered complete and accurate (after adjustments / cleaning the data). For example, 100,000 ANC1 visits were reported.\nIf this is the case, then we only need to add the percentage that has not used the services (according to the survey results) to get the target population. For example, if ANC1 coverage from survey is 95% and the number of ANC1 visits from DHIS2 for the year is 100,000, the total number of pregnant women is: \\[ 100,000 / 0.95 = 105,263 \\]\nThe same approach can be used for DPT1 or penta1. The survey coverage is the percent of children 12-23 months who received DPT1/penta1, the facility data are the number of infants who received DPT1/penta1 vaccination. For example, if survey coverage is 92%, and there were 100,000 vaccinations given, then the \\[ denominator= 100,000 / 0.92 = 108,696. \\]\nThe number of live births can be obtained from ANC1 and DPT1 by making assumptions about pregnancy loss (abortion after the first ANC visit, stillbirths), twinning rates, and neonatal mortality. These steps are shown in the Figure below. ![] (images/1-dqa_denom_adjustment.png)\nAn example of ANC1:\n\nAbove we computed 105,263 pregnant women in the population\nat 3% abortion, this implies 105,263 * (1-.0.03) = 102,454 deliveries\nat 1.5% twinning rate this implies 102,454 / (1-(0.015/2)) = 103,229 births\nat 2% stillbirth rate this implies 103,229 * (1-0.02) = 101,164 live births\nat 3% neonatal mortality this implies 101,164 * (1-0.03) = 98,129 children eligible for DPT1/penta1.",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denominator Assessment and selection</span>"
+    ]
+  },
+  {
+    "objectID": "denominator-assessment.html#implementation-conducting-analysis-in-the-shiny-app",
+    "href": "denominator-assessment.html#implementation-conducting-analysis-in-the-shiny-app",
+    "title": "7  Denominator Assessment and selection",
+    "section": "7.3 Implementation: Conducting analysis in the Shiny App",
+    "text": "7.3 Implementation: Conducting analysis in the Shiny App\nShiny App\nTo get outputs for this analysis first, one need to set up their analysis by inputting key information at the Analysis Set up section in the Shiny App.\nThe parameters required are as shown in the figure below and they are:\n\nNational mortality rates - based on the most recent survey \n\nANC1 Survey -\nPregnancy loss -\nTwin rate -\nNeonatal mortality rate -\nPost neonatal mortality rate -\nStillbirth rate -\nPenta1 survey -\n\nSurvey coverage based percentages (based on the most recent survey) \n\nANC4 Survey -\nInstitutional delivery survey -\nLowbirth weight survey -\nCaesarean section survey -\nPenta3 survey -\nMeasles1 survey -\nBCG survey -\nVaccines survey year -\nVaccine data start year -\n\nSurvey datasets\nIn addition to setting these parameters, you will be required to upload the following survey datasets (in addition to the health facility data loaded at the beginning of the analysis session).\n\n\nUN Estimates data\nUN Mortality data\nWUENIC estimates data\nSurvey data (uploaded as a folder)\n\n\nThe first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources. The second part is to compare results from the different methods - both at the national and sub-national levels.\nThe final step is to select the best performing denominator for the coverage analyses with health facility data. The results on the national gap and the median sub-national gap should be taken into account to make that choice.\n\n\n\n\n\nThe best methods have the smallest gaps with the survey results. Ideally, one method is selected but it is also possible to select one denominator method for the MNH coverage indicators (ANC, delivery, PNC) and another method for the immunization coverage analyses. It will be important to clearly state the chosen denominator method in all tables.\nThe interpretation should focus on the extent to which the DHIS2 projections are considered robust which is the case when:\n\nThe DHIS2 total population projection is consistent over time with regular population growth\nThe DHIS2 total live birth projection is consistent over time (regular trend)\nThe projected numbers of total population and live births are close to the UN population projection\nThe DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.\n\nThe interpretation should describe, based on the graphs:\n\nWhich denominator methods performed best at the national level for the two indicators?\nWhich denominator performed best at the sub-national level for the two indicators?\nWhat selection is made for the indicators in the coverage analyses?",
+    "crumbs": [
+      "Section 1: Health facility data quality assessment",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Denominator Assessment and selection</span>"
+    ]
+  },
+  {
+    "objectID": "national-analyses.html",
+    "href": "national-analyses.html",
+    "title": "National Analyses",
+    "section": "",
+    "text": "This section deals with all the analyses that are at the national level. It includes the following analyses:\n\nCoverage of interventions nationally, analysed at both the Admin Level (regional) and Admin Level 2 (district) levels.\nNational equity assessment\nSub-national mapping of the coverage",
+    "crumbs": [
+      "National Analyses"
+    ]
+  },
+  {
+    "objectID": "national-coverage.html",
+    "href": "national-coverage.html",
+    "title": "8  National Coverage",
+    "section": "",
+    "text": "8.1 National coverage of interventions",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>National Coverage</span>"
+    ]
+  },
+  {
+    "objectID": "national-coverage.html#national-coverage-of-interventions",
+    "href": "national-coverage.html#national-coverage-of-interventions",
+    "title": "8  National Coverage",
+    "section": "",
+    "text": "8.1.1 Rationale, Approach and implementation\nRationale: Scientific basis for the analysis\nCoverage of interventions is a critical and direct output of health systems. Regular tracking of coverage at national and subnational levels has become the mainstay of monitoring progress in national health plans and international initiatives. Reproductive, maternal, newborn, child and adolescent health indicators with targets are the most common indicators of national health plans and global monitoring. Both health facility data and household surveys can provide coverage statistics, and an integrated analytical approach is desirable.\nApproach: Description of analytical steps\nMany coverage indicators can be estimated in both surveys and from health facility data. Both are critical pieces of information and need to be considered in conjunction with each other. The Table below lists the indicators, for antenatal and delivery care and child immunization, considered in the health facility data analysis in the workshop, including the variable names (in R) in the first column.\n\n\n\n\n\n\n\n\n\nName (in R)\nIndicator title\nSurvey d enomin ator\nFacility data den ominator\n\n\n\n\nAntenatal care\n\n\n\n\n\nanc1\nAntenatal care at least one or more visits among all pregnant women (%)\nWomen aged 15-49 years with a live birth in the last 2 years\nEstimated live births as d enominator\n\n\nanc_1 trimester\nAntenatal care 1+ visits in 1st trimester of pregnancy among all pregnant women (%)\n\n\n\n\nanc4\nAntenatal care 4+ visits among all pregnant women (%)\n\n\n\n\nipt2\nipt3\nIntermittent preventive therapy for malaria - 2nd dose / 3rd dose during pregnancy among all pregnant women (%)\n\n\n\n\nifa90\nIron folic acid supplementation given (90 days supply) during pregnancy among all pregnant women (%)\n\n\n\n\nhiv_test\nHIV test conducted among pregnant women (%)\nNot available (in some survey re ports)\n\n\n\nsyph ilis_test\nSyphilis test conducted among pregnant women (%)\n\n\n\n\nDelivery care\n\n\n\n\n\ninstd eliveries\nInstitutional live births among all live births\nLive births in the last 2 years\nEstimated live births as de nominator.\n\n\nsba\nSkilled birth attendance\n\n\n\n\nlo w_bweight\nLow birth weight (below 2500 grams) among all live births\n\n\n\n\ncsection\nC-section among all live births\n\n\n\n\npnc48h\nPostnatal care within 48 hours\n\n\n\n\nImmunization\n\n\n\n\n\nbcg\nBCG vaccination to infants\nChildren 12-23 months\nN of surviving infants (beyond neonatal period)\n\n\npenta1\nPenta vaccine - 1st dose to infants\nChildren 12-23 months\n\n\n\npenta3\nPenta vaccine - 3rd dose to infants\nChildren 12-23 months\n\n\n\nmeasles1\nMeasles vaccine - 1st dose (to infants)\nChildren 12-23 months\nN of surviving infants (beyond postNN period)\n\n\nmeasles2\nMeasles vaccine - 1st dose (older children)\nChildren 24-35 months\nN of surviving infants (beyond po stneonatal period) (or age 1)\n\n\n\nThe facility data can be used to generate annual coverage estimates, using the dataset for 2019-2024, through the Shiny App developed. These coverage results should be compared and interpreted alongside the results from recent surveys. The analysis results will include both coverage estimates.\nImplementation: Conducting analysis in the Shiny App\n\n\n8.1.2 Antenatal care (ANC)\nMost countries have at least one ANC indicator with a target in the national plan. The global ENAP/EPMM coverage targets for 2025 are: globally, at least 90% of pregnant women with 4 or more ANC care visits, and 90% of countries with at least 70% coverage. There are several ANC indicators that capture:\n\ncontact with health services during pregnancy (ANC 1st visit, ANC 4 or more visits, ANC first visit in first trimester). ANC1 is often considered an indicator of basic access to health services. It is high in most countries, and in many instances, the numbers of ANC1 visits in the routine health facility data can provide a better denominator for the ANC and delivery indicators than population projections (see section 2 on denominators).\ncontents of services provided (intermittent preventive therapy (IPT2 or IPT3) against malaria, HIV testing, syphilis testing and iron-folic acid (IFA) supplementation (at least 90 tablets given to the pregnant woman)). Some countries will not have policies for all of these diagnostic or therapeutic interventions during pregnancy (e.g., no IPT if no malaria risk).\n\nFor most indicators, the surveys also provide coverage estimates for the national level, with 95% confidence intervals. For most coverage indicators the data refer to a period before the survey: e.g., institutional birth coverage for the live births in the two years preceding the survey. This means that the midpoint of the coverage estimate lies one year before the survey.\nAn example of two graphs for ANC, based on facility and survey data, is shown below, showing both good concordance between the facility-based and survey results for coverage of ANC first visit in the first trimester and poor concordance in case of ANC4 visits. In the latter case, it is evident that ANC4 is overreported in the facility data as coverage is much higher than the survey and unlikely to be high (over 90% during 2021-23 and even 101% in 2023). Poor recording and reporting of ANC 4th visits in the DHIS2 data is likely the main cause.\nSometimes, an indicator may reach an unlikely high coverage at the national level, say over 125%. This may be because the data quality of the numerator of the coverage indicator is poor, the denominator is wrong, or the intervention is given and recorded more than once during pregnancy. An example is IFA supplementation. In that case, the computation of coverage is not useful. It is better to express it differently. For instance, if coverage is 200%, it is better to compute the average number of courses of 90 IFA tablets that a pregnant woman received (in this case 2.0 per pregnant woman in the population).1\n![] (images/2-national-anc-cov.png)\n\n\n8.1.3 Delivery care\nAll countries have at least one delivery care indicator with a target in the national plan. The global ENAP/EPMM coverage target for 2025 is at least 90% global average coverage, and 90% of countries at least 80% coverage of skilled birth attendance (SBA). For postnatal care (PNC) within 2 days the global coverage target is 80% and the 90% of countries with at least 60% coverage.\nInstitutional (live) birth coverage and SBA are closely related, as almost all deliveries with a skilled attendant occur in health facilities. From the analytical point of view, institutional birth coverage is preferred because it is a more objective measure and avoids issues with the definition of what constitutes skilled birth. SBA is often preferred from the health care perspective, as it includes an element of quality: obviously, an institutional delivery without skilled attendance is not desirable, and in some countries home SBA may be part of the health care delivery strategy. attendance. Either indicator works well to capture delivery care.\nCaesarean section is a live saving intervention and an important indicator. A general rule of thumb is, put forward by WHO, that in a population the need for Caesarean section is in the range of 10-15% of all deliveries. If the Caesarean section rate is below 10%, that means that there is unmet need. If the Caesarean section rate is over 10-15%, that implies that there most likely overuse of Caesarean section. It may however also imply that there is still unmet need among certain population groups (e.g. the poorest women or rural women) in combination with overuse in other subgroups of the population (such as urban and richer women).\nPostnatal care (PNC) within 48 hours is provided to the mother/women and newborn. Country systems may have different ways of recording the type of PNC and also surveys are known to have data issues with PNC for the mother or the baby.2 Some countries use multiple definitions of timing of the PNC visit (e.g., within the first week).\nLow birthweight is a critical indicator of neonatal health. It is most meaningful if the distinction between prematurity and small-for-gestational age is made, but most facility reporting systems and most surveys do not have such data. All babies are supposed to have been weighed right after birth and the percent of newborns weighing less than 2500 grams is usually reported in the DHIS2 system. As general guidance for the interpretation of the data, low birthweight prevalence in sub-Saharan Africa was estimated at 13.9% (95% credibility interval: 12.4-15.7%) for 2020.3\n\n\n8.1.4 Immunization\nImmunization coverage indicators are included in virtually every country’s health sector monitoring plan. A general target is at least 90% coverage for essential vaccines given in childhood and adolescence.\nFor the national coverage analyses, the focus is on BCG, first and third doses of penta/DTP (penta1 or DTP1 and penta3 or DTP3), and first and second doses of measles vaccine, often given in combination with rubella vaccine. BCG and penta/DTP vaccinations are recommended to be given at birth (BCG), 6 weeks (penta1) and 14 weeks (penta3). For facility data, the number of vaccinations given to infants is used and the denominator is the number of eligible children in the population, which is approximated as live births minus neonatal deaths. Survey data generally provide vaccination coverage among children 12-23 months (may also include the age at which the vaccination was given – mostly before the first birthday).4\nThe first dose of measles vaccine is generally recommended at age 9 months. For the facility data, the recording and reporting usually separate measles given to children under 1 year and children 1 year and older, though the quality of recording and reporting for the age group may vary (there may be a tendency to record measles vaccinations after 12 months as given to infants). Here, we use children who have survived the first year of life (live births minus neonatal deaths minus postneonatal deaths) as the denominator for measuring vaccination coverage. The second dose of measles uses children aged 24-35 months as denominator. This can be estimated as live births minus neonatal deaths = 2* postneonatal deaths).\nWHO and UNICEF work with countries to produce annual estimates of immunization coverage based on all data sources. The national estimates, called WUENIC, are published and available for 2020-2024. These time trends are included in the Stata outputs, to compare the 2019-2023 annual estimates of the facility data produced in the workshop and the survey results.\n\n\n8.1.5 Family planning\nThe family planning coverage estimates are derived from a collaboration of the Countdown with Track20. Track20 has developed an advanced estimation tool called Family Planning Estimation Tool (FPET) which focuses on three indicators: modern contraceptive use, unmet need for modern contraceptives and demand satisfied with modern methods. The three indicators are closely related since demand is satisfied (this is the true coverage indicator) = use of modern contraceptives / (unmet need + use of modern contraceptives).\nFPET uses statistical modelling that incorporates all available data from surveys and may also use estimates obtained from facility data if the quality is sufficient.5 FPET allows for various types of survey data to be integrated into the estimates and fits a line that pulls from the trends. This utilizes the strength of multiple data points and minimizes the risk of comparing different surveys.",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>National Coverage</span>"
+    ]
+  },
+  {
+    "objectID": "national-coverage.html#footnotes",
+    "href": "national-coverage.html#footnotes",
+    "title": "8  National Coverage",
+    "section": "",
+    "text": "Surveys can provide coverage of IFA supplementation, as here the unit of data analysis is individual pregnant women.↩︎\nAmouzou A, Hazel E, Vaz L, Sanni Y, Moran A. Discordance in postnatal care between mothers and newborns: Measurement artifact or missed opportunity? J Glob Health. 2020 Jun;10(1):010505.↩︎\nOkwaraji YB, et al. National, regional, and global estimates of low birthweight in 2020, with trends from 2000: a systematic analysis. Lancet. 2024 Mar 16;403(10431):1071-1080.↩︎\nTherefore, the survey data on immunization roughly refer to the program performance in the year before the survey↩︎\nhttps://www.track20.org/pages/data_analysis/publications/methodological/family_planning_estimation_tool.php↩︎",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>National Coverage</span>"
+    ]
+  },
+  {
+    "objectID": "national-inequality.html",
+    "href": "national-inequality.html",
+    "title": "9  National Inequality",
+    "section": "",
+    "text": "National Inequality",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>National Inequality</span>"
+    ]
+  },
+  {
+    "objectID": "national-global-coverage.html",
+    "href": "national-global-coverage.html",
+    "title": "10  national-global-coverage",
+    "section": "",
+    "text": "11 Global targets for coverage of health services",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>national-global-coverage</span>"
+    ]
+  },
+  {
+    "objectID": "national-subnational-mapping.html",
+    "href": "national-subnational-mapping.html",
+    "title": "11  national-subnational-mapping",
+    "section": "",
+    "text": "12 National and subnational mapping of health service coverage",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>national-subnational-mapping</span>"
+    ]
+  },
+  {
+    "objectID": "national-equity-assessment.html",
+    "href": "national-equity-assessment.html",
+    "title": "12  national-equity-assessment",
+    "section": "",
+    "text": "13 National Equity Assessment",
+    "crumbs": [
+      "National Analyses",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>national-equity-assessment</span>"
     ]
   },
   {
     "objectID": "subnational-analyses.html",
     "href": "subnational-analyses.html",
-    "title": "7  subnational-analyses",
+    "title": "subnational-analyses",
     "section": "",
-    "text": "#| echo: false #|",
+    "text": "Subnational Analyses",
     "crumbs": [
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>subnational-analyses</span>"
+      "subnational-analyses"
+    ]
+  },
+  {
+    "objectID": "subnational-coverage.html",
+    "href": "subnational-coverage.html",
+    "title": "13  subnational-coverage",
+    "section": "",
+    "text": "14 Subnational Coverage",
+    "crumbs": [
+      "subnational-analyses",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>subnational-coverage</span>"
+    ]
+  },
+  {
+    "objectID": "subnational-inequality.html",
+    "href": "subnational-inequality.html",
+    "title": "14  Sub-national Inequality",
+    "section": "",
+    "text": "15",
+    "crumbs": [
+      "subnational-analyses",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Sub-national Inequality</span>"
+    ]
+  },
+  {
+    "objectID": "subnational-global-coverage.html",
+    "href": "subnational-global-coverage.html",
+    "title": "15  subnational-global-coverage",
+    "section": "",
+    "text": "16 Subnational Global coverage targets",
+    "crumbs": [
+      "subnational-analyses",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>subnational-global-coverage</span>"
+    ]
+  },
+  {
+    "objectID": "maternal-mortality.html",
+    "href": "maternal-mortality.html",
+    "title": "16  maternal-mortality",
+    "section": "",
+    "text": "17 Maternal Mortality",
+    "crumbs": [
+      "maternal-mortality",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>maternal-mortality</span>"
+    ]
+  },
+  {
+    "objectID": "service-utilization-analyses.html",
+    "href": "service-utilization-analyses.html",
+    "title": "service-utilization-analyses",
+    "section": "",
+    "text": "Service Utilization Analyses",
+    "crumbs": [
+      "service-utilization-analyses"
+    ]
+  },
+  {
+    "objectID": "service-utilization.html",
+    "href": "service-utilization.html",
+    "title": "17  Section 5: Curative health services utilization for sick children",
+    "section": "",
+    "text": "18 Section5: Curative health services utilization for sick children",
+    "crumbs": [
+      "service-utilization-analyses",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Section 5: Curative health services utilization for sick children</span>"
+    ]
+  },
+  {
+    "objectID": "health-systems-inputs.html",
+    "href": "health-systems-inputs.html",
+    "title": "18  Health systems inputs",
+    "section": "",
+    "text": "19 Health systems inputs",
+    "crumbs": [
+      "health-systems-analyses.html",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Health systems inputs</span>"
+    ]
+  },
+  {
+    "objectID": "health-systems-outputs.html",
+    "href": "health-systems-outputs.html",
+    "title": "19  health-systems-outputs",
+    "section": "",
+    "text": "20 Health systems outputs",
+    "crumbs": [
+      "health-systems-analyses.html",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>health-systems-outputs</span>"
+    ]
+  },
+  {
+    "objectID": "private-sector-analyses.html",
+    "href": "private-sector-analyses.html",
+    "title": "20  Private sector analyses",
+    "section": "",
+    "text": "21 Private Sector Analyses",
+    "crumbs": [
+      "health-systems-analyses.html",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Private sector analyses</span>"
+    ]
+  },
+  {
+    "objectID": "planning-ahead.html",
+    "href": "planning-ahead.html",
+    "title": "21  Planning Ahead",
+    "section": "",
+    "text": "22 Planning Ahead",
+    "crumbs": [
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Planning Ahead</span>"
     ]
   }
 ]

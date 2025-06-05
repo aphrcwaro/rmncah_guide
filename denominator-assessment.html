@@ -9,7 +9,7 @@
 <meta name="author" content="Peter Kaberia">
 <meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. This version was updated last in June 2025.">
 
-<title>2&nbsp; General Introduction to CD2030 CAM Approach – CAM 2025 Analysis Guide</title>
+<title>7&nbsp; Denominator Assessment and selection – CAM 2025 Analysis Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./getting-started.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./national-analyses.html" rel="next">
+<link href="./numerator-adjustments.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./general-intro.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Section 1: Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./general-intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./general-intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></span></a>
   </div>
 </li>
@@ -164,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./denominator-assessment.html" class="sidebar-item-text sidebar-link">
+  <a href="./denominator-assessment.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Denominator Assessment and selection</span></span></a>
   </div>
 </li>
@@ -319,19 +348,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#general-introduction-to-cd2030-cam-approach" id="toc-general-introduction-to-cd2030-cam-approach" class="nav-link active" data-scroll-target="#general-introduction-to-cd2030-cam-approach"><span class="header-section-number">2.1</span> General Introduction to CD2030 CAM Approach</a></li>
-  <li><a href="#organization-of-the-guidebook" id="toc-organization-of-the-guidebook" class="nav-link" data-scroll-target="#organization-of-the-guidebook"><span class="header-section-number">2.2</span> Organization of the Guidebook</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="header-section-number">2.3</span> Data Sources</a></li>
-  <li><a href="#expected-outputs" id="toc-expected-outputs" class="nav-link" data-scroll-target="#expected-outputs"><span class="header-section-number">2.4</span> Expected outputs</a></li>
+  <li><a href="#rationale-scientific-basis-for-the-analysis" id="toc-rationale-scientific-basis-for-the-analysis" class="nav-link active" data-scroll-target="#rationale-scientific-basis-for-the-analysis"><span class="header-section-number">7.1</span> Rationale: Scientific basis for the analysis</a></li>
+  <li><a href="#approach-description-of-analytical-steps" id="toc-approach-description-of-analytical-steps" class="nav-link" data-scroll-target="#approach-description-of-analytical-steps"><span class="header-section-number">7.2</span> Approach: Description of analytical steps</a>
+  <ul class="collapse">
+  <li><a href="#facility-data-derived-denominators" id="toc-facility-data-derived-denominators" class="nav-link" data-scroll-target="#facility-data-derived-denominators"><span class="header-section-number">7.2.1</span> Facility data derived denominators</a></li>
+  </ul></li>
+  <li><a href="#implementation-conducting-analysis-in-the-shiny-app" id="toc-implementation-conducting-analysis-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app"><span class="header-section-number">7.3</span> Implementation: Conducting analysis in the Shiny App</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/general-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/denominator-assessment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Section 1: Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Denominator Assessment and selection</span></h1>
 </div>
 
 
@@ -348,50 +379,261 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="general-introduction-to-cd2030-cam-approach" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="general-introduction-to-cd2030-cam-approach"><span class="header-section-number">2.1</span> General Introduction to CD2030 CAM Approach</h2>
-<p>The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.</p>
-<p>Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach <img src="images/0-overview_cam.png" class="img-fluid"></p>
+<section id="rationale-scientific-basis-for-the-analysis" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="rationale-scientific-basis-for-the-analysis"><span class="header-section-number">7.1</span> Rationale: Scientific basis for the analysis</h2>
+<p>Service coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions/provinces and districts).</p>
 </section>
-<section id="organization-of-the-guidebook" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="organization-of-the-guidebook"><span class="header-section-number">2.2</span> Organization of the Guidebook</h2>
-<p>This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:</p>
+<section id="approach-description-of-analytical-steps" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="approach-description-of-analytical-steps"><span class="header-section-number">7.2</span> Approach: Description of analytical steps</h2>
+<p>The objective of the health facility denominator analysis is twofold. First, we assess the quality of the population projections in DHIS2 by comparison with the UN projections and the internal consistency. Then, we assess the performance of multiple denominators options for the computation of population-based service coverage indicators from the health facility data. This should lead to a final decision on denominators that are used for the analyses of population-based coverage indicators based on health facility data.</p>
+<p>Each indicator has its own denominator, as shown in the table below.</p>
+<p><strong>Table 3: Selected indicators with numerators and denominators</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 31%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Indicators</strong></th>
+<th style="text-align: left;"><strong>Numerator</strong></th>
+<th style="text-align: left;"><strong>Denominator</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>SERVICE UTILIZATION</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Outpatient visits, children under 5, per year (N)</td>
+<td style="text-align: left;">N of OPD visits for under-5</td>
+<td style="text-align: left;">Total mid-year population under 5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Inpatient admissions, children under 5, per year (N)</td>
+<td style="text-align: left;">N of admissions for under-5</td>
+<td style="text-align: left;">Total mid-year population under 5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>PREVENTIVE INTERVENTIONS</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">% of pregnant women with 4 antenatal care visits</td>
+<td style="text-align: left;">N of women with ANC 4th visit</td>
+<td style="text-align: left;">Total N of pregnant women in the whole population</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">% of live births in health facilities</td>
+<td style="text-align: left;">N of live births in health facilities</td>
+<td style="text-align: left;">Total N of live births in the whole population</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">% of infants receiving 3 doses of pentavalent vaccine</td>
+<td style="text-align: left;">N of infants receiving 3 doses</td>
+<td style="text-align: left;">N of infants eligible for 3 doses of the vaccine</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CURATIVE INTERVENTIONS</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">% of children under 5 with malaria who receive ACT</td>
+<td style="text-align: left;">N of children under 5 with malaria receiving ACT</td>
+<td style="text-align: left;">Total N of children who had malaria in the last year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">% of deliveries that were by C-section (population)</td>
+<td style="text-align: left;">N of C-sections reported</td>
+<td style="text-align: left;">Total N of deliveries in the population</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">% of deliveries that were by C-section (institutional)</td>
+<td style="text-align: left;">N of C-sections reported</td>
+<td style="text-align: left;">Total N of deliveries in health facilities</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>MORTALITY</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Institutional maternal mortality ratio</td>
+<td style="text-align: left;">N of maternal deaths in health facilities</td>
+<td style="text-align: left;">Total number of live births in health facilities</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Stillbirth rate</td>
+<td style="text-align: left;">N of stillbirths in health facilities</td>
+<td style="text-align: left;">Total N of births in health facilities</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Neonatal mortality before discharge</td>
+<td style="text-align: left;">N of neonatal deaths before discharge (after birth)</td>
+<td style="text-align: left;">Total N of live births in the health facilities</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>FAMILY PLANNING (FP)</strong></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ratio FP visits to women of reproductive age</td>
+<td style="text-align: left;">N of FP new and revisits</td>
+<td style="text-align: left;">Total N of women 15-49 years</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Estimated modern use of contraceptives</td>
+<td style="text-align: left;">Couple years of protection</td>
+<td style="text-align: left;">Total N of women 15-49 years</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FP coverage (demand satisfied)</td>
+<td style="text-align: left;">N of women using modern methods</td>
+<td style="text-align: left;">Total N of women in need of FP</td>
+</tr>
+</tbody>
+</table>
+<p>In the first part, we assess the <strong>quality of the DHIS2 population projections</strong> at national level:</p>
+<ul>
+<li><p><strong>Check the internal consistency of the DHIS2 population growth over time:</strong></p>
+<ul>
+<li><p>Compute the population growth rate:</p>
+<p><span class="math display">\[
+\frac{\text{pop}_{2024} - \text{pop}_{2023}}{\text{pop}_{2023}}
+\]</span></p></li>
+<li><p>Compute the crude birth rate (CBR), defined as the number of live births per 1,000 population.</p></li>
+<li><p>Expect both growth rate and CBR to be consistent over time (e.g., less than 2 per 1,000 difference between years).</p></li>
+</ul></li>
+<li><p><strong>Compare the population data in DHIS2 with the UN population projections at the national level:</strong></p>
+<ul>
+<li><p>Differences may occur, but large discrepancies suggest issues with DHIS2 population projections.</p></li>
+<li><p>The comparison is done for four indicators. Abnormal values are flagged:</p>
+<ul>
+<li><p><strong>Population size:</strong><br>
+A relative difference between DHIS2 and UN-projected population size greater than 5% indicates a data quality issue.</p>
+<p><span class="math display">\[
+\left| \frac{\text{pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{pop}_{\text{UN}}} \right|
+\]</span></p></li>
+<li><p><strong>Population growth during 2023–2024:</strong><br>
+Annual growth is computed using the natural logarithm:</p>
+<p><span class="math display">\[
+\ln \left( \frac{\text{pop}_{2024}}{\text{pop}_{2023}} \right)
+\]</span></p>
+<p>A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.</p></li>
+<li><p><strong>Crude birth rate (CBR):</strong><br>
+Defined as: <span class="math display">\[
+\frac{\text{projected live births}}{\text{total population}} \times 1000
+\]</span></p>
+<p>A difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.</p></li>
+<li><p><strong>Crude death rate (CDR):</strong><br>
+Defined as:</p>
+<p><span class="math display">\[
+\text{CBR} - \text{population growth rate}
+\]</span></p>
+<p>(both expressed per 1,000 population). A <strong>negative CDR</strong> or a <strong>CDR &lt; 5 per 1,000</strong> indicates inconsistency and potential data problems.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.</p>
+<p>For the national level, we evaluate 4 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional two are facility data- based methods ( <strong><em>ANC1-derived</em></strong> and <strong><em>penta1-derived</em></strong> denominators).</p>
+<p><strong>Note</strong></p>
+<ul>
+<li>For the sub-national level, no UN projections are available, so we will use 3 methods only.</li>
+</ul>
+<p>The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.</p>
+<p>Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the <a href="https://data.unicef.org/topic/child-survival/neonatal-mortality/">WHO website</a>. The default assumptions are as follows:</p>
+<ul>
+<li><p>Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.</p></li>
+<li><p>Stillbirths or pregnancy loss between 28 weeks and birth: 2%.</p></li>
+<li><p>Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.</p></li>
+<li><p>Neonatal mortality: 3% (or 30 per 1,000 live births).</p></li>
+<li><p>Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).</p></li>
+</ul>
+<p>The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: <strong><em>institutional live births</em></strong> and <strong><em>penta3</em></strong>. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys – the results will be the same).</p>
+<section id="facility-data-derived-denominators" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="facility-data-derived-denominators"><span class="header-section-number">7.2.1</span> Facility data derived denominators</h3>
+<p>The basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).</p>
+<p>This approach requires the following:</p>
+<p>A recent population-based survey is used to obtain an estimate of population level coverage of ANC1 or penta1. For example, ANC1 coverage is 95% of pregnant women.</p>
+<p>The DHIS2 data on the number of ANC1 and penta1 visits need to be considered complete and accurate (after adjustments / cleaning the data). For example, 100,000 ANC1 visits were reported.</p>
+<p>If this is the case, then we only need to add the percentage that has not used the services (according to the survey results) to get the target population. For example, if ANC1 coverage from survey is 95% and the number of ANC1 visits from DHIS2 for the year is 100,000, the total number of pregnant women is: <span class="math display">\[ 100,000 / 0.95 = 105,263 \]</span></p>
+<p>The same approach can be used for DPT1 or penta1. The survey coverage is the percent of children 12-23 months who received DPT1/penta1, the facility data are the number of infants who received DPT1/penta1 vaccination. For example, if survey coverage is 92%, and there were 100,000 vaccinations given, then the <span class="math display">\[ denominator= 100,000 / 0.92 = 108,696. \]</span></p>
+<p>The number of live births can be obtained from ANC1 and DPT1 by making assumptions about pregnancy loss (abortion after the first ANC visit, stillbirths), twinning rates, and neonatal mortality. These steps are shown in the Figure below. ![] (images/1-dqa_denom_adjustment.png)</p>
+<p><strong>An example of ANC1:</strong></p>
+<ul>
+<li><p>Above we computed 105,263 pregnant women in the population</p></li>
+<li><p>at 3% abortion, this implies 105,263 * (1-.0.03) = 102,454 deliveries</p></li>
+<li><p>at 1.5% twinning rate this implies 102,454 / (1-(0.015/2)) = 103,229 births</p></li>
+<li><p>at 2% stillbirth rate this implies 103,229 * (1-0.02) = 101,164 live births</p></li>
+<li><p>at 3% neonatal mortality this implies 101,164 * (1-0.03) = 98,129 children eligible for DPT1/penta1.</p></li>
+</ul>
+</section>
+</section>
+<section id="implementation-conducting-analysis-in-the-shiny-app" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app"><span class="header-section-number">7.3</span> Implementation: Conducting analysis in the Shiny App</h2>
+<p>Shiny App</p>
+<p>To get outputs for this analysis first, one need to set up their analysis by inputting key information at the <strong>Analysis Set up</strong> section in the Shiny App.</p>
+<p>The parameters required are as shown in the figure below and they are:</p>
 <ol type="1">
-<li><p>Section 1: Health facility data quality assessment</p></li>
-<li><p>Section 2: National&nbsp; Analyses (Coverage &amp; Equity)</p></li>
-<li><p>Section 3: Subnational analysis (Coverage &amp; Inequality)</p></li>
-<li><p>Section 4: Maternal mortality, stillbirths and neonatal mortality</p></li>
-<li><p>Section5: Curative health services utilization for sick children</p></li>
-<li><p>Section 6: Health systems progress and performance</p></li>
-<li><p>Section 7: Planning ahead for data use</p></li>
+<li><p><strong>National mortality rates - based on the most recent survey</strong> <img src="images/1-dqa_denom_rates.png" class="img-fluid"></p>
+<ul>
+<li><strong>ANC1 Survey -</strong></li>
+<li><strong>Pregnancy loss -</strong></li>
+<li><strong>Twin rate -</strong></li>
+<li><strong>Neonatal mortality rate -</strong></li>
+<li><strong>Post neonatal mortality rate -</strong></li>
+<li><strong>Stillbirth rate -</strong></li>
+<li><strong>Penta1 survey -</strong></li>
+</ul></li>
+<li><p><strong>Survey coverage based percentages (based on the most recent survey)</strong> <img src="images/1-dqa_survey_setup.png" class="img-fluid"></p>
+<ul>
+<li>ANC4 Survey -</li>
+<li>Institutional delivery survey -</li>
+<li>Lowbirth weight survey -</li>
+<li>Caesarean section survey -</li>
+<li>Penta3 survey -</li>
+<li>Measles1 survey -</li>
+<li>BCG survey -</li>
+<li>Vaccines survey year -</li>
+<li>Vaccine data start year -</li>
+</ul></li>
+<li><p><strong>Survey datasets</strong></p>
+<p>In addition to setting these parameters, you will be required to upload the following survey datasets (in addition to the health facility data loaded at the beginning of the analysis session).</p>
+<p><img src="images/1-dqa-survey_upload.png" class="img-fluid"></p>
+<ul>
+<li>UN Estimates data</li>
+<li>UN Mortality data</li>
+<li>WUENIC estimates data</li>
+<li>Survey data (uploaded as a folder)</li>
+</ul></li>
 </ol>
-<p>These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.</p>
-<p>Each section has:</p>
+<p>The first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources. The second part is to compare results from the different methods - both at the national and sub-national levels.<img src="images/1-dqa_dhis2_comparison.png" class="img-fluid"></p>
+<p>The final step is to select the best performing denominator for the coverage analyses with health facility data. The results on the national gap and the median sub-national gap should be taken into account to make that choice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/1-dqa_denom_selection.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+<p>The best methods have the smallest gaps with the survey results. Ideally, one method is selected but it is also possible to select one denominator method for the MNH coverage indicators (ANC, delivery, PNC) and another method for the immunization coverage analyses. It will be important to clearly state the chosen denominator method in all tables.</p>
+<p>The interpretation should focus on the extent to which the DHIS2 projections are considered robust which is the case when:</p>
 <ul>
-<li><p><strong>Why/Rationale -</strong> the scientific basis for the analysis;</p></li>
-<li><p><strong>Approach</strong>- a step-by-step guide on how to conduct the analysis; and the</p></li>
-<li><p><strong>Implementation -</strong> the use of the R Shiny App for data visualization and interpretation.</p></li>
+<li><p>The DHIS2 total population projection is consistent over time with regular population growth</p></li>
+<li><p>The DHIS2 total live birth projection is consistent over time (regular trend)</p></li>
+<li><p>The projected numbers of total population and live births are close to the UN population projection</p></li>
+<li><p>The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.</p></li>
 </ul>
-</section>
-<section id="data-sources" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">2.3</span> Data Sources</h2>
-<p>The Countdown CAM approach uses a variety of data sources, including:</p>
+<p>The interpretation should describe, based on the graphs:</p>
 <ul>
-<li><p><strong>Health facility data</strong>: Routine health data collected from health facilities, including service coverage, health systems performance, and health service utilization.</p></li>
-<li><p><strong>Surveys</strong>: Nationally representative surveys, such as the Demographic and Health Surveys (DHS) and Multiple Indicator Cluster Surveys (MICS), which provide data on health indicators, equity, and health service utilization.</p></li>
-<li><p><strong>Administrative data</strong>: Data collected by government agencies, such as vital registration systems and health management information systems (HMIS), which provide information on health outcomes and service delivery.</p></li>
-<li><p><strong>Other data sources</strong>: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.</p></li>
+<li><p>Which denominator methods performed best at the national level for the two indicators?</p></li>
+<li><p>Which denominator performed best at the sub-national level for the two indicators?</p></li>
+<li><p>What selection is made for the indicators in the coverage analyses?</p></li>
 </ul>
-</section>
-<section id="expected-outputs" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="expected-outputs"><span class="header-section-number">2.4</span> Expected outputs</h2>
-<ul>
-<li><strong>Full country report</strong> (national/subnational) (.pdf, .doc files)</li>
-<li><strong>Synthesis/poster reports</strong> (.pdf, .doc files)</li>
-<li><strong>Country analytical reproducible files</strong> (.rds files)</li>
-<li><strong>Adjusted and or summarized data files</strong> (.csv. .dta, xlsx files)</li>
-</ul>
-<p>Country analytical reproducible files (.rds files) are the final output of the analysis, which can be used for further analysis and visualization. These files contain the cleaned and processed data, country specific analysis parameters as well as the results of the analysis, including coverage, equity, and health systems performance indicators.</p>
 
 
 </section>
@@ -798,13 +1040,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introduction to Countdown to 2030">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Countdown to 2030</span></span>
+      <a href="./numerator-adjustments.html" class="pagination-link" aria-label="Numerator Adjustments">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Numerator Adjustments</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./getting-started.html" class="pagination-link" aria-label="Getting started">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Getting started</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./national-analyses.html" class="pagination-link" aria-label="National Analyses">
+        <span class="nav-page-text">National Analyses</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -816,7 +1058,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/general-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/denominator-assessment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

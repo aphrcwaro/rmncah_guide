@@ -9,7 +9,7 @@
 <meta name="author" content="Peter Kaberia">
 <meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. This version was updated last in June 2025.">
 
-<title>2&nbsp; General Introduction to CD2030 CAM Approach – CAM 2025 Analysis Guide</title>
+<title>6&nbsp; Numerator Adjustments – CAM 2025 Analysis Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./getting-started.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./denominator-assessment.html" rel="next">
+<link href="./numerator-assessment.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -84,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./general-intro.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Section 1: Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -125,7 +154,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./general-intro.html" class="sidebar-item-text sidebar-link active">
+  <a href="./general-intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></span></a>
   </div>
 </li>
@@ -158,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./numerator-adjustments.html" class="sidebar-item-text sidebar-link">
+  <a href="./numerator-adjustments.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Numerator Adjustments</span></span></a>
   </div>
 </li>
@@ -319,19 +348,24 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#general-introduction-to-cd2030-cam-approach" id="toc-general-introduction-to-cd2030-cam-approach" class="nav-link active" data-scroll-target="#general-introduction-to-cd2030-cam-approach"><span class="header-section-number">2.1</span> General Introduction to CD2030 CAM Approach</a></li>
-  <li><a href="#organization-of-the-guidebook" id="toc-organization-of-the-guidebook" class="nav-link" data-scroll-target="#organization-of-the-guidebook"><span class="header-section-number">2.2</span> Organization of the Guidebook</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources"><span class="header-section-number">2.3</span> Data Sources</a></li>
-  <li><a href="#expected-outputs" id="toc-expected-outputs" class="nav-link" data-scroll-target="#expected-outputs"><span class="header-section-number">2.4</span> Expected outputs</a></li>
+  <li><a href="#numerator-adjustments" id="toc-numerator-adjustments" class="nav-link active" data-scroll-target="#numerator-adjustments"><span class="header-section-number">6.1</span> Numerator adjustments</a>
+  <ul class="collapse">
+  <li><a href="#rationale-scientific-basis-for-the-analysis-1" id="toc-rationale-scientific-basis-for-the-analysis-1" class="nav-link" data-scroll-target="#rationale-scientific-basis-for-the-analysis-1"><span class="header-section-number">6.1.1</span> Rationale: Scientific basis for the analysis</a></li>
+  <li><a href="#approach-description-of-analytical-steps-1" id="toc-approach-description-of-analytical-steps-1" class="nav-link" data-scroll-target="#approach-description-of-analytical-steps-1"><span class="header-section-number">6.1.2</span> Approach: Description of analytical steps</a></li>
+  </ul></li>
+  <li><a href="#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" id="toc-adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" class="nav-link" data-scroll-target="#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio"><span class="header-section-number">6.2</span> Adjusting the Numerator Using Completeness and Facility Reporting Ratio</a>
+  <ul class="collapse">
+  <li><a href="#implementation-conducting-analysis-in-the-shiny-app-1" id="toc-implementation-conducting-analysis-in-the-shiny-app-1" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app-1"><span class="header-section-number">6.2.1</span> Implementation: Conducting analysis in the Shiny App</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/general-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/numerator-adjustments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Section 1: Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">General Introduction to CD2030 CAM Approach</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Numerator Adjustments</span></h1>
 </div>
 
 
@@ -348,52 +382,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="general-introduction-to-cd2030-cam-approach" class="level2" data-number="2.1">
-<h2 data-number="2.1" class="anchored" data-anchor-id="general-introduction-to-cd2030-cam-approach"><span class="header-section-number">2.1</span> General Introduction to CD2030 CAM Approach</h2>
-<p>The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.</p>
-<p>Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach <img src="images/0-overview_cam.png" class="img-fluid"></p>
+<section id="numerator-adjustments" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="numerator-adjustments"><span class="header-section-number">6.1</span> Numerator adjustments</h2>
+<section id="rationale-scientific-basis-for-the-analysis-1" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="rationale-scientific-basis-for-the-analysis-1"><span class="header-section-number">6.1.1</span> Rationale: Scientific basis for the analysis</h3>
+<p>The completeness of reporting may affect the analysis, especially if completeness is low or varies between years. Extreme outliers, such as an accidental extra zero in a number, can have a large impact, especially on subnational numbers. Following the assessments, several steps are necessary to obtain a clean data set for analysis. This implies adjusting for incomplete reporting and correcting for extreme outliers.</p>
 </section>
-<section id="organization-of-the-guidebook" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="organization-of-the-guidebook"><span class="header-section-number">2.2</span> Organization of the Guidebook</h2>
-<p>This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:</p>
-<ol type="1">
-<li><p>Section 1: Health facility data quality assessment</p></li>
-<li><p>Section 2: National&nbsp; Analyses (Coverage &amp; Equity)</p></li>
-<li><p>Section 3: Subnational analysis (Coverage &amp; Inequality)</p></li>
-<li><p>Section 4: Maternal mortality, stillbirths and neonatal mortality</p></li>
-<li><p>Section5: Curative health services utilization for sick children</p></li>
-<li><p>Section 6: Health systems progress and performance</p></li>
-<li><p>Section 7: Planning ahead for data use</p></li>
-</ol>
-<p>These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.</p>
-<p>Each section has:</p>
-<ul>
-<li><p><strong>Why/Rationale -</strong> the scientific basis for the analysis;</p></li>
-<li><p><strong>Approach</strong>- a step-by-step guide on how to conduct the analysis; and the</p></li>
-<li><p><strong>Implementation -</strong> the use of the R Shiny App for data visualization and interpretation.</p></li>
-</ul>
+<section id="approach-description-of-analytical-steps-1" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="approach-description-of-analytical-steps-1"><span class="header-section-number">6.1.2</span> Approach: Description of analytical steps</h3>
+<p>If we do not consider reporting completeness that means we assume all non-reporting facilities provided zero services, which is not likely to be true. Adjustments depend on how much services (e.g., pregnancy care, vaccinations) were provided at non-reporting facilities compared to those that reported. The adjustment factor k - defined as the ratio of the volume of services provided by non-reporting facilities to the volume of services provided by reporting facilities - is used to adjust the reported numbers for incomplete reporting.</p>
 </section>
-<section id="data-sources" class="level2" data-number="2.3">
-<h2 data-number="2.3" class="anchored" data-anchor-id="data-sources"><span class="header-section-number">2.3</span> Data Sources</h2>
-<p>The Countdown CAM approach uses a variety of data sources, including:</p>
-<ul>
-<li><p><strong>Health facility data</strong>: Routine health data collected from health facilities, including service coverage, health systems performance, and health service utilization.</p></li>
-<li><p><strong>Surveys</strong>: Nationally representative surveys, such as the Demographic and Health Surveys (DHS) and Multiple Indicator Cluster Surveys (MICS), which provide data on health indicators, equity, and health service utilization.</p></li>
-<li><p><strong>Administrative data</strong>: Data collected by government agencies, such as vital registration systems and health management information systems (HMIS), which provide information on health outcomes and service delivery.</p></li>
-<li><p><strong>Other data sources</strong>: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.</p></li>
-</ul>
 </section>
-<section id="expected-outputs" class="level2" data-number="2.4">
-<h2 data-number="2.4" class="anchored" data-anchor-id="expected-outputs"><span class="header-section-number">2.4</span> Expected outputs</h2>
+<section id="adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="adjusting-the-numerator-using-completeness-and-facility-reporting-ratio"><span class="header-section-number">6.2</span> Adjusting the Numerator Using Completeness and Facility Reporting Ratio</h2>
+<p>To account for incomplete reporting, the reported number of events can be adjusted using the following formula:</p>
+<p><span class="math display">\[
+N_{\text{adjusted}} = N_{\text{reported}} + N_{\text{reported}} \times \left( \frac{1}{c} - 1 \right) \times k
+\]</span></p>
+<p><strong>Where:</strong> - ( N_{} ): Total number of events adjusted for incomplete reporting - ( N_{} ): Number of events reported<br>
+- ( c ): Reporting completeness (e.g., proportion of facilities that reported)<br>
+- ( k ): Adjustment factor to account for lower service volume in non-reporting facilities</p>
+<p>As a default value, we use k=0.25, which means the non-reporting facilities provided services but only at a volume which was a quarter of the reporting health facilities. The factor k can be different for different services. For instance, if private facility reporting is poor but they are in the national system and they provide a considerable number of deliveries, k maybe greater than 0.25 or even as high as 1.0.</p>
+<p>The following k-values are used depending on the reporting used to adjust the reported numbers for incomplete reporting:</p>
 <ul>
-<li><strong>Full country report</strong> (national/subnational) (.pdf, .doc files)</li>
-<li><strong>Synthesis/poster reports</strong> (.pdf, .doc files)</li>
-<li><strong>Country analytical reproducible files</strong> (.rds files)</li>
-<li><strong>Adjusted and or summarized data files</strong> (.csv. .dta, xlsx files)</li>
+<li><p><strong><em>k=0</em></strong> - No services in non-reporting facilities (default k-value)</p></li>
+<li><p><strong><em>k=0.25 -</em></strong> Some services, but much lower than reporting facilities</p></li>
+<li><p><strong><em>k=0.50 -</em></strong> Half the rate compared to reporting facilities</p></li>
+<li><p><strong><em>k=0.75 -</em></strong> Nearly as much as reporting facilities</p></li>
+<li><p><strong><em>k= 1.0</em></strong> - Same rate of services as reporting facilities</p></li>
 </ul>
-<p>Country analytical reproducible files (.rds files) are the final output of the analysis, which can be used for further analysis and visualization. These files contain the cleaned and processed data, country specific analysis parameters as well as the results of the analysis, including coverage, equity, and health systems performance indicators.</p>
+<p>If the facility reporting rate is below 75%, it becomes more difficult to impute district data. Therefore, no adjustments are made if reporting is lower than 75%. In that case, further analysis to determine coverage with the facility data is not considered sufficiently reliable.</p>
+<p>Extreme outliers, as defined in the previous section, will be corrected by imputing the median monthly value of the same year. The table summarizes the adjustments.</p>
+<p><strong>Table 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 31%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Problem</strong></th>
+<th style="text-align: left;"><strong>Action</strong></th>
+<th style="text-align: left;"><strong>Adjustment</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Low reporting rates: identifying low rates that were adjusted</td>
+<td style="text-align: left;">If below 75% (default), data were imputed</td>
+<td style="text-align: left;">Median monthly value for the district year was imputed for the month with low reporting</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Incomplete reporting by districts, variable over time, affecting trend assessment</td>
+<td style="text-align: left;">If reporting rates were &gt;=75% and &lt;= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities</td>
+<td style="text-align: left;">Adjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Extreme outliers can greatly affect coverage trend assessments</td>
+<td style="text-align: left;">If a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made</td>
+<td style="text-align: left;">Extreme monthly outliers are corrected and given the district median value for the same year</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Missing values</td>
+<td style="text-align: left;">If there is a missing value, data were imputed</td>
+<td style="text-align: left;">District median monthly value for the year was imputed for the month with missing value</td>
+</tr>
+</tbody>
+</table>
+<section id="implementation-conducting-analysis-in-the-shiny-app-1" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app-1"><span class="header-section-number">6.2.1</span> Implementation: Conducting analysis in the Shiny App</h3>
+<ul>
+<li><p>The outputs for this analysis can be obtained through the <strong>Data adjustment</strong> section of the Shiny App</p>
+<p><img src="images/1-dqa_adjustments.png" class="img-fluid"></p></li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Note:</strong></p>
+<p>The <strong><em>Remove Years</em></strong> section before this, allows you to remove any years with no data or whose data has been determined to be not fit for analysis by the country team due to quality issues).</p>
+<p><img src="images/1-dqa_remove_years.png" class="img-fluid"></p>
+</blockquote>
+<ul>
+<li>This Section produces a master adjusted dataset (.dta) ready for analysis and plots for different indicators showing data adjustment changes.</li>
+</ul>
+<p><strong>Report</strong></p>
+<ul>
+<li><p>The interpretation should include the selected adjustment factor (factor k) that was used to adjust for incomplete reporting (if necessary, by service). If the default factor is used, then report this and explain what this means for the reader.</p></li>
+<li><p>Report the percent change that the adjustment made in reported numbers of institutional deliveries and in penta1 (average of the 6-year period); you may want to highlight the year with the greatest impact of the adjustment if there is one; interpret if the impact of the adjustment on coverage rates is large or small; Make the same description and interpretations for penta1 vaccinations.</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -798,13 +876,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Introduction to Countdown to 2030">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Countdown to 2030</span></span>
+      <a href="./numerator-assessment.html" class="pagination-link" aria-label="Numerator Assessment">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Numerator Assessment</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./getting-started.html" class="pagination-link" aria-label="Getting started">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Getting started</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./denominator-assessment.html" class="pagination-link" aria-label="Denominator Assessment and selection">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Denominator Assessment and selection</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -816,7 +894,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/general-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/numerator-adjustments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
