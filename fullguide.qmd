@@ -205,37 +205,22 @@ The analysis of the monthly data by district for 2019-2024 is used to assess ann
 
 **Table 1: Health facility data quality assessment: numerators**
 
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|            | **Indicator**                                                                   | **Numerator**                                                                                                             | **Denominator**                                                                      | **Interpretation**                                                                                                  |
-+============+:================================================================================+:==========================================================================================================================+:=====================================================================================+:====================================================================================================================+
-| 1          | **Completeness of monthly facility reporting**                                  | Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD)                    |                                                                                      | Essential indicator for all analyses                                                                                |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 1a         | \% of expected monthly facility reports (national)                              | N of monthly facility reports received                                                                                    | Total N of facility reports expected (usually 12\* N of facilities with the service) | Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis               |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 1b         | \% of districts with completeness of facility reporting \>= 90%                 | N of districts with at least 90% monthly reporting completeness in a year                                                 | Total N of districts                                                                 | Can be used to identify districts with low reporting rates in multiple years                                        |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 1c         | \% of districts with no missing monthly values in a year for any of the 4 forms | N of districts with no missing values for any of the 4 forms in a year                                                    | Total N of districts                                                                 | Additional indicator, is not used to compute the overall data quality score                                         |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| **2**      | **Extreme outliers**                                                            | The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators |                                                                                      | N of indicators included in the mean may vary according to countries                                                |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 2a         | \% of monthly values that are not extreme outliers[^fullguide-1] (national)     | N of monthly values that are not extreme outliers in a specific year                                                      | Total N of monthly values (usually 12 \* N years to be analyzed)                     | At least 99% of monthly data expected **not** to be an extreme outlier; consider reasons                            |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 2b         | \% of districts with no extreme outliers in a year                              | N of districts with no extreme outliers in a specific year                                                                | Total N of districts                                                                 | At least 90% of districts should have no extreme outliers at all; consider reasons                                  |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| **3**      | **Consistency of annual reporting**                                             |                                                                                                                           |                                                                                      |                                                                                                                     |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 3a         | ANC1 to penta1 ratio in the reported data (national)                            | N of ANC1 reported                                                                                                        | N of penta1 reported                                                                 | National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same -- see below) |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 3b         | Penta1 to penta3 ratio in the reported data (national)                          | N of penta1 reported                                                                                                      | N of penta3 reported                                                                 | National ratio within an expected range, based on the survey results (see below)                                    |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 3c         | \% of districts with ANC1-penta1 ratio between 1.0 and 1.5                      | N of districts with ratios within the expected range                                                                      | Total N of districts                                                                 | For districts there is more variation in the ratio: a wider range is considered                                     |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 3d         | \% of districts with penta1-penta3 ratio between 1.0 and 1.5                    | N of districts within the expected range                                                                                  | Total N of districts                                                                 | For districts there is more variation in the ratio: a wider range is considered                                     |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-| 4          | **Summary of performance**                                                      |                                                                                                                           |                                                                                      |                                                                                                                     |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
-|            | Annual data quality score (mean 1a, 1b, 2a,2b, 3c,3d)                           |                                                                                                                           |                                                                                      |                                                                                                                     |
-+------------+---------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+
+|   | **Indicator** | **Numerator** | **Denominator** | **Interpretation** |
+|----|:---|:---|:---|:---|
+| 1 | **Completeness of monthly facility reporting** | Statistics for 1a and 1b are based on the mean of 4 reporting forms (ANC, delivery, immunization, OPD) |  | Essential indicator for all analyses |
+| 1a | \% of expected monthly facility reports (national) | N of monthly facility reports received | Total N of facility reports expected (usually 12\* N of facilities with the service) | Reporting rates over 90% are good; changes in reporting completeness over time affects trend analysis |
+| 1b | \% of districts with completeness of facility reporting \>= 90% | N of districts with at least 90% monthly reporting completeness in a year | Total N of districts | Can be used to identify districts with low reporting rates in multiple years |
+| 1c | \% of districts with no missing monthly values in a year for any of the 4 forms | N of districts with no missing values for any of the 4 forms in a year | Total N of districts | Additional indicator, is not used to compute the overall data quality score |
+| **2** | **Extreme outliers** | The statistics for 2a and 2b are based on the mean of outliers in ANC, delivery, PNC, vaccination, OPD and IPD indicators |  | N of indicators included in the mean may vary according to countries |
+| 2a | \% of monthly values that are not extreme outliers[^fullguide-1] (national) | N of monthly values that are not extreme outliers in a specific year | Total N of monthly values (usually 12 \* N years to be analyzed) | At least 99% of monthly data expected **not** to be an extreme outlier; consider reasons |
+| 2b | \% of districts with no extreme outliers in a year | N of districts with no extreme outliers in a specific year | Total N of districts | At least 90% of districts should have no extreme outliers at all; consider reasons |
+| **3** | **Consistency of annual reporting** |  |  |  |
+| 3a | ANC1 to penta1 ratio in the reported data (national) | N of ANC1 reported | N of penta1 reported | National ratio within an expected range (1.05 to 1.10 if survey coverage ANC1 and penta1 are the same -- see below) |
+| 3b | Penta1 to penta3 ratio in the reported data (national) | N of penta1 reported | N of penta3 reported | National ratio within an expected range, based on the survey results (see below) |
+| 3c | \% of districts with ANC1-penta1 ratio between 1.0 and 1.5 | N of districts with ratios within the expected range | Total N of districts | For districts there is more variation in the ratio: a wider range is considered |
+| 3d | \% of districts with penta1-penta3 ratio between 1.0 and 1.5 | N of districts within the expected range | Total N of districts | For districts there is more variation in the ratio: a wider range is considered |
+| 4 | **Summary of performance** |  |  |  |
+|  | Annual data quality score (mean 1a, 1b, 2a,2b, 3c,3d) |  |  |  |
 
 [^fullguide-1]: An extreme outlier is defined as a monthly value that is 5 times the median absolute deviation (MAD) from monthly median value for a particular year.
 
@@ -299,17 +284,12 @@ Extreme outliers, as defined in the previous section, will be corrected by imput
 
 **Table 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis**
 
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| **Problem**                                                                       | **Action**                                                                                                                                            | **Adjustment**                                                                                                                                                                                           |
-+:==================================================================================+:======================================================================================================================================================+:=========================================================================================================================================================================================================+
-| Low reporting rates: identifying low rates that were adjusted                     | If below 75% (default), data were imputed                                                                                                             | Median monthly value for the district year was imputed for the month with low reporting                                                                                                                  |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Incomplete reporting by districts, variable over time, affecting trend assessment | If reporting rates were \>=75% and \<= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities    | Adjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms) |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Extreme outliers can greatly affect coverage trend assessments                    | If a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made | Extreme monthly outliers are corrected and given the district median value for the same year                                                                                                             |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Missing values                                                                    | If there is a missing value, data were imputed                                                                                                        | District median monthly value for the year was imputed for the month with missing value                                                                                                                  |
-+-----------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Problem** | **Action** | **Adjustment** |
+|:---|:---|:---|
+| Low reporting rates: identifying low rates that were adjusted | If below 75% (default), data were imputed | Median monthly value for the district year was imputed for the month with low reporting |
+| Incomplete reporting by districts, variable over time, affecting trend assessment | If reporting rates were \>=75% and \<= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities | Adjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms) |
+| Extreme outliers can greatly affect coverage trend assessments | If a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made | Extreme monthly outliers are corrected and given the district median value for the same year |
+| Missing values | If there is a missing value, data were imputed | District median monthly value for the year was imputed for the month with missing value |
 
 ### Implementation: Conducting analysis in the Shiny App {#implementation-conducting-analysis-in-the-shiny-app-1}
 
@@ -345,102 +325,81 @@ Each indicator has its own denominator, as shown in the table below.
 
 **Table 3: Selected indicators with numerators and denominators**
 
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| **Indicators**                                          | **Numerator**                                       | **Denominator**                                      |
-+:========================================================+:====================================================+:=====================================================+
-| **SERVICE UTILIZATION**                                 |                                                     |                                                      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Outpatient visits, children under 5, per year (N)       | N of OPD visits for under-5                         | Total mid-year population under 5                    |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Inpatient admissions, children under 5, per year (N)    | N of admissions for under-5                         | Total mid-year population under 5                    |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| **PREVENTIVE INTERVENTIONS**                            |                                                     |                                                      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of pregnant women with 4 antenatal care visits       | N of women with ANC 4th visit                       | Total N of pregnant women in the whole population    |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of live births in health facilities                  | N of live births in health facilities               | Total N of live births in the whole population       |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of infants receiving 3 doses of pentavalent vaccine  | N of infants receiving 3 doses                      | N of infants eligible for 3 doses of the vaccine     |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| **CURATIVE INTERVENTIONS**                              |                                                     |                                                      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of children under 5 with malaria who receive ACT     | N of children under 5 with malaria receiving ACT    | Total N of children who had malaria in the last year |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of deliveries that were by C-section (population)    | N of C-sections reported                            | Total N of deliveries in the population              |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| \% of deliveries that were by C-section (institutional) | N of C-sections reported                            | Total N of deliveries in health facilities           |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| **MORTALITY**                                           |                                                     |                                                      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Institutional maternal mortality ratio                  | N of maternal deaths in health facilities           | Total number of live births in health facilities     |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Stillbirth rate                                         | N of stillbirths in health facilities               | Total N of births in health facilities               |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Neonatal mortality before discharge                     | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| **FAMILY PLANNING (FP)**                                |                                                     |                                                      |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Ratio FP visits to women of reproductive age            | N of FP new and revisits                            | Total N of women 15-49 years                         |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| Estimated modern use of contraceptives                  | Couple years of protection                          | Total N of women 15-49 years                         |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
-| FP coverage (demand satisfied)                          | N of women using modern methods                     | Total N of women in need of FP                       |
-+---------------------------------------------------------+-----------------------------------------------------+------------------------------------------------------+
+| **Indicators** | **Numerator** | **Denominator** |
+|:---|:---|:---|
+| **SERVICE UTILIZATION** |  |  |
+| Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 |
+| Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 |
+| **PREVENTIVE INTERVENTIONS** |  |  |
+| \% of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population |
+| \% of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population |
+| \% of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine |
+| **CURATIVE INTERVENTIONS** |  |  |
+| \% of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year |
+| \% of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population |
+| \% of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities |
+| **MORTALITY** |  |  |
+| Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities |
+| Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities |
+| Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities |
+| **FAMILY PLANNING (FP)** |  |  |
+| Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years |
+| Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years |
+| FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP |
 
 In the first part, we assess the **quality of the DHIS2 population projections** at national level:
 
-- **Check the internal consistency of the DHIS2 population growth over time:**
+-   **Check the internal consistency of the DHIS2 population growth over time:**
 
-  - Compute the population growth rate:
+    -   Compute the population growth rate:
 
-    $$
-    \frac{\text{pop}_{2024} - \text{pop}_{2023}}{\text{pop}_{2023}}
-    $$
+        $$
+        \frac{\text{pop}_{2024} - \text{pop}_{2023}}{\text{pop}_{2023}}
+        $$
 
-  - Compute the crude birth rate (CBR), defined as the number of live births per 1,000 population.
+    -   Compute the crude birth rate (CBR), defined as the number of live births per 1,000 population.
 
-  - Expect both growth rate and CBR to be consistent over time (e.g., less than 2 per 1,000 difference between years).
+    -   Expect both growth rate and CBR to be consistent over time (e.g., less than 2 per 1,000 difference between years).
 
-- **Compare the population data in DHIS2 with the UN population projections at the national level:**
+-   **Compare the population data in DHIS2 with the UN population projections at the national level:**
 
-  - Differences may occur, but large discrepancies suggest issues with DHIS2 population projections.
+    -   Differences may occur, but large discrepancies suggest issues with DHIS2 population projections.
 
-  - The comparison is done for four indicators. Abnormal values are flagged:
+    -   The comparison is done for four indicators. Abnormal values are flagged:
 
-    - **Population size:**  
-      A relative difference between DHIS2 and UN-projected population size greater than 5% indicates a data quality issue.
+        -   **Population size:**\
+            A relative difference between DHIS2 and UN-projected population size greater than 5% indicates a data quality issue.
 
-      $$
-      \left| \frac{\text{pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{pop}_{\text{UN}}} \right|
-      $$
+            $$
+            \left| \frac{\text{pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{pop}_{\text{UN}}} \right|
+            $$
 
-    - **Population growth during 2023–2024:**  
-      Annual growth is computed using the natural logarithm:
+        -   **Population growth during 2023–2024:**\
+            Annual growth is computed using the natural logarithm:
 
-      $$
-      \ln \left( \frac{\text{pop}_{2024}}{\text{pop}_{2023}} \right)
-      $$
+            $$
+            \ln \left( \frac{\text{pop}_{2024}}{\text{pop}_{2023}} \right)
+            $$
 
-      A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.
+            A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.
 
-    - **Crude birth rate (CBR):**  
-      Defined as:
+        -   **Crude birth rate (CBR):**\
+            Defined as:
 
-      $$
-      \frac{\text{projected live births}}{\text{total population}} \times 1000
-      $$
+            $$
+            \frac{\text{projected live births}}{\text{total population}} \times 1000
+            $$
 
-      A difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.
+            A difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.
 
-    - **Crude death rate (CDR):**  
-      Defined as:
+        -   **Crude death rate (CDR):**\
+            Defined as:
 
-      $$
-      \text{CBR} - \text{population growth rate}
-      $$
+            $$
+            \text{CBR} - \text{population growth rate}
+            $$
 
-      (both expressed per 1,000 population). A **negative CDR** or a **CDR < 5 per 1,000** indicates inconsistency and potential data problems.
-
+            (both expressed per 1,000 population). A **negative CDR** or a **CDR \< 5 per 1,000** indicates inconsistency and potential data problems.
 
 The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level. For the national level, we evaluate 4 denominator methods. The first two are projection methods - DHIS2 estimate and UN estimate. In addition, 2 facility data derived methods are used: ANC1-derived and penta1-derived denominators. The box below describes the facility data derived method. For the subnational level, no UN projections are available, so we will use 3 methods only.
 
@@ -838,23 +797,15 @@ The main challenge with mortality data from health facilities is underreporting 
 
 The definitions for institutional, community and population maternal mortality and for stillbirths are:
 
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| **Indicator**                                 | **Numerator**                                                 | **Denominator**                                       |
-+:==============================================+:==============================================================+:======================================================+
+| **Indicator** | **Numerator** | **Denominator** |
+|:---|:---|:---|
 | Institutional maternal mortality ratio (iMMR) | Number of maternal deaths in health facilities[^fullguide-10] | Number of live births in health facilities \* 100,000 |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Population maternal mortality (MMR)           | Number of maternal deaths in the population                   | Number of live births in the population \* 100,000    |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Community maternal mortality ratio (comer)    | Number of maternal deaths in the community                    | Number of live births in the community \* 100,000     |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Institutional stillbirth rate (iSBR)          | Number of stillbirths in health facilities[^fullguide-11]     | Number of births in health facilities \* 1,000        |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Population stillbirth rate (SBR)              | Number of stillbirths in the population                       | Number of births in the population \* 1,000           |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Community stillbirth rate (cSBR)              | Number of stillbirths in the community                        | Number of births in the community \* 1,000            |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
-| Neonatal mortality (before discharge)         | Number of neonatal deaths before discharge                    | Number of live births in health facilities \* 1000    |
-+-----------------------------------------------+---------------------------------------------------------------+-------------------------------------------------------+
+| Population maternal mortality (MMR) | Number of maternal deaths in the population | Number of live births in the population \* 100,000 |
+| Community maternal mortality ratio (comer) | Number of maternal deaths in the community | Number of live births in the community \* 100,000 |
+| Institutional stillbirth rate (iSBR) | Number of stillbirths in health facilities[^fullguide-11] | Number of births in health facilities \* 1,000 |
+| Population stillbirth rate (SBR) | Number of stillbirths in the population | Number of births in the population \* 1,000 |
+| Community stillbirth rate (cSBR) | Number of stillbirths in the community | Number of births in the community \* 1,000 |
+| Neonatal mortality (before discharge) | Number of neonatal deaths before discharge | Number of live births in health facilities \* 1000 |
 
 [^fullguide-10]: Maternal death is defined as any cause related to or aggravated by pregnancy or its management (excluding accidental or incidental causes) during pregnancy and childbirth or within 42 days of termination of pregnancy, irrespective of the duration and site of the pregnancy
 
@@ -1218,21 +1169,14 @@ Step 2: Upload the File
 
 ## **Common Errors and How to Fix Them**
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| **Error Message**                                                                                                                       | **Cause**                                                                  | **Solution**                                                                        |
-+:========================================================================================================================================+:===========================================================================+:====================================================================================+
-| "Unsupported file format"                                                                                                               | File type not supported                                                    | Save your file as .xls, .xlsx, .dta, or .rds.                                       |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| "The following required columns are missing from the data: opv1"                                                                        | Missing essential columns in the data                                      | Add the missing column(s) to your dataset and ensure their values are valid.        |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| "The following sheets are missing: Service_data_1, Service_data_2, Service_data_3, Reporting_completeness, Population_data, Admin_data" | Missing one or more required sheets in the file                            | Add the missing sheets to your file and ensure they conform to the template.        |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| "Sheet Service_data_3 is empty"                                                                                                         | The sheet exists but contains no data                                      | Populate the sheet with valid data or remove the empty sheet.                       |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| "Key Columns "month" missing in Service_data_3"                                                                                         | A key column district, year, or month, is missing from the specified sheet | Add the missing column(s) to the sheet and ensure the data is structured correctly. |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-| "Column name month must not be duplicated. Use .name_repair to specify repair."                                                         | Duplicate column names in the dataset                                      | Ensure all column names are unique. Rename or remove duplicate columns.             |
-+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+| **Error Message** | **Cause** | **Solution** |
+|:---|:---|:---|
+| "Unsupported file format" | File type not supported | Save your file as .xls, .xlsx, .dta, or .rds. |
+| "The following required columns are missing from the data: opv1" | Missing essential columns in the data | Add the missing column(s) to your dataset and ensure their values are valid. |
+| "The following sheets are missing: Service_data_1, Service_data_2, Service_data_3, Reporting_completeness, Population_data, Admin_data" | Missing one or more required sheets in the file | Add the missing sheets to your file and ensure they conform to the template. |
+| "Sheet Service_data_3 is empty" | The sheet exists but contains no data | Populate the sheet with valid data or remove the empty sheet. |
+| "Key Columns "month" missing in Service_data_3" | A key column district, year, or month, is missing from the specified sheet | Add the missing column(s) to the sheet and ensure the data is structured correctly. |
+| "Column name month must not be duplicated. Use .name_repair to specify repair." | Duplicate column names in the dataset | Ensure all column names are unique. Rename or remove duplicate columns. |
 
 ***Note**: If a key column (district, year, or month) is missing data in a row, that row will be excluded from the resulting dataset.*
 

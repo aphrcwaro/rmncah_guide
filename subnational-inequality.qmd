@@ -1,6 +1,5 @@
 ---
-title: "subnational-inequality"
-format: html
+title: "Sub-national Inequality"
 ---
 
-# Subnational Inequality
+# 

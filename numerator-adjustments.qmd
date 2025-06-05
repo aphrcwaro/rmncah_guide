@@ -1,6 +1,6 @@
 ---
 title: "Numerator Adjustments"
-format: html
+
 ---
 
 ```{r}
