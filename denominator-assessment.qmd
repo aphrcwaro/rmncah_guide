@@ -1,6 +1,5 @@
 ---
 title: "Denominator Assessment and selection"
-format: html
 ---
 
 ## Rationale: Scientific basis for the analysis
