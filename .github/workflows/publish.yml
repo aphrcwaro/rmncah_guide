@@ -22,7 +22,7 @@ jobs:
       # Step 3: Install R packages
       - name: Install required R packages
         run: |
-          Rscript -e 'install.packages(c("quarto", "tidyverse"))'
+          Rscript -e 'install.packages(c("quarto", "tidyverse", "kableExtra"))'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
