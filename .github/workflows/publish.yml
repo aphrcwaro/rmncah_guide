@@ -21,8 +21,15 @@ jobs:
 
       # Step 3: Install R packages
       - name: Install required R packages
-        run: |
-          Rscript -e 'install.packages(c("quarto", "tidyverse", "kableExtra"))'
+	uses: r-lib/actions/setup-r-dependencies@v2
+	with:
+	  packages: |
+	    kableExtra
+	    knitr
+	    quarto
+	    tidyverse
+      #  run: |
+      #   Rscript -e 'install.packages(c("quarto", "tidyverse", "kableExtra"))'
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
