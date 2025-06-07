@@ -1,6 +1,5 @@
 ---
 title: "Maternal Mortality"
-format: html
 ---
 
 ## Maternal Mortality

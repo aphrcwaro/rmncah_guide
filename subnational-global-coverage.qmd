@@ -1,7 +1,11 @@
 ---
-title: "subnational-global-coverage"
-format: html
+title: "Subnational: Global coverage targets"
+
 ---
+```{r}
+#| echo: false
+
+source("_common.R")
+```
 
 # Subnational Global coverage targets
-

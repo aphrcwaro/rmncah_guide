@@ -1,15 +1,18 @@
 ---
-title: "subnational-analyses"
-format: html
+title: "Sub-national Analyses"
 ---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)  
+```
 
 ## Subnational Analyses
 
 This section deals with sub-national analyses. It will provide guidelines on how to conduct analyses at the Admin_2 (district) level.
 
-We'll look at the folllowing sections:
+We'll look at the following subsections:
 
--   Coverage at subnational level
+-   Coverage at sub-national level
 
 -   Coverage inequalities at the district level
 
