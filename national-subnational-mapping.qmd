@@ -1,6 +1,10 @@
 ---
 title: "Sub-national Mapping"
-format: html
 ---
+```{r}
+#| echo: false
+
+source("_common.R") 
+```
 
 ## National and subnational mapping of health service coverage

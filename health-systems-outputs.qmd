@@ -1,6 +1,14 @@
 ---
-title: "health-systems-outputs"
+title: "Health Systems Outputs"
 ---
+
+------------------------------------------------------------------------
+
+```{r}
+#| echo: false
+
+source("_common.R") 
+```
 
 ## Health systems outputs
 
@@ -16,7 +24,7 @@ The following can be examined:
 
 -   There may be major outliers. For instance, regions with low density and high admission rates: this may be because:
 
-    -    Hospital density is under-reported by these regions
+    -   Hospital density is under-reported by these regions
 
     -   Hospitals in the low density regions have very high admission and bed occupancy rates
 
@@ -32,7 +40,7 @@ The following can be examined:
 
 -   There may be major outliers, for instance, regions with low health workforce density and high OPD utilization rates. This may be because:
 
-    -    Health workforce density is under-reported by these regions
+    -   Health workforce density is under-reported by these regions
 
     -   Health workers have a very high workload in these regions
 

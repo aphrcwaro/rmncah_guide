@@ -1,7 +1,49 @@
 ---
-title: "subnational-inequality"
-format: html
+title: "Sub-national Inequality"
 ---
 
-# Subnational Inequality
+```{r}
+#| echo: false
 
+source("_common.R")
+```
+
+## Inequality: Health facility data {#inequality-health-facility-data}
+
+### Rationale, Approach and implementation
+
+**Rationale: Scientific basis for the analysis**
+
+Sub-national analysis of health intervention coverage is essential for advancing universal health coverage (UHC), which aims to ensure equitable access to quality health services for all populations. National averages often mask critical disparities that exist across regions, districts, or population subgroups. Monitoring sub-national data helps identify geographical areas where coverage is low, signaling potential inequities in health service access and prompting targeted interventions. This is particularly important for drawing attention to populations who are left behind and ensuring resources are directed where they are most needed.
+
+**Approach: Description of analytical steps**
+
+The focus should be on assessing the extent to which the country programs have succeeded in reducing the inequalities between regions/provinces and between districts, and the extent to which districts have reached a coverage target. Three global targets for coverage indicators are of particular interest:
+
+-   ANC4: 80% of districts have at least 70% coverage (EPMM/ENAP)
+
+-   SBA or institutional delivery: 80% of districts have at least 80% coverage (EPMM/ENAP)
+
+-   Penta3/DTP3: at least 80% coverage in every district or equivalent administrative unit with three doses of diphtheria-tetanus-pertussis containing vaccines (DTP -- or pentavalent vaccine).
+
+The regional and district analyses should use the best performing denominator for the coverage computations, as decided from the analysis in section 2 on denominators. There will be more "noise" in the sub-national data with improbably high or low coverage rates, compared to the national analyses, and more so in the district analyses than in the regional (admin1) analyses. This is because district analyses are affected by small numbers (more fluctuations which may be random or due to data quality issues) and by the health service utilization patterns by women and children.
+
+For instance, a municipal district may get more deliveries than an adjacent rural district because of the location of the hospitals in the municipal district.
+
+The key statistical measures for sub-national inequalities are:
+
+-   MADM: median absolute distance from the median. This measure gives an indication on whether the country has been successful in reducing inequalities between sub-national units.
+
+-   Percent of sub-national units with coverage above a specific target or threshold: this indicator provides information on the extent to which a country has been successful in reaching universal coverage at the sub-national level.
+
+***Summary of district and regional performance***
+
+Progress towards international and national targets can be measured by computing the percentage of regions and districts that have achieved these targets. The goal is for all regions and districts to have met the target. Higher percentages mean less inequality.
+
+**Implementation: Conducting analysis in the Shiny App**
+
+This analysis is conducted within the **Sub-National Analysis** section of the Shiny App
+
+*insert image_Subnational analysis tab*
+
+*insert image_targets_achieved*
