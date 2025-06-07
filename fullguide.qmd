@@ -703,7 +703,7 @@ All outputs can be imported into the Workbook and be further examined and analys
 
 The FP output for **Table 3d** and the Workbook is derived from the 2023 Track20 workshop, preceding the CAM. It is proposed to include up to two slides in the final Chartbook, with a focus on national trends and their intepretation.
 
-Section 3: Subnational analysis (Coverage & Inequality)
+# Section 3: Subnational analysis (Coverage & Inequality)
 
 ## Coverage of Interventions (Admin level 2) {#coverage-of-interventions-admin-level-2}
 
