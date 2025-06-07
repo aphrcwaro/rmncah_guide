@@ -3,4 +3,14 @@ title: "subnational-analyses"
 format: html
 ---
 
-# Subnational Analyses
+## Subnational Analyses
+
+This section deals with sub-national analyses. It will provide guidelines on how to conduct analyses at the Admin_2 (district) level.
+
+We'll look at the folllowing sections:
+
+-   Coverage at subnational level
+
+-   Coverage inequalities at the district level
+
+-   Mapping of coverage at the district level

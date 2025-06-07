@@ -1,6 +1,11 @@
 ---
-title: "national-global-coverage"
-format: html
+title: "Global Coverage Targets"
 ---
 
-# Global targets for coverage of health services
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+## Global coverage targets for coverage of health services

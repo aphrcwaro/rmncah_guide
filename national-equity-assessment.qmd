@@ -1,6 +1,5 @@
 ---
-title: "national-equity-assessment"
-format: html
+title: "National Equity Assessment"
 ---
 
 # National Equity Assessment

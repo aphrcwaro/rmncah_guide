@@ -1,6 +1,6 @@
 ---
-title: "national-subnational-mapping"
+title: "Sub-national Mapping"
 format: html
 ---
 
-# National and subnational mapping of health service coverage
+## National and subnational mapping of health service coverage

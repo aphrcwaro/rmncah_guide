@@ -2,6 +2,12 @@
 title: "National Coverage"
 ---
 
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
 ## National coverage of interventions
 
 ### Rationale, Approach and implementation

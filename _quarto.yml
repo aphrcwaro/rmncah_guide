@@ -3,7 +3,7 @@ project:
   output-dir: _book
 
 book:
-  title: "CAM 2025 Analysis Guide"
+  title: "Country Analysis Meeting (CAM) 2025 - Analysis Guide"
   reader-mode: true
   page-footer: 
     right: |
@@ -12,12 +12,15 @@ book:
   repo-url: https://github.com/aphrcwaro/cd2030.rmncah/
   repo-branch: main
   repo-actions: [edit, issue]
-  description: "A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. This version was updated last in June 2025."
+  description: "A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 7th, 2025)."
+
   chapters:
-    - index.qmd
-    - general-intro.qmd
-    - getting-started.qmd
-    - loading-data.qmd
+    - part: intro.qmd
+      chapters:
+        - index.qmd
+        - general-intro.qmd
+        - getting-started.qmd
+        - loading-data.qmd
 
     - part: data-quality.qmd
       chapters:
@@ -58,12 +61,12 @@ book:
 format:
   html:
     theme: 
-    - cosmo
-    - cd2030.scss
+      - cosmo
+      - cd2030.scss
     code-link: true
     author-meta: "Peter Kaberia"
     callout-appearance: simple
-
+    number-sections: false
 
   docx:
     reference-doc: reference.docx

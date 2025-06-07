@@ -1,6 +1,5 @@
 ---
 title: "General Introduction to CD2030 CAM Approach"
-format: html
 ---
 
 ```{r}
@@ -56,8 +55,8 @@ The Countdown CAM approach uses a variety of data sources, including:
 
 ## Expected outputs
 
--   **Full country report** (national/subnational) (.pdf, .doc files)
 -   **Synthesis/poster reports** (.pdf, .doc files)
+-   **Full country report** (national/sub-national) (.pdf, .doc files) - to be downloaded in sections from the Shiny App and compiled into a full report with analysis outputs and interpretations.
 -   **Country analytical reproducible files** (.rds files)
 -   **Adjusted and or summarized data files** (.csv. .dta, xlsx files)
 
