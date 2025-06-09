@@ -44,6 +44,6 @@ Progress towards international and national targets can be measured by computing
 
 This analysis is conducted within the **Sub-National Analysis** section of the Shiny App
 
-*insert image_Subnational analysis tab*
+*insert image_Sub-national analysis tab*
 
 *insert image_targets_achieved*

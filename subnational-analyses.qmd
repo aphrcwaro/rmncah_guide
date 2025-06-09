@@ -2,8 +2,10 @@
 title: "Sub-national Analyses"
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)  
+```{r}
+#| echo: false
+
+source("_common.R")
 ```
 
 ## Subnational Analyses

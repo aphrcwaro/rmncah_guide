@@ -1,7 +1,6 @@
+------------------------------------------------------------------------
 
----
-
----
+------------------------------------------------------------------------
 
 ```{r}
 #| echo: false
@@ -28,3 +27,7 @@ For more on Countdown to 2030 initiative, visit: [The Countdown website](https:/
 The cd2030.rmncah R package and Shiny App were developed to support evidence generation and analysis of RMNCAH indicators.
 
 Key features include: User-friendly interface for data management and analysis Tools for visualization and statistical summarization Automated report generation
+
+### Acknowledgments
+
+The Countdown acknowledges and appreciates the contribution of the following individual in developing the Stata codes that form the backbone of the `cd2030.rmncah` R package and Shiny App:
