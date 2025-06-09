@@ -14,27 +14,27 @@ Each indicator has its own denominator, as shown in the table below.
 
 **Table 3: Selected indicators with numerators and denominators**
 
-| **Indicators** | **Numerator** | **Denominator** |
+| **Indicators**                                          | **Numerator**                                       | **Denominator**                                      |
 |:------------------------|:----------------------|:-----------------------|
-| **SERVICE UTILIZATION** |  |  |
-| Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 |
-| Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 |
-| **PREVENTIVE INTERVENTIONS** |  |  |
-| \% of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population |
-| \% of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population |
-| \% of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine |
-| **CURATIVE INTERVENTIONS** |  |  |
-| \% of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year |
-| \% of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population |
-| \% of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities |
-| **MORTALITY** |  |  |
-| Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities |
-| Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities |
-| Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities |
-| **FAMILY PLANNING (FP)** |  |  |
-| Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years |
-| Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years |
-| FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP |
+| **SERVICE UTILIZATION**                                 |                                                     |                                                      |
+| Outpatient visits, children under 5, per year (N)       | N of OPD visits for under-5                         | Total mid-year population under 5                    |
+| Inpatient admissions, children under 5, per year (N)    | N of admissions for under-5                         | Total mid-year population under 5                    |
+| **PREVENTIVE INTERVENTIONS**                            |                                                     |                                                      |
+| \% of pregnant women with 4 antenatal care visits       | N of women with ANC 4th visit                       | Total N of pregnant women in the whole population    |
+| \% of live births in health facilities                  | N of live births in health facilities               | Total N of live births in the whole population       |
+| \% of infants receiving 3 doses of pentavalent vaccine  | N of infants receiving 3 doses                      | N of infants eligible for 3 doses of the vaccine     |
+| **CURATIVE INTERVENTIONS**                              |                                                     |                                                      |
+| \% of children under 5 with malaria who receive ACT     | N of children under 5 with malaria receiving ACT    | Total N of children who had malaria in the last year |
+| \% of deliveries that were by C-section (population)    | N of C-sections reported                            | Total N of deliveries in the population              |
+| \% of deliveries that were by C-section (institutional) | N of C-sections reported                            | Total N of deliveries in health facilities           |
+| **MORTALITY**                                           |                                                     |                                                      |
+| Institutional maternal mortality ratio                  | N of maternal deaths in health facilities           | Total number of live births in health facilities     |
+| Stillbirth rate                                         | N of stillbirths in health facilities               | Total N of births in health facilities               |
+| Neonatal mortality before discharge                     | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities      |
+| **FAMILY PLANNING (FP)**                                |                                                     |                                                      |
+| Ratio FP visits to women of reproductive age            | N of FP new and revisits                            | Total N of women 15-49 years                         |
+| Estimated modern use of contraceptives                  | Couple years of protection                          | Total N of women 15-49 years                         |
+| FP coverage (demand satisfied)                          | N of women using modern methods                     | Total N of women in need of FP                       |
 
 In the first part, we assess the **quality of the DHIS2 population projections** at national level:
 
@@ -63,7 +63,7 @@ In the first part, we assess the **quality of the DHIS2 population projections**
             \left| \frac{\text{pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{pop}_{\text{UN}}} \right|
             $$
 
-        -   **Population growth during 2023–2024:**\
+        -   **Population growth during 2023--2024:**\
             Annual growth is computed using the natural logarithm:
 
             $$
@@ -142,7 +142,7 @@ The number of live births can be obtained from ANC1 and DPT1 by making assumptio
 
 ## Implementation: Conducting analysis in the Shiny App
 
-Shiny App
+**Shiny App**
 
 To get outputs for this analysis first, one need to set up their analysis by inputting key information at the **Analysis Set up** section in the Shiny App.
 
@@ -150,25 +150,25 @@ The parameters required are as shown in the figure below and they are:
 
 1.  **National mortality rates - based on the most recent survey** ![](images/1-dqa_denom_rates.png)
 
-    -   **ANC1 Survey -**
-    -   **Pregnancy loss -**
-    -   **Twin rate -**
-    -   **Neonatal mortality rate -**
-    -   **Post neonatal mortality rate -**
-    -   **Stillbirth rate -**
-    -   **Penta1 survey -**
+    -   **ANC1 Survey -** This refers to the surveys collecting data on ANC services. The surveys are part of demographic studies to monitor and evaluate coverage, quality and equity of MNH services.
+    -   **Pregnancy loss -** refers to the death of an embryo or fetus before birth. It can occur at different stages of pregnancy and is broadly categorized based on gestational age and clinical features.
+    -   **Twin rate -** refers to the number of twin births per 1,000 total births
+    -   **Neonatal mortality rate -** The number of deaths during the first 28 days of life per 1,000 live births in a given year or period.
+    -   **Post neonatal mortality rate -** The number of deaths of infants aged 1 month (28 days) to 11 months per 1,000 live births in a given year or period.
+    -   **Stillbirth rate -** The number of babies born with no signs of life at or after 28 weeks of gestation per 1,000 total births (live births + stillbirths).
+    -   **Penta1 survey -** type of coverage survey that assesses how many children received first dose of pentavalent vaccine.
 
 2.  **Survey coverage based percentages (based on the most recent survey)** ![](images/1-dqa_survey_setup.png)
 
     -   ANC4 Survey -
-    -   Institutional delivery survey -
-    -   Lowbirth weight survey -
-    -   Caesarean section survey -
-    -   Penta3 survey -
-    -   Measles1 survey -
-    -   BCG survey -
-    -   Vaccines survey year -
-    -   Vaccine data start year -
+    -   Institutional delivery survey - type of survey that collects data on where women gave birth, specifically whether the delivery took place in a health facility or outside
+    -   Lowbirth weight survey - type of survey that is used to estimate the proportion of newborns with a birth weight of \<2.5g.
+    -   Caesarean section survey - this is a type of survey that collects data on proportion of live births delivered by caesarean section, usually within a specified period
+    -   Penta3 survey - type of coverage survey that assesses how many children received third dose of pentavalent vaccine.
+    -   Measles1 survey - type of coverage survey that assesses how many children received first dose of measles vaccine.
+    -   BCG survey - type of coverage survey that assesses how many children received bacillus calmette-Guerin vaccine.
+    -   Vaccines survey year - refers to the specific calendar year during which data on vaccination coverage was collected in a survey.
+    -   Vaccine data start year - refers to the earliest year which vaccination data was collected.
 
 3.  **Survey datasets**
 
@@ -176,7 +176,7 @@ The parameters required are as shown in the figure below and they are:
 
     ![](images/1-dqa-survey_upload.png)
 
-    -   UN Estimates data
+    -   UN Estimates data -
     -   UN Mortality data
     -   WUENIC estimates data
     -   Survey data (uploaded as a folder)
