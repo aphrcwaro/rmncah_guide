@@ -16,7 +16,7 @@ Health facility data on outpatient (OPD) visits is an indicator of access to cur
 
 The data on OPD visits should include new and re-visits. Data are usually reported for under-5 years and 5 years and older. As with data on maternal and newborn care and immunization, the data quality is assessed, and adjustments are made for completeness of reporting and extreme outliers are corrected. The adjusted clean data are used for analysis at national and subnational levels.
 
-### Outpatient service utilization 
+### Outpatient service utilization
 
 The data on outpatient visits should include both new and re-visits.
 
@@ -28,7 +28,7 @@ The data on outpatient visits should include both new and re-visits.
 
 -   Regarding the interpretations for OPD:
 
-    -    What can be said about the data quality for OPD visits? Is there consistency of reported numbers between years?
+    -   What can be said about the data quality for OPD visits? Is there consistency of reported numbers between years?
 
     -   What is the number of OPD visits per child per year during 2019-2023, is it increasing?
 

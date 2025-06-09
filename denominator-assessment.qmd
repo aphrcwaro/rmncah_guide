@@ -15,7 +15,7 @@ Each indicator has its own denominator, as shown in the table below.
 **Table 3: Selected indicators with numerators and denominators**
 
 | **Indicators** | **Numerator** | **Denominator** |
-|:------------------------|:----------------------|:-----------------------|
+|:-----------------------|:-----------------------|:-----------------------|
 | **SERVICE UTILIZATION** |  |  |
 | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 |
 | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 |
@@ -150,7 +150,7 @@ The parameters required are as shown in the figure below and they are:
 
 1.  **National mortality rates - based on the most recent survey** ![](images/1-dqa_denom_rates.png)
 
-    -   **ANC1 Survey -**
+    -   **ANC1 Survey - The coverage percentage**
     -   **Pregnancy loss -**
     -   **Twin rate -**
     -   **Neonatal mortality rate -**
