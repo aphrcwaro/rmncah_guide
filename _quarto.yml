@@ -20,7 +20,7 @@ book:
         - index.qmd
         - general-intro.qmd
         - getting-started.qmd
-        - App features.qmd
+        - app-features.qmd
         - loading-data.qmd
 
     - part: data-quality.qmd
@@ -71,7 +71,5 @@ format:
     callout-appearance: simple
     number-sections: false
 
-  docx:
-    reference-doc: reference.docx
-    toc: true
-    number-sections: false
+ 
+
