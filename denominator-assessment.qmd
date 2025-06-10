@@ -15,7 +15,7 @@ Each indicator has its own denominator, as shown in the table below.
 **Table 3: Selected indicators with numerators and denominators**
 
 | **Indicators** | **Numerator** | **Denominator** |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | **SERVICE UTILIZATION** |  |  |
 | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 |
 | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 |
@@ -101,16 +101,12 @@ The maternal and newborn health denominators are closely related and can be comp
 Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the [WHO website](https://data.unicef.org/topic/child-survival/neonatal-mortality/). The default assumptions are as follows:
 
 -   Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.
-
 -   Stillbirths or pregnancy loss between 28 weeks and birth: 2%.
-
 -   Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.
-
 -   Neonatal mortality: 3% (or 30 per 1,000 live births).
-
 -   Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).
 
-The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: ***institutional live births*** and ***penta3***. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys -- the results will be the same).
+The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: ***institutional live births*** and ***penta3***. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys - the results will be the same).
 
 ### Facility data derived denominators
 
@@ -140,11 +136,13 @@ The number of live births can be obtained from ANC1 and DPT1 by making assumptio
 
 -   at 3% neonatal mortality this implies 101,164 \* (1-0.03) = 98,129 children eligible for DPT1/penta1.
 
-## Implementation: Conducting analysis in the Shiny App
+## Implementation in the Shiny App
 
 Shiny App
 
 To get outputs for this analysis first, one need to set up their analysis by inputting key information at the **Analysis Set up** section in the Shiny App.
+
+### Analysis set up {#sec-denom-analysis-setup}
 
 The parameters required are as shown in the figure below and they are:
 
@@ -181,7 +179,11 @@ The parameters required are as shown in the figure below and they are:
     -   WUENIC estimates data
     -   Survey data (uploaded as a folder)
 
+### Denominator assessment
+
 The first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources. The second part is to compare results from the different methods - both at the national and sub-national levels.![](images/1-dqa_dhis2_comparison.png)
+
+### Denominator selection
 
 The final step is to select the best performing denominator for the coverage analyses with health facility data. The results on the national gap and the median sub-national gap should be taken into account to make that choice.
 
@@ -192,17 +194,12 @@ The best methods have the smallest gaps with the survey results. Ideally, one me
 The interpretation should focus on the extent to which the DHIS2 projections are considered robust which is the case when:
 
 -   The DHIS2 total population projection is consistent over time with regular population growth
-
 -   The DHIS2 total live birth projection is consistent over time (regular trend)
-
 -   The projected numbers of total population and live births are close to the UN population projection
-
 -   The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.
 
 The interpretation should describe, based on the graphs:
 
 -   Which denominator methods performed best at the national level for the two indicators?
-
 -   Which denominator performed best at the sub-national level for the two indicators?
-
 -   What selection is made for the indicators in the coverage analyses?

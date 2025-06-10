@@ -12,7 +12,7 @@ book:
   repo-url: https://github.com/aphrcwaro/cd2030.rmncah/
   repo-branch: main
   repo-actions: [edit, issue]
-  description: "A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 7th, 2025)."
+  description: "A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 10th, 2025)."
 
   chapters:
     - part: intro.qmd
@@ -20,6 +20,7 @@ book:
         - index.qmd
         - general-intro.qmd
         - getting-started.qmd
+        - App features.qmd
         - loading-data.qmd
 
     - part: data-quality.qmd
@@ -45,6 +46,8 @@ book:
     - part: maternal-mortality-analyses.qmd
       chapters: 
         - maternal-mortality.qmd
+        - mortality-mapping.qmd
+        - mortality-completeness.qmd
 
     - part: service-utilization-analyses.qmd
       chapters: 

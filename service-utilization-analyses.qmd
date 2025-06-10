@@ -1,6 +1,11 @@
 ---
-title: "service-utilization-analyses"
-format: html
+title: "Health Service Utilization Analyses"
 ---
 
-# Service Utilization Analyses
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+## Rationale, Approach and Implementation {#sec-service-utilization-science}

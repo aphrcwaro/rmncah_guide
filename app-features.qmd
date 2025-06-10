@@ -1,0 +1,78 @@
+---
+title: "App Features"
+---
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+## Overview of App Features
+
+This section details the main components of the **cd2030.rmncah** Shiny App interface: the **Title Bar**, **Sidebar**, and **Main Panel (Body Content)**. Understanding these elements will help you navigate and use the app more effectively.
+
+## Title Bar
+
+The Title Bar, located at the top of the app, provides key information controls. The elements of the Title Bar, such as "Set Cache Directory/Save Cache" and "Download Report," are only displayed after data has been loaded.
+
+### Key Elements of the Title Bar
+
+1.  **Contextual Information**: Displays the current analysis context, such as the country of analysis (e.g., "Madagascar - Countdown Analysis").
+
+![](images/0-features-context.png){fig-align="center"}
+
+2.  **Cache Management**
+
+    -   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
+
+    -   **Save Cache:** This button allows you to save the progress of your analysis. This is useful for large analyses or for resuming a session later.
+
+    -   NB:
+
+        -   The Cache button is enabled only once valid data has been uploaded into the App
+        -   Changing the file path of the Cache mid analysis would require you to set the cache again, losing any saved progress after the last save.
+
+3.  **Download Report**: This button allows you to generate the final report. The available download formats are Word and PDF. ![](images/0-features-download.png){fig-align="center"}
+
+## Sidebar
+
+The Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.
+
+### Sidebar Navigation
+
+1.  **Introduction**: Provides a brief overview of the app's purpose and functionality.
+
+2.  **Load Data**: Allows you to upload and manage your datasets (e.g. Health Facility Datasets, Master datasets, and cache file).
+
+3.  **Data Quality**: Provides tools for assessing the quality of your data, including checks for missing values and inconsistencies. Subsections include:
+
+    -   Reporting Rate
+    -   Outlier Detection
+    -   Consistency Check
+    -   Data Completeness
+    -   Calculate Ratios
+    -   Overall Score
+
+![](images/1-dqa_reporting_rates.png){fig-align="center"}
+
+4.  **Analysis Set-up**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.
+
+![](images/2-analysis_setup.png){fig-align="center"}
+
+5.  **National Analysis**: Provides tools for analyzing national-level data, including coverage and equity analysis.
+
+## Main Panel(Body Content)
+
+The main panel is the central workspace where the analysis result, visualizations, and interactive elements are displayed.
+
+### Key Elements of the Main Panel
+
+1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
+
+   ![](images/0-features-page-title.png){fig-align="center"}
+   
+2.  **Action Buttons**: Provides context-specific actions:
+    -   **Generate Report**: Downloads a report specific to the current page or analysis.
+    -   **Get Help**: Provides context-sensitive help and documentation for the current page.
+    
