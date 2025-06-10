@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Kaberia">
-<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 7th, 2025).">
+<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 10th, 2025).">
 
 <title>Numerator Adjustments – Country Analysis Meeting (CAM) 2025 - Analysis Guide</title>
 <style>
@@ -113,7 +113,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility DQA</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -172,6 +172,11 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./app-features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">App Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./loading-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Loading Health facility data</span></a>
   </div>
 </li>
@@ -180,7 +185,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./data-quality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Health facility data quality assessment</span></a>
+ <span class="menu-text">Health facility DQA</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -279,12 +284,22 @@ window.Quarto = {
   <a href="./maternal-mortality.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maternal Mortality</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-mapping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Mapping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-completeness.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Completeness</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./service-utilization-analyses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">service-utilization-analyses</span></a>
+ <span class="menu-text">Health Service Utilization Analyses</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -338,14 +353,13 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#numerator-adjustments" id="toc-numerator-adjustments" class="nav-link active" data-scroll-target="#numerator-adjustments">Numerator adjustments</a>
+  <li><a href="#sec-dqa-adjust-science" id="toc-sec-dqa-adjust-science" class="nav-link active" data-scroll-target="#sec-dqa-adjust-science">Rationale, Approach and implementation</a></li>
+  <li><a href="#numerator-adjustment" id="toc-numerator-adjustment" class="nav-link" data-scroll-target="#numerator-adjustment">Numerator Adjustment</a></li>
+  <li><a href="#sec-dqa-adjust-implement" id="toc-sec-dqa-adjust-implement" class="nav-link" data-scroll-target="#sec-dqa-adjust-implement">Implementation: Conducting analysis in the Shiny App</a>
   <ul class="collapse">
-  <li><a href="#rationale-scientific-basis-for-the-analysis-1" id="toc-rationale-scientific-basis-for-the-analysis-1" class="nav-link" data-scroll-target="#rationale-scientific-basis-for-the-analysis-1">Rationale: Scientific basis for the analysis</a></li>
-  <li><a href="#approach-description-of-analytical-steps-1" id="toc-approach-description-of-analytical-steps-1" class="nav-link" data-scroll-target="#approach-description-of-analytical-steps-1">Approach: Description of analytical steps</a></li>
-  </ul></li>
-  <li><a href="#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" id="toc-adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" class="nav-link" data-scroll-target="#adjusting-the-numerator-using-completeness-and-facility-reporting-ratio">Adjusting the Numerator Using Completeness and Facility Reporting Ratio</a>
-  <ul class="collapse">
-  <li><a href="#implementation-conducting-analysis-in-the-shiny-app-1" id="toc-implementation-conducting-analysis-in-the-shiny-app-1" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app-1">Implementation: Conducting analysis in the Shiny App</a></li>
+  <li><a href="#remove-years" id="toc-remove-years" class="nav-link" data-scroll-target="#remove-years">Remove Years</a></li>
+  <li><a href="#sec-dqa-adjust-outputs" id="toc-sec-dqa-adjust-outputs" class="nav-link" data-scroll-target="#sec-dqa-adjust-outputs">Adjustment outputs</a></li>
+  <li><a href="#sec-dqa-adjust-report" id="toc-sec-dqa-adjust-report" class="nav-link" data-scroll-target="#sec-dqa-adjust-report"><strong>Report</strong></a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/numerator-adjustments.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
@@ -353,7 +367,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility DQA</a></li><li class="breadcrumb-item"><a href="./numerator-adjustments.html"><span class="chapter-title">Numerator Adjustments</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">Numerator Adjustments</span></h1>
 </div>
@@ -372,43 +386,43 @@ window.Quarto = {
 </header>
 
 
-<section id="numerator-adjustments" class="level2">
-<h2 class="anchored" data-anchor-id="numerator-adjustments">Numerator adjustments</h2>
-<section id="rationale-scientific-basis-for-the-analysis-1" class="level3">
-<h3 class="anchored" data-anchor-id="rationale-scientific-basis-for-the-analysis-1">Rationale: Scientific basis for the analysis</h3>
+<section id="sec-dqa-adjust-science" class="level2">
+<h2 class="anchored" data-anchor-id="sec-dqa-adjust-science">Rationale, Approach and implementation</h2>
+<p><strong>Rationale: Scientific basis for the analysis</strong></p>
 <p>The completeness of reporting may affect the analysis, especially if completeness is low or varies between years. Extreme outliers, such as an accidental extra zero in a number, can have a large impact, especially on subnational numbers. Following the assessments, several steps are necessary to obtain a clean data set for analysis. This implies adjusting for incomplete reporting and correcting for extreme outliers.</p>
-</section>
-<section id="approach-description-of-analytical-steps-1" class="level3">
-<h3 class="anchored" data-anchor-id="approach-description-of-analytical-steps-1">Approach: Description of analytical steps</h3>
+<p>Approach: Description of analytical steps</p>
 <p>If we do not consider reporting completeness that means we assume all non-reporting facilities provided zero services, which is not likely to be true. Adjustments depend on how much services (e.g., pregnancy care, vaccinations) were provided at non-reporting facilities compared to those that reported. The adjustment factor k - defined as the ratio of the volume of services provided by non-reporting facilities to the volume of services provided by reporting facilities - is used to adjust the reported numbers for incomplete reporting.</p>
 </section>
-</section>
-<section id="adjusting-the-numerator-using-completeness-and-facility-reporting-ratio" class="level2">
-<h2 class="anchored" data-anchor-id="adjusting-the-numerator-using-completeness-and-facility-reporting-ratio">Adjusting the Numerator Using Completeness and Facility Reporting Ratio</h2>
-<p>To account for incomplete reporting, the reported number of events can be adjusted using the following formula:</p>
+<section id="numerator-adjustment" class="level2">
+<h2 class="anchored" data-anchor-id="numerator-adjustment">Numerator Adjustment</h2>
+<p>To account for incomplete reporting, the reported number of events can be adjusted using completeness and facility reporting ratio, with the following formula:</p>
 <p><span class="math display">\[
 N_{\text{adjusted}} = N_{\text{reported}} + N_{\text{reported}} \times \left( \frac{1}{c} - 1 \right) \times k
 \]</span></p>
-<p><strong>Where:</strong> - ( N_{} ): Total number of events adjusted for incomplete reporting - ( N_{} ): Number of events reported<br>
-- ( c ): Reporting completeness (e.g., proportion of facilities that reported)<br>
-- ( k ): Adjustment factor to account for lower service volume in non-reporting facilities</p>
-<p>As a default value, we use k=0.25, which means the non-reporting facilities provided services but only at a volume which was a quarter of the reporting health facilities. The factor k can be different for different services. For instance, if private facility reporting is poor but they are in the national system and they provide a considerable number of deliveries, k maybe greater than 0.25 or even as high as 1.0.</p>
+<p><strong>Where:</strong></p>
+<ul>
+<li>( N_{} ): Total number of events adjusted for incomplete reporting</li>
+<li>( N_{} ): Number of events reported</li>
+<li>( c ): Reporting completeness (e.g., proportion of facilities that reported)</li>
+<li>( k ): Adjustment factor to account for lower service volume in non-reporting facilities</li>
+</ul>
+<p>As a default value, we use <span class="math display">\[k=0.25\]</span>, which means the non-reporting facilities provided services but only at a volume which was a quarter of the reporting health facilities. The factor k can be different for different services. For instance, if private facility reporting is poor but they are in the national system and they provide a considerable number of deliveries, k maybe greater than 0.25 or even as high as 1.0.</p>
 <p>The following k-values are used depending on the reporting used to adjust the reported numbers for incomplete reporting:</p>
 <ul>
-<li><p><strong><em>k=0</em></strong> - No services in non-reporting facilities (default k-value)</p></li>
-<li><p><strong><em>k=0.25 -</em></strong> Some services, but much lower than reporting facilities</p></li>
-<li><p><strong><em>k=0.50 -</em></strong> Half the rate compared to reporting facilities</p></li>
-<li><p><strong><em>k=0.75 -</em></strong> Nearly as much as reporting facilities</p></li>
-<li><p><strong><em>k= 1.0</em></strong> - Same rate of services as reporting facilities</p></li>
+<li><strong><em>k=0</em></strong> - No services in non-reporting facilities (default k-value)</li>
+<li><strong><em>k=0.25 -</em></strong> Some services, but much lower than reporting facilities</li>
+<li><strong><em>k=0.50 -</em></strong> Half the rate compared to reporting facilities</li>
+<li><strong><em>k=0.75 -</em></strong> Nearly as much as reporting facilities</li>
+<li><strong><em>k= 1.0</em></strong> - Same rate of services as reporting facilities</li>
 </ul>
 <p>If the facility reporting rate is below 75%, it becomes more difficult to impute district data. Therefore, no adjustments are made if reporting is lower than 75%. In that case, further analysis to determine coverage with the facility data is not considered sufficiently reliable.</p>
 <p>Extreme outliers, as defined in the previous section, will be corrected by imputing the median monthly value of the same year. The table summarizes the adjustments.</p>
 <p><strong>Table 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis</strong></p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 26%">
-<col style="width: 31%">
-<col style="width: 41%">
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -440,24 +454,35 @@ N_{\text{adjusted}} = N_{\text{reported}} + N_{\text{reported}} \times \left( \f
 </tr>
 </tbody>
 </table>
-<section id="implementation-conducting-analysis-in-the-shiny-app-1" class="level3">
-<h3 class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app-1">Implementation: Conducting analysis in the Shiny App</h3>
+</section>
+<section id="sec-dqa-adjust-implement" class="level2">
+<h2 class="anchored" data-anchor-id="sec-dqa-adjust-implement">Implementation: Conducting analysis in the Shiny App</h2>
 <ul>
-<li><p>The outputs for this analysis can be obtained through the <strong>Data adjustment</strong> section of the Shiny App</p>
+<li>The outputs for this analysis can be obtained through the <strong>Data adjustment</strong> section of the Shiny App.</li>
+</ul>
+<section id="remove-years" class="level3">
+<h3 class="anchored" data-anchor-id="remove-years">Remove Years</h3>
+<p>The <strong><em>Remove Years</em></strong> section before this, allows you to remove any years with no data or whose data has been determined to be not fit for analysis by the country team due to quality issues). It is recommended to be used in instances where the data quality is poor, or the country teams have sufficient, contextual information that renders the said year(s) data unreliable/inaccurate.This will ensure that the analysis is based on reliable data.</p>
+<p><img src="images/1-dqa_remove_years.png" class="img-fluid"></p>
+</section>
+<section id="sec-dqa-adjust-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="sec-dqa-adjust-outputs">Adjustment outputs</h3>
+<ul>
+<li><p>This Section produces a master adjusted dataset (.dta) ready for analysis and plots for different indicators showing data adjustment changes.</p>
 <p><img src="images/1-dqa_adjustments.png" class="img-fluid"></p></li>
 </ul>
-<blockquote class="blockquote">
-<p><strong>Note:</strong></p>
-<p>The <strong><em>Remove Years</em></strong> section before this, allows you to remove any years with no data or whose data has been determined to be not fit for analysis by the country team due to quality issues).</p>
-<p><img src="images/1-dqa_remove_years.png" class="img-fluid"></p>
-</blockquote>
+</section>
+<section id="sec-dqa-adjust-report" class="level3">
+<h3 class="anchored" data-anchor-id="sec-dqa-adjust-report"><strong>Report</strong></h3>
 <ul>
-<li>This Section produces a master adjusted dataset (.dta) ready for analysis and plots for different indicators showing data adjustment changes.</li>
-</ul>
-<p><strong>Report</strong></p>
+<li>The interpretation should include the selected adjustment factor (factor k) that was used to adjust for incomplete reporting (if necessary, by service). If the default factor is used, then report this and explain what this means for the reader.</li>
+<li>Report the percent change that the adjustment made in reported numbers of institutional deliveries and in penta1 (average of the 6-year period);</li>
+<li>You may want to :
 <ul>
-<li><p>The interpretation should include the selected adjustment factor (factor k) that was used to adjust for incomplete reporting (if necessary, by service). If the default factor is used, then report this and explain what this means for the reader.</p></li>
-<li><p>Report the percent change that the adjustment made in reported numbers of institutional deliveries and in penta1 (average of the 6-year period); you may want to highlight the year with the greatest impact of the adjustment if there is one; interpret if the impact of the adjustment on coverage rates is large or small; Make the same description and interpretations for penta1 vaccinations.</p></li>
+<li>Highlight the year with the greatest impact of the adjustment if there is one;</li>
+<li>Interpret if the impact of the adjustment on coverage rates is large or small;</li>
+<li>Make the same description and interpretations for penta1 vaccinations.</li>
+</ul></li>
 </ul>
 
 

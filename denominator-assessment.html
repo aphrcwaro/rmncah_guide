@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Kaberia">
-<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 7th, 2025).">
+<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 10th, 2025).">
 
 <title>Denominator Assessment and selection – Country Analysis Meeting (CAM) 2025 - Analysis Guide</title>
 <style>
@@ -113,7 +113,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility DQA</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -172,6 +172,11 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./app-features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">App Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./loading-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Loading Health facility data</span></a>
   </div>
 </li>
@@ -180,7 +185,7 @@ window.Quarto = {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./data-quality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Health facility data quality assessment</span></a>
+ <span class="menu-text">Health facility DQA</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -279,12 +284,22 @@ window.Quarto = {
   <a href="./maternal-mortality.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maternal Mortality</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-mapping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Mapping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-completeness.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Completeness</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./service-utilization-analyses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">service-utilization-analyses</span></a>
+ <span class="menu-text">Health Service Utilization Analyses</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -343,14 +358,19 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#facility-data-derived-denominators" id="toc-facility-data-derived-denominators" class="nav-link" data-scroll-target="#facility-data-derived-denominators">Facility data derived denominators</a></li>
   </ul></li>
-  <li><a href="#implementation-conducting-analysis-in-the-shiny-app" id="toc-implementation-conducting-analysis-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app">Implementation: Conducting analysis in the Shiny App</a></li>
+  <li><a href="#implementation-in-the-shiny-app" id="toc-implementation-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-in-the-shiny-app">Implementation in the Shiny App</a>
+  <ul class="collapse">
+  <li><a href="#sec-denom-analysis-setup" id="toc-sec-denom-analysis-setup" class="nav-link" data-scroll-target="#sec-denom-analysis-setup">Analysis set up</a></li>
+  <li><a href="#denominator-assessment" id="toc-denominator-assessment" class="nav-link" data-scroll-target="#denominator-assessment">Denominator assessment</a></li>
+  <li><a href="#denominator-selection" id="toc-denominator-selection" class="nav-link" data-scroll-target="#denominator-selection">Denominator selection</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/denominator-assessment.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility data quality assessment</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./data-quality.html">Health facility DQA</a></li><li class="breadcrumb-item"><a href="./denominator-assessment.html"><span class="chapter-title">Denominator Assessment and selection</span></a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title"><span class="chapter-title">Denominator Assessment and selection</span></h1>
 </div>
@@ -378,7 +398,7 @@ window.Quarto = {
 <p>The objective of the health facility denominator analysis is twofold. First, we assess the quality of the population projections in DHIS2 by comparison with the UN projections and the internal consistency. Then, we assess the performance of multiple denominators options for the computation of population-based service coverage indicators from the health facility data. This should lead to a final decision on denominators that are used for the analyses of population-based coverage indicators based on health facility data.</p>
 <p>Each indicator has its own denominator, as shown in the table below.</p>
 <p><strong>Table 3: Selected indicators with numerators and denominators</strong></p>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD | <strong>Indicators</strong> | <strong>Numerator</strong> | <strong>Denominator</strong> | |:————————|:———————-|:———————–| | <strong>SERVICE UTILIZATION</strong> | | | | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 | | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 | | <strong>PREVENTIVE INTERVENTIONS</strong> | | | | % of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population | | % of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population | | % of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine | | <strong>CURATIVE INTERVENTIONS</strong> | | | | % of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year | | % of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population | | % of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities | | <strong>MORTALITY</strong> | | | | Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities | | Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities | | Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities | | <strong>FAMILY PLANNING (FP)</strong> | | | | Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years | | Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years | | FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP | ======= | <strong>Indicators</strong> | <strong>Numerator</strong> | <strong>Denominator</strong> | |:———————–|:———————–|:———————–| | <strong>SERVICE UTILIZATION</strong> | | | | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 | | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 | | <strong>PREVENTIVE INTERVENTIONS</strong> | | | | % of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population | | % of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population | | % of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine | | <strong>CURATIVE INTERVENTIONS</strong> | | | | % of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year | | % of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population | | % of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities | | <strong>MORTALITY</strong> | | | | Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities | | Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities | | Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities | | <strong>FAMILY PLANNING (FP)</strong> | | | | Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years | | Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years | | FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP | &gt;&gt;&gt;&gt;&gt;&gt;&gt; 3ca019758b7b0acf9b278b3763a67c4e63921073</p>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD | <strong>Indicators</strong> | <strong>Numerator</strong> | <strong>Denominator</strong> | |:————————|:———————-|:———————–| | <strong>SERVICE UTILIZATION</strong> | | | | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 | | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 | | <strong>PREVENTIVE INTERVENTIONS</strong> | | | | % of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population | | % of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population | | % of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine | | <strong>CURATIVE INTERVENTIONS</strong> | | | | % of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year | | % of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population | | % of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities | | <strong>MORTALITY</strong> | | | | Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities | | Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities | | Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities | | <strong>FAMILY PLANNING (FP)</strong> | | | | Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years | | Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years | | FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP | ======= | <strong>Indicators</strong> | <strong>Numerator</strong> | <strong>Denominator</strong> | |:—|:—|:—| | <strong>SERVICE UTILIZATION</strong> | | | | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 | | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 | | <strong>PREVENTIVE INTERVENTIONS</strong> | | | | % of pregnant women with 4 antenatal care visits | N of women with ANC 4th visit | Total N of pregnant women in the whole population | | % of live births in health facilities | N of live births in health facilities | Total N of live births in the whole population | | % of infants receiving 3 doses of pentavalent vaccine | N of infants receiving 3 doses | N of infants eligible for 3 doses of the vaccine | | <strong>CURATIVE INTERVENTIONS</strong> | | | | % of children under 5 with malaria who receive ACT | N of children under 5 with malaria receiving ACT | Total N of children who had malaria in the last year | | % of deliveries that were by C-section (population) | N of C-sections reported | Total N of deliveries in the population | | % of deliveries that were by C-section (institutional) | N of C-sections reported | Total N of deliveries in health facilities | | <strong>MORTALITY</strong> | | | | Institutional maternal mortality ratio | N of maternal deaths in health facilities | Total number of live births in health facilities | | Stillbirth rate | N of stillbirths in health facilities | Total N of births in health facilities | | Neonatal mortality before discharge | N of neonatal deaths before discharge (after birth) | Total N of live births in the health facilities | | <strong>FAMILY PLANNING (FP)</strong> | | | | Ratio FP visits to women of reproductive age | N of FP new and revisits | Total N of women 15-49 years | | Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years | | FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP | &gt;&gt;&gt;&gt;&gt;&gt;&gt; 3ca019758b7b0acf9b278b3763a67c4e63921073</p>
 <p>In the first part, we assess the <strong>quality of the DHIS2 population projections</strong> at national level:</p>
 <ul>
 <li><p><strong>Check the internal consistency of the DHIS2 population growth over time:</strong></p>
@@ -429,13 +449,13 @@ Defined as:</p>
 <p>The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.</p>
 <p>Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the <a href="https://data.unicef.org/topic/child-survival/neonatal-mortality/">WHO website</a>. The default assumptions are as follows:</p>
 <ul>
-<li><p>Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.</p></li>
-<li><p>Stillbirths or pregnancy loss between 28 weeks and birth: 2%.</p></li>
-<li><p>Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.</p></li>
-<li><p>Neonatal mortality: 3% (or 30 per 1,000 live births).</p></li>
-<li><p>Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).</p></li>
+<li>Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.</li>
+<li>Stillbirths or pregnancy loss between 28 weeks and birth: 2%.</li>
+<li>Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.</li>
+<li>Neonatal mortality: 3% (or 30 per 1,000 live births).</li>
+<li>Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).</li>
 </ul>
-<p>The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: <strong><em>institutional live births</em></strong> and <strong><em>penta3</em></strong>. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys – the results will be the same).</p>
+<p>The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: <strong><em>institutional live births</em></strong> and <strong><em>penta3</em></strong>. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys - the results will be the same).</p>
 <section id="facility-data-derived-denominators" class="level3">
 <h3 class="anchored" data-anchor-id="facility-data-derived-denominators">Facility data derived denominators</h3>
 <p>The basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).</p>
@@ -455,10 +475,12 @@ Defined as:</p>
 </ul>
 </section>
 </section>
-<section id="implementation-conducting-analysis-in-the-shiny-app" class="level2">
-<h2 class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app">Implementation: Conducting analysis in the Shiny App</h2>
+<section id="implementation-in-the-shiny-app" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-in-the-shiny-app">Implementation in the Shiny App</h2>
 <p><strong>Shiny App</strong></p>
 <p>To get outputs for this analysis first, one need to set up their analysis by inputting key information at the <strong>Analysis Set up</strong> section in the Shiny App.</p>
+<section id="sec-denom-analysis-setup" class="level3">
+<h3 class="anchored" data-anchor-id="sec-denom-analysis-setup">Analysis set up</h3>
 <p>The parameters required are as shown in the figure below and they are:</p>
 <ol type="1">
 <li><strong>National mortality rates - based on the most recent survey</strong> <img src="images/1-dqa_denom_rates.png" class="img-fluid"></li>
@@ -487,7 +509,13 @@ Defined as:</p>
 <li>Survey data (uploaded as a folder)</li>
 </ul></li>
 </ol>
+</section>
+<section id="denominator-assessment" class="level3">
+<h3 class="anchored" data-anchor-id="denominator-assessment">Denominator assessment</h3>
 <p>The first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources. The second part is to compare results from the different methods - both at the national and sub-national levels.<img src="images/1-dqa_dhis2_comparison.png" class="img-fluid"></p>
+</section>
+<section id="denominator-selection" class="level3">
+<h3 class="anchored" data-anchor-id="denominator-selection">Denominator selection</h3>
 <p>The final step is to select the best performing denominator for the coverage analyses with health facility data. The results on the national gap and the median sub-national gap should be taken into account to make that choice.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -497,19 +525,20 @@ Defined as:</p>
 <p>The best methods have the smallest gaps with the survey results. Ideally, one method is selected but it is also possible to select one denominator method for the MNH coverage indicators (ANC, delivery, PNC) and another method for the immunization coverage analyses. It will be important to clearly state the chosen denominator method in all tables.</p>
 <p>The interpretation should focus on the extent to which the DHIS2 projections are considered robust which is the case when:</p>
 <ul>
-<li><p>The DHIS2 total population projection is consistent over time with regular population growth</p></li>
-<li><p>The DHIS2 total live birth projection is consistent over time (regular trend)</p></li>
-<li><p>The projected numbers of total population and live births are close to the UN population projection</p></li>
-<li><p>The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.</p></li>
+<li>The DHIS2 total population projection is consistent over time with regular population growth</li>
+<li>The DHIS2 total live birth projection is consistent over time (regular trend)</li>
+<li>The projected numbers of total population and live births are close to the UN population projection</li>
+<li>The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.</li>
 </ul>
 <p>The interpretation should describe, based on the graphs:</p>
 <ul>
-<li><p>Which denominator methods performed best at the national level for the two indicators?</p></li>
-<li><p>Which denominator performed best at the sub-national level for the two indicators?</p></li>
-<li><p>What selection is made for the indicators in the coverage analyses?</p></li>
+<li>Which denominator methods performed best at the national level for the two indicators?</li>
+<li>Which denominator performed best at the sub-national level for the two indicators?</li>
+<li>What selection is made for the indicators in the coverage analyses?</li>
 </ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

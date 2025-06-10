@@ -9,7 +9,7 @@
 <meta name="author" content="Peter Kaberia">
 <meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 10th, 2025).">
 
-<title>Subnational: Global coverage targets – Country Analysis Meeting (CAM) 2025 - Analysis Guide</title>
+<title>Mortality Mapping – Country Analysis Meeting (CAM) 2025 - Analysis Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,8 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./maternal-mortality-analyses.html" rel="next">
-<link href="./subnational-inequality.html" rel="prev">
+<link href="./mortality-completeness.html" rel="next">
+<link href="./maternal-mortality.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./subnational-analyses.html">Sub-national Analyses</a></li><li class="breadcrumb-item"><a href="./subnational-global-coverage.html"><span class="chapter-title">Subnational: Global coverage targets</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./maternal-mortality-analyses.html">Mortality</a></li><li class="breadcrumb-item"><a href="./mortality-mapping.html"><span class="chapter-title">Mortality Mapping</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -236,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./subnational-global-coverage.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Subnational: Global coverage targets</span></a>
+  <a href="./subnational-global-coverage.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Subnational: Global coverage targets</span></a>
   </div>
 </li>
       </ul>
@@ -257,7 +257,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./mortality-mapping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Mapping</span></a>
+  <a href="./mortality-mapping.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Mortality Mapping</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -319,21 +319,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#subnational-global-coverage-targets" id="toc-subnational-global-coverage-targets" class="nav-link active" data-scroll-target="#subnational-global-coverage-targets">Subnational Global coverage targets</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/subnational-global-coverage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./subnational-analyses.html">Sub-national Analyses</a></li><li class="breadcrumb-item"><a href="./subnational-global-coverage.html"><span class="chapter-title">Subnational: Global coverage targets</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./maternal-mortality-analyses.html">Mortality</a></li><li class="breadcrumb-item"><a href="./mortality-mapping.html"><span class="chapter-title">Mortality Mapping</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Subnational: Global coverage targets</span></h1>
+<h1 class="title"><span class="chapter-title">Mortality Mapping</span></h1>
 </div>
 
 
@@ -350,11 +344,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="subnational-global-coverage-targets" class="level1">
-<h1>Subnational Global coverage targets</h1>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -758,13 +749,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./subnational-inequality.html" class="pagination-link" aria-label="Sub-national Inequality">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Sub-national Inequality</span></span>
+      <a href="./maternal-mortality.html" class="pagination-link" aria-label="Maternal Mortality">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Maternal Mortality</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./maternal-mortality-analyses.html" class="pagination-link" aria-label="Mortality">
-        <span class="nav-page-text">Mortality</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./mortality-completeness.html" class="pagination-link" aria-label="Mortality Completeness">
+        <span class="nav-page-text"><span class="chapter-title">Mortality Completeness</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -776,7 +767,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
       &nbsp;
-    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/subnational-global-coverage.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/mortality-mapping.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>

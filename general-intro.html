@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Peter Kaberia">
-<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 7th, 2025).">
+<meta name="description" content="A guide to conducting analyses for the RMNCAH-N indicators using the cd2030.rmncah Shiny App. (Last updated June 10th, 2025).">
 
 <title>General Introduction to CD2030 CAM Approach – Country Analysis Meeting (CAM) 2025 - Analysis Guide</title>
 <style>
@@ -143,6 +143,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./app-features.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">App Features</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./loading-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Loading Health facility data</span></a>
   </div>
 </li>
@@ -151,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./data-quality.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Health facility data quality assessment</span></a>
+ <span class="menu-text">Health facility DQA</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -250,12 +255,22 @@ ul.task-list li input[type="checkbox"] {
   <a href="./maternal-mortality.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Maternal Mortality</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-mapping.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Mapping</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mortality-completeness.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Mortality Completeness</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./service-utilization-analyses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">service-utilization-analyses</span></a>
+ <span class="menu-text">Health Service Utilization Analyses</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -311,8 +326,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#general-introduction-to-cd2030-cam-approach" id="toc-general-introduction-to-cd2030-cam-approach" class="nav-link active" data-scroll-target="#general-introduction-to-cd2030-cam-approach">General Introduction to CD2030 CAM Approach</a></li>
   <li><a href="#organization-of-the-guidebook" id="toc-organization-of-the-guidebook" class="nav-link" data-scroll-target="#organization-of-the-guidebook">Organization of the Guidebook</a></li>
-  <li><a href="#data-sources" id="toc-data-sources" class="nav-link" data-scroll-target="#data-sources">Data Sources</a></li>
-  <li><a href="#expected-outputs" id="toc-expected-outputs" class="nav-link" data-scroll-target="#expected-outputs">Expected outputs</a></li>
+  <li><a href="#intro-data-sources" id="toc-intro-data-sources" class="nav-link" data-scroll-target="#intro-data-sources">Data Sources</a></li>
+  <li><a href="#intro-expected-outputs" id="toc-intro-expected-outputs" class="nav-link" data-scroll-target="#intro-expected-outputs">Expected outputs</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/general-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -340,20 +355,20 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="general-introduction-to-cd2030-cam-approach" class="level2">
 <h2 class="anchored" data-anchor-id="general-introduction-to-cd2030-cam-approach">General Introduction to CD2030 CAM Approach</h2>
-<p>The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.</p>
-<p>Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach <img src="images/0-overview_cam.png" class="img-fluid"></p>
+<p>The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and sub-national estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.</p>
+<p>Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and sub-national targets, as well as global targets. The figure below shows the general overview of the CAM approach <img src="images/0-overview_cam.png" class="img-fluid"></p>
 </section>
 <section id="organization-of-the-guidebook" class="level2">
 <h2 class="anchored" data-anchor-id="organization-of-the-guidebook">Organization of the Guidebook</h2>
 <p>This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:</p>
 <ol type="1">
-<li><p>Section 1: Health facility data quality assessment</p></li>
-<li><p>Section 2: National&nbsp; Analyses (Coverage &amp; Equity)</p></li>
-<li><p>Section 3: Subnational analysis (Coverage &amp; Inequality)</p></li>
-<li><p>Section 4: Maternal mortality, stillbirths and neonatal mortality</p></li>
-<li><p>Section5: Curative health services utilization for sick children</p></li>
-<li><p>Section 6: Health systems progress and performance</p></li>
-<li><p>Section 7: Planning ahead for data use</p></li>
+<li>Section 1: Health facility data quality assessment</li>
+<li>Section 2: National&nbsp; Analyses (Coverage &amp; Equity)</li>
+<li>Section 3: Subnational analysis (Coverage &amp; Inequality)</li>
+<li>Section 4: Maternal mortality, stillbirths and neonatal mortality</li>
+<li>Section5: Curative health services utilization for sick children</li>
+<li>Section 6: Health systems progress and performance</li>
+<li>Section 7: Planning ahead for data use</li>
 </ol>
 <p>These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.</p>
 <p>Each section has:</p>
@@ -363,8 +378,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Implementation -</strong> the use of the R Shiny App for data visualization and interpretation.</p></li>
 </ul>
 </section>
-<section id="data-sources" class="level2">
-<h2 class="anchored" data-anchor-id="data-sources">Data Sources</h2>
+<section id="intro-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="intro-data-sources">Data Sources</h2>
 <p>The Countdown CAM approach uses a variety of data sources, including:</p>
 <ul>
 <li><p><strong>Health facility data</strong>: Routine health data collected from health facilities, including service coverage, health systems performance, and health service utilization.</p></li>
@@ -373,8 +388,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p><strong>Other data sources</strong>: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.</p></li>
 </ul>
 </section>
-<section id="expected-outputs" class="level2">
-<h2 class="anchored" data-anchor-id="expected-outputs">Expected outputs</h2>
+<section id="intro-expected-outputs" class="level2">
+<h2 class="anchored" data-anchor-id="intro-expected-outputs">Expected outputs</h2>
 <ul>
 <li><strong>Synthesis/poster reports</strong> (.pdf, .doc files)</li>
 <li><strong>Full country report</strong> (national/sub-national) (.pdf, .doc files) - to be downloaded in sections from the Shiny App and compiled into a full report with analysis outputs and interpretations.</li>
