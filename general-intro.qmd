@@ -9,26 +9,20 @@ source ("_common.R")
 
 ## General Introduction to CD2030 CAM Approach
 
-The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.
+The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and sub-national estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.
 
-Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach ![](images/0-overview_cam.png)
+Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and sub-national targets, as well as global targets. The figure below shows the general overview of the CAM approach ![](images/0-overview_cam.png)
 
 ## Organization of the Guidebook
 
 This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:
 
 1.  Section 1: Health facility data quality assessment
-
 2.  Section 2: National  Analyses (Coverage & Equity)
-
 3.  Section 3: Subnational analysis (Coverage & Inequality)
-
 4.  Section 4: Maternal mortality, stillbirths and neonatal mortality
-
 5.  Section5: Curative health services utilization for sick children
-
 6.  Section 6: Health systems progress and performance
-
 7.  Section 7: Planning ahead for data use
 
 These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.
@@ -41,7 +35,7 @@ Each section has:
 
 -   **Implementation -** the use of the R Shiny App for data visualization and interpretation.
 
-## Data Sources
+## Data Sources {#intro-data-sources}
 
 The Countdown CAM approach uses a variety of data sources, including:
 
@@ -53,7 +47,7 @@ The Countdown CAM approach uses a variety of data sources, including:
 
 -   **Other data sources**: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.
 
-## Expected outputs
+## Expected outputs {#intro-expected-outputs}
 
 -   **Synthesis/poster reports** (.pdf, .doc files)
 -   **Full country report** (national/sub-national) (.pdf, .doc files) - to be downloaded in sections from the Shiny App and compiled into a full report with analysis outputs and interpretations.

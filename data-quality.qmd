@@ -1,6 +1,4 @@
-
-
-# Health facility data quality assessment
+## Health facility DQA
 
 ------------------------------------------------------------------------
 
@@ -10,5 +8,6 @@
 source("_common.R")
 ```
 
-This section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score.
+This section focuses on inspecting the quality of the health facility data by considering the following standard indicators: reporting completeness, outliers, internal consistency among the correlated indicators and data completeness. The final output for this section is the Overall data quality score. The analysis is conducted within the Health Facility Data Quality section of the Shiny App as shown here:
 
+![](images/1-dqa-dqapage.png){fig-align="center"}
