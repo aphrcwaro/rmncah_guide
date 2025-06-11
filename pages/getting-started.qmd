@@ -56,7 +56,13 @@ Download RStudio from [Posit Website](https://posit.co/downloads/)
 
 **Do I still need to download R?** Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.
 
-After installation, launch RStudio and begin interacting with R through its console and script windows. ![](images/rstudio.png)
+After installation, launch RStudio and begin interacting with R through its console and script windows.
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","rstudio.png"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
 
 ## Installing the CD2030 RMNCAH package {#sec-instal-cd2030-rmncah}
 
@@ -68,9 +74,6 @@ After installing R and RStudio, you may proceed with installing the Countdown203
 
 ```{r, eval=FALSE}
 if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
-devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
-
-
 devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
 ```
 
@@ -119,7 +122,6 @@ knitr::include_graphics(here::here("images","github-repo.png"))
 
 :::
 
-::: columns
 ::: {.column width="50%"}
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
@@ -129,13 +131,12 @@ knitr::include_graphics(here::here("images","project-file.png"))
 ```
 
 :::
+:::
 
 
 To install and run:
 
 ```{r, eval=FALSE}
-devtools::install()
-
 library(cd2030.rmncah)
 dashboard()
 ```
