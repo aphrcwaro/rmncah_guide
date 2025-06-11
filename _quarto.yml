@@ -57,6 +57,7 @@ book:
       part-pt: Sobre este Guia
         - pages/general-intro.qmd
         - pages/getting-started.qmd
+        - pages/app-features.qmd
         - pages/loading-data.qmd
 
     - part: Data Quality Assessment
@@ -95,7 +96,9 @@ book:
       part-fr: Utilisation des services
       part-pt: Utilização dos Serviços
       chapters: 
-        - pages/service-utilization.qmd
+        - pages/maternal-mortality.qmd
+        - pages/mortality-mapping.qmd
+        - pages/mortality-completeness.qmd
 
     - part: Health System Perfomance
       part-fr: Performance du système de santé

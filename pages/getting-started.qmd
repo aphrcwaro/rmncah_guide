@@ -6,34 +6,49 @@
 source("_common.R")
 ```
 
-Initially, Countdown2030 analyses were conducted using Stata. These scripts have now been translated into R to support the development and deployment of a Shiny-based dashboard.
+In the past, Countdown to 2030 (CD2030) analyses were conducted using Stata, relying on a series of `.do` files. These scripts have since been translated into an R package — **cd2030.rmncah** — and integrated into a user-friendly Shiny App. This application enables health data users to load data, conduct data quality assessments (DQA), perform analyses, and generate insightful outputs using pre-designed report templates.
 
-We extend our appreciation to the team that compiled the original Stata codebase.
+The tool facilitates in-depth inspection of data quality and supports subnational analysis (up to the administrative level 2) for various indicators related to data quality and RMNCAH outcomes.
 
-## Installing R and RStudio {#R-and-rstudio}
+## Software requirements {#sec-software-requirements}
 
-To begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms. \> **Note**: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier. \>To ensure smooth installation and functionality, it is recommended to install **R** first, followed by **RStudio**. This order is important as RStudio relies on R to function properly.
+To use this innovative digital health analytics tool, the following are required:
 
-### Download and Install R (Step 1)
+-   Install the latest versions of **R** and **RStudio**
+-   Install the **cd2030.rmncah** R package installation instructions ([available here](denominator-assessment.qmd#sec-instal-cd2030-rmncah))
+-   Ensure access to all required ([datasets](#sec-data-requirements)) and ([parameters](denominator-assessment.qmd#sec-denom-analysis-setup))
+-   Install **RTools** (for Windows users, to support package compilation)
+
+## Installing R and RStudio {#sec-instal-r}
+
+To begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.
+
+**Note**: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier.
+
+To ensure smooth installation and functionality, it is recommended to install **R** first, followed by **RStudio**. This order is important as RStudio relies on R to function properly.
+
+### Step 1: Download and Install R
 
 R is distributed via The [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/). Select your operating system from the homepage: Windows, Mac, or Linux.
 
-#### Windows
+**Windows**
 
 1.  Navigate to ***Download R for Windows*** and select the “base” option.
 2.  Click the first link (e.g., “Download R x.x.x for Windows”) to download the installer.
 3.  Run the installer and follow the prompts. ***Administrator privileges may be required***.
 4.  R will be installed in your system's Program Files, with a shortcut added to the Start menu.
 
-#### Mac
+**Mac**
 
 1.  Click ***Download R for Mac*** on the CRAN homepage.
 2.  Download the latest release package and run the installer.
 3.  The default installation settings are typically sufficient. You may be prompted to enter your system password.
 
-**R is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.**
+**Note**
 
-### Install RStudio (Step 2)
+R is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.
+
+### Step 2: Download and Install RStudio
 
 RStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.
 
@@ -43,7 +58,7 @@ Download RStudio from [Posit Website](https://posit.co/downloads/)
 
 After installation, launch RStudio and begin interacting with R through its console and script windows. ![](images/rstudio.png)
 
-## Installing the Countdown2030 RMNCAH Application
+## Installing the CD2030 RMNCAH package {#sec-instal-cd2030-rmncah}
 
 After installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository [`cd2030.rnncah`](https://github.com/aphrcwaro/cd2030.rmncah). The application is implemented as an R package and supports interactive dashboard generation via Shiny.
 
@@ -52,18 +67,26 @@ After installing R and RStudio, you may proceed with installing the Countdown203
 **Stable Version**
 
 ```{r, eval=FALSE}
+if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
+devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
+
+
 devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
 ```
 
 **Development Version**
 
 ```{r, eval=FALSE}
+
+if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
 devtools::install_github("aphrcwaro/cd2030.rmncah")
+
 ```
 
 ### Launching the Application
 
 ```{r, eval=FALSE}
+
 library(cd2030.rmncah)
 dashboard()
 ```
@@ -104,22 +127,20 @@ To compile packages from source, especially development versions, RTools must be
 
 RTools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
 
-## Data requirements
+## Data requirements {#sec-data-requirements}
 
 ### Datasets required
 
 To run the analysis efficiently, each country team will require to have a folder containing the following datasets:
 
 1.  Health facility data (.xlsx file)
-
 2.  UN Estimates
-
 3.  Survey data
-
 4.  UN mortality data
+5.  FPET data
 
-5.  FPET data These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.
+These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.
 
 ### Country specific analysis parameters
 
-The following parameters will be required to run the analysis see
+The following ([parameters](denominator-assessment.qmd#sec-denom-analysis-setup)) will be required to run the analysis
