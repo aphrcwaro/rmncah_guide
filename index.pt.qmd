@@ -1,0 +1,30 @@
+# Bem-vindo {-}
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+## Visão Geral da Contagem Regressiva para 2030 {-}
+
+A iniciativa "Contagem Regressiva para 2030 para a Saúde de Mulheres, Crianças e Adolescentes" (The Countdown) é uma colaboração global que envolve acadêmicos de instituições nacionais, regionais e internacionais, agências da ONU, o Banco Mundial e organizações da sociedade civil. A iniciativa acompanha o progresso em Saúde Reprodutiva, Materna, Neonatal, Infantil e do Adolescente e Nutrição (SRMNIA+N), promovendo a defesa e a responsabilização por meio de uma análise rigorosa dos dados.
+
+**Os principais objetivos incluem:**
+
+- Reforçar a análise e o monitoramento de dados liderados pelos países
+- Promover a inovação e a geração de evidências por meio da colaboração multi-países
+- Aprimorar a medição e o monitoramento global
+- Melhorar a comunicação de políticas e programas
+
+Para saber mais sobre a iniciativa "Contagem Regressiva para 2030", visite: [O site da The Countdown](https://www.countdown2030.org/about)
+
+## Sobre o Pacote R `cd2030.rmncah` {-}
+
+O pacote R e o aplicativo Shiny `cd2030.rmncah` foram desenvolvidos para apoiar a geração de evidências e a análise de indicadores SRMNIA.
+
+As principais características incluem: interface amigável para gerenciamento e análise de dados, ferramentas para visualização e sumarização estatística, e geração automatizada de relatórios.
+
+## Agradecimentos {-}
+
+A Contagem Regressiva reconhece e agradece a contribuição do indivíduo seguinte no desenvolvimento dos códigos Stata que formam a espinha dorsal do pacote R e do aplicativo Shiny `cd2030.rmncah`:

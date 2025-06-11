@@ -1,6 +1,4 @@
----
-title: "Numerator Assessment"
----
+# Numerators Assessment {#numerators-assessment}
 
 ```{r}
 #| echo: false
