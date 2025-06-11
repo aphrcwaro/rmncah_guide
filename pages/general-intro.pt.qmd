@@ -1,48 +1,54 @@
-# CD2030 CAM Approach
+# Abordagem CD2030 CAM
 
 ```{r}
 #| echo: false
-source ("_common.R")
+source (here::here("_common.R"))
 ```
 
-The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.
+O Countdown to 2030 para a Saúde da Mulher, da Criança e do Adolescente, o GFF, a UNICEF, a OMS, a WAHO e outros parceiros estão a colaborar para fortalecer as revisões de progresso e desempenho lideradas pelos países, como as revisões anuais do setor da saúde e as revisões de meio de termo dos casos de investimento. Este guia é para as equipas analíticas dos países do Countdown desenvolverem um conjunto de estimativas nacionais e subnacionais para os principais indicadores RMNCAH-N, incluindo a equidade, utilizando séries temporais de cinco anos de dados de rotina e resultados de inquéritos.
 
-Much attention is paid to obtaining a clean data set with the necessary corrections and adjustments for known biases. Service coverage and equity, maternal and perinatal mortality, and health service utilization and systems performance are the main subjects, with a focus on monitoring national and subnational targets, as well as global targets. The figure below shows the general overview of the CAM approach ![](images/0-overview_cam.png)
+Muita atenção é dada à obtenção de um conjunto de dados limpo com as correções e ajustes necessários para os viés conhecidos. A cobertura e equidade dos serviços, a mortalidade materna e perinatal, e a utilização dos serviços de saúde e o desempenho dos sistemas de saúde são os principais temas, com foco no monitoramento de metas nacionais e subnacionais, bem como metas globais. A figura abaixo mostra a visão geral da abordagem CAM
 
-## Organization of the Guidebook
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","0-overview_cam.png"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
 
-This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:
+## Organização do Guia
 
-  1.  Section 1: Health facility data quality assessment
-  2.  Section 2: National  Analyses (Coverage & Equity)
-  3.  Section 3: Subnational analysis (Coverage & Inequality)
-  4.  Section 4: Maternal mortality, stillbirths and neonatal mortality
-  5.  Section5: Curative health services utilization for sick children
-  6.  Section 6: Health systems progress and performance
-  7.  Section 7: Planning ahead for data use
+Este guia está organizado em sete seções, cada uma focada numa área específica de análise de dados relacionada com a saúde e nutrição reprodutiva, materna, neonatal, infantil e adolescente (RMNCAH-N). O guia fornece uma abordagem abrangente para analisar dados de saúde de rotina e resultados de inquéritos, com ênfase na qualidade dos dados, cobertura, equidade e desempenho dos sistemas de saúde. As sete seções de análise de dados neste guia são:
 
-These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.
+1.  Seção 1: Avaliação da qualidade dos dados das unidades de saúde
+2.  Seção 2: Análises Nacionais (Cobertura e Equidade)
+3.  Seção 3: Análise Subnacional (Cobertura e Desigualdade)
+4.  Seção 4: Mortalidade materna, natimortos e mortalidade neonatal
+5.  Seção 5: Utilização de serviços de saúde curativos para crianças doentes
+6.  Seção 6: Progresso e desempenho dos sistemas de saúde
+7.  Seção 7: Planejamento para o futuro uso de dados
 
-Each section has:
+Estas seções foram concebidas para serem utilizadas de forma modular, permitindo que os países selecionem os tópicos mais relevantes para o seu contexto e disponibilidade de dados.
 
--   **Why/Rationale -** the scientific basis for the analysis;
--   **Approach**- a step-by-step guide on how to conduct the analysis; and the
--   **Implementation -** the use of the R Shiny App for data visualization and interpretation.
+Cada seção tem:
 
-## Data Sources
+-   **Porquê/Justificativa -** a base científica para a análise;
+-   **Abordagem** - um guia passo a passo sobre como realizar a análise; e a
+-   **Implementação -** o uso do aplicativo R Shiny para visualização e interpretação de dados.
 
-The Countdown CAM approach uses a variety of data sources, including:
+## Fontes de Dados {#intro-data-sources}
 
--   **Health facility data**: Routine health data collected from health facilities, including service coverage,   health systems performance, and health service utilization.
--   **Surveys**: Nationally representative surveys, such as the Demographic and Health Surveys (DHS) and Multiple Indicator Cluster Surveys (MICS), which provide data on health indicators, equity, and health service utilization.
--   **Administrative data**: Data collected by government agencies, such as vital registration systems and health management information systems (HMIS), which provide information on health outcomes and service delivery.
--   **Other data sources**: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.
+A abordagem CD2030 CAM utiliza uma variedade de fontes de dados, incluindo:
 
-## Expected outputs
+-   **Dados de unidades de saúde**: Dados de saúde de rotina coletados de unidades de saúde, incluindo cobertura de serviços, desempenho de sistemas de saúde e utilização de serviços de saúde.
+-   **Inquéritos**: Inquéritos representativos a nível nacional, como os Inquéritos Demográficos e de Saúde (DHS) e os Inquéritos de Aglomerados de Indicadores Múltiplos (MICS), que fornecem dados sobre indicadores de saúde, equidade e utilização de serviços de saúde.
+-   **Dados administrativos**: Dados coletados por agências governamentais, como sistemas de registro vital e sistemas de informação de gestão da saúde (HMIS), que fornecem informações sobre resultados de saúde e prestação de serviços.
+-   **Outras fontes de dados**: Outras fontes de dados relevantes, como dados censitários, estimativas populacionais e dados de financiamento da saúde, que fornecem contexto adicional para a análise.
 
--   **Synthesis/poster reports** (.pdf, .doc files)
--   **Full country report** (national/sub-national) (.pdf, .doc files) - to be downloaded in sections from the Shiny App and compiled into a full report with analysis outputs and interpretations.
--   **Country analytical reproducible files** (.rds files)
--   **Adjusted and or summarized data files** (.csv. .dta, xlsx files)
+## Resultados Esperados {#intro-expected-outputs}
 
-Country analytical reproducible files (.rds files) are the final output of the analysis, which can be used for further analysis and visualization. These files contain the cleaned and processed data, country specific analysis parameters as well as the results of the analysis, including coverage, equity, and health systems performance indicators.
+-   **Relatórios de síntese/pôsteres** (arquivos .pdf, .doc)
+-   **Relatório completo do país** (nacional/subnacional) (arquivos .pdf, .doc) - a ser descarregado em seções do aplicativo Shiny e compilado num relatório completo com resultados de análise e interpretações.
+-   **Arquivos reprodutíveis de análise do país** (arquivos .rds)
+-   **Arquivos de dados ajustados e/ou resumidos** (arquivos .csv, .dta, .xlsx)
+
+Os arquivos reprodutíveis de análise do país (arquivos .rds) são o resultado final da análise, que podem ser utilizados para análise e visualização posteriores. Esses arquivos contêm os dados limpos e processados, parâmetros de análise específicos do país, bem como os resultados da análise, incluindo indicadores de cobertura, equidade e desempenho dos sistemas de saúde.

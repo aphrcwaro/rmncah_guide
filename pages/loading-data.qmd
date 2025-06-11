@@ -5,7 +5,7 @@
 ```{r}
 #| echo: false
 
-source("_common.R")
+source(here::here("_common.R"))
 ```
 
 This section explains how to structure and upload data into the app, ensuring compatibility with the **Countdown Health facility data format**

@@ -25,6 +25,7 @@ jobs:
             tidyverse
             knitr
             kableExtra
+            here
             github::ropensci-review-tools/babelquarto@a485fea
 
       - name: Set up Quarto

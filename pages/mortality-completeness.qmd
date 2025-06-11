@@ -5,5 +5,5 @@ title: "Mortality Completeness"
 ```{r}
 #| echo: false
 
-source("_common.R")
+source(here::here("_common.R"))
 ```

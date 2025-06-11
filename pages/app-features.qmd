@@ -5,7 +5,7 @@ title: "App Features"
 ```{r}
 #| echo: false
 
-source("_common.R")
+source(here::here("_common.R"))
 ```
 
 ## Overview of App Features
