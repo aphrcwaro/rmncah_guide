@@ -73,7 +73,8 @@ After installing R and RStudio, you may proceed with installing the Countdown203
 **Stable Version**
 
 ```{r, eval=FALSE}
-if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
+if (!requireNamespace("devtools", quietly = TRUE)) 
+  install.packages("devtools")
 devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
 ```
 
@@ -81,8 +82,9 @@ devtools::install_github("aphrcwaro/cd2030.rmncah@v1.0.0")
 
 ```{r, eval=FALSE}
 
-if (!requireNamespace("devtools", quietly = TRUE)) install.packages("devtools")
-devtools::install_github("aphrcwaro/cd2030.rmncah")
+if (!requireNamespace("devtools", quietly = TRUE)) 
+  install.packages("devtools")
+  devtools::install_github("aphrcwaro/cd2030.rmncah")
 
 ```
 
@@ -111,28 +113,23 @@ Advanced users with GitHub accounts may prefer to clone the repository directly.
 -   Inspection of the package structure
 -   Once cloned, open the .Rproj file in RStudio to set the working directory.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
-
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","github-repo.png"))
 # library(knitr)
 # opts_chunk$set(list(echo = FALSE, eval = FALSE))
 ```
-
 :::
 
 ::: {.column width="50%"}
-
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","project-file.png"))
 # library(knitr)
 # opts_chunk$set(list(echo = FALSE, eval = FALSE))
 ```
-
 :::
-:::
-
+:::::
 
 To install and run:
 

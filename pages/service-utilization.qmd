@@ -1,5 +1,5 @@
 ---
-title: "Curative health services utilization"
+title: "Health services utilization"
 ---
 
 ## Curative health services utilization for sick children
