@@ -86,56 +86,56 @@
   {
     "objectID": "pages/getting-started.pt.html",
     "href": "pages/getting-started.pt.html",
-    "title": "2  Getting started",
+    "title": "2  Primeiros passos",
     "section": "",
-    "text": "2.1 Software requirements\nIn the past, Countdown to 2030 (CD2030) analyses were conducted using Stata, relying on a series of .do files. These scripts have since been translated into an R package — cd2030.rmncah — and integrated into a user-friendly Shiny App. This application enables health data users to load data, conduct data quality assessments (DQA), perform analyses, and generate insightful outputs using pre-designed report templates.\nThe tool facilitates in-depth inspection of data quality and supports subnational analysis (up to the administrative level 2) for various indicators related to data quality and RMNCAH outcomes.\nTo use this innovative digital health analytics tool, the following are required:",
+    "text": "2.1 Requisitos de software\nNo passado, as análises do Countdown to 2030 (CD2030) eram conduzidas usando Stata, baseando-se numa série de arquivos .do. Esses scripts foram desde então traduzidos para um pacote R — cd2030.rmncah — e integrados numa Aplicação Shiny de fácil utilização. Esta aplicação permite aos utilizadores de dados de saúde carregar dados, realizar avaliações da qualidade dos dados (DQA), fazer análises e gerar resultados perspicazes usando modelos de relatório pré-projetados.\nA ferramenta facilita a inspeção aprofundada da qualidade dos dados e suporta a análise subnacional (até o nível administrativo 2) para vários indicadores relacionados à qualidade dos dados e aos resultados RMNCAH.\nPara usar esta ferramenta inovadora de análise de saúde digital, são necessários os seguintes:",
     "crumbs": [
       "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting started</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Primeiros passos</span>"
     ]
   },
   {
     "objectID": "pages/getting-started.pt.html#sec-software-requirements",
     "href": "pages/getting-started.pt.html#sec-software-requirements",
-    "title": "2  Getting started",
+    "title": "2  Primeiros passos",
     "section": "",
-    "text": "Install the latest versions of R and RStudio\nInstall the cd2030.rmncah R package installation instructions (available here)\nEnsure access to all required (datasets) and (parameters)\nInstall RTools (for Windows users, to support package compilation)",
+    "text": "Instalar as versões mais recentes do R e do RStudio\nInstalar o pacote R cd2030.rmncah (instruções de instalação disponíveis aqui)\nGarantir o acesso a todos os conjuntos de dados e parâmetros necessários\nInstalar o RTools (para utilizadores Windows, para suportar a compilação de pacotes)",
     "crumbs": [
       "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting started</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Primeiros passos</span>"
     ]
   },
   {
     "objectID": "pages/getting-started.pt.html#sec-instal-r",
     "href": "pages/getting-started.pt.html#sec-instal-r",
-    "title": "2  Getting started",
-    "section": "2.2 Installing R and RStudio",
-    "text": "2.2 Installing R and RStudio\nTo begin working in R, it is necessary to install both R and RStudio. R is the underlying programming language, while RStudio provides a user-friendly interface that simplifies the development and execution of R scripts. Both are freely available and widely supported across platforms.\nNote: R and RStudio are not the same. R is the programming language, while RStudio is an integrated development environment (IDE) that makes working with R easier.\nTo ensure smooth installation and functionality, it is recommended to install R first, followed by RStudio. This order is important as RStudio relies on R to function properly.\n\n2.2.1 Step 1: Download and Install R\nR is distributed via The Comprehensive R Archive Network (CRAN). Select your operating system from the homepage: Windows, Mac, or Linux.\nWindows\n\nNavigate to Download R for Windows and select the “base” option.\nClick the first link (e.g., “Download R x.x.x for Windows”) to download the installer.\nRun the installer and follow the prompts. Administrator privileges may be required.\nR will be installed in your system’s Program Files, with a shortcut added to the Start menu.\n\nMac\n\nClick Download R for Mac on the CRAN homepage.\nDownload the latest release package and run the installer.\nThe default installation settings are typically sufficient. You may be prompted to enter your system password.\n\nNote\nR is not a graphical software application but a programming environment. It is best used in conjunction with RStudio, which provides a consistent and user-friendly interface across operating systems.\n\n\n2.2.2 Step 2: Download and Install RStudio\nRStudio is an integrated development environment (IDE) designed for R. It features a script editor, console, graphics viewer, and additional tools for package management, debugging, and file organization.\nDownload RStudio from Posit Website\nDo I still need to download R? Even if you use RStudio, you’ll still need to download R to your computer. RStudio helps you use the version of R that lives on your computer, but it doesn’t come with a version of R on its own.\nAfter installation, launch RStudio and begin interacting with R through its console and script windows.",
+    "title": "2  Primeiros passos",
+    "section": "2.2 Instalação do R e do RStudio",
+    "text": "2.2 Instalação do R e do RStudio\nPara começar a trabalhar em R, é necessário instalar tanto o R quanto o RStudio. R é a linguagem de programação subjacente, enquanto o RStudio fornece uma interface amigável que simplifica o desenvolvimento e a execução de scripts R. Ambos estão disponíveis gratuitamente e são amplamente suportados em todas as plataformas.\nNota: R e RStudio não são a mesma coisa. R é a linguagem de programação, enquanto RStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalho com R.\nPara garantir uma instalação e funcionalidade suaves, é recomendado instalar o R primeiro, seguido do RStudio. Esta ordem é importante, pois o RStudio depende do R para funcionar corretamente.\n\n2.2.1 Passo 1: Baixar e Instalar o R\nO R é distribuído através do Comprehensive R Archive Network (CRAN). Selecione o seu sistema operativo na página inicial: Windows, Mac ou Linux.\nWindows\n\nNavegue até Download R for Windows e selecione a opção “base”.\nClique no primeiro link (por exemplo, “Download R x.x.x for Windows”) para baixar o instalador.\nExecute o instalador e siga as instruções. Privilégios de administrador podem ser necessários.\nO R será instalado nos Arquivos de Programas do seu sistema, com um atalho adicionado ao menu Iniciar.\n\nMac\n\nClique em Download R for Mac na página inicial do CRAN.\nBaixe o pacote da versão mais recente e execute o instalador.\nAs configurações de instalação padrão são geralmente suficientes. Pode ser solicitado que insira a sua senha do sistema.\n\nNota\nR não é uma aplicação de software gráfica, mas um ambiente de programação. É melhor usado em conjunto com o RStudio, que fornece uma interface consistente e amigável em todos os sistemas operativos.\n\n\n2.2.2 Passo 2: Baixar e Instalar o RStudio\nRStudio é um ambiente de desenvolvimento integrado (IDE) projetado para R. Ele possui um editor de script, console, visualizador gráfico e ferramentas adicionais para gerenciamento de pacotes, depuração e organização de arquivos.\nBaixe o RStudio do site da Posit\nAinda preciso baixar o R? Mesmo que use o RStudio, ainda precisará baixar o R para o seu computador. O RStudio ajuda-o a usar a versão do R que está no seu computador, mas não vem com uma versão própria do R.\nApós a instalação, inicie o RStudio e comece a interagir com o R através da sua consola e janelas de script.",
     "crumbs": [
       "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting started</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Primeiros passos</span>"
     ]
   },
   {
     "objectID": "pages/getting-started.pt.html#sec-instal-cd2030-rmncah",
     "href": "pages/getting-started.pt.html#sec-instal-cd2030-rmncah",
-    "title": "2  Getting started",
-    "section": "2.3 Installing the CD2030 RMNCAH package",
-    "text": "2.3 Installing the CD2030 RMNCAH package\nAfter installing R and RStudio, you may proceed with installing the Countdown2030 RMNCAH application, which is hosted on GitHub under the repository cd2030.rnncah. The application is implemented as an R package and supports interactive dashboard generation via Shiny.\n\n2.3.1 Installation via R Console\nStable Version\n\nif (!requireNamespace(\"devtools\", quietly = TRUE)) install.packages(\"devtools\")\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\n\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\nDevelopment Version\n\n\nif (!requireNamespace(\"devtools\", quietly = TRUE)) install.packages(\"devtools\")\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah\")\n\n\n\n2.3.2 Launching the Application\n\n\nlibrary(cd2030.rmncah)\ndashboard()\n\nThe Shiny dashboard will launch automatically in your default web browser.\n\n\n\n\n\n\n\n\n\n\n\n2.3.3 Alternative Installation via GitHub Desktop or Git or direct download\nAdvanced users with GitHub accounts may prefer to clone the repository directly. This method allows for:\n\nVersion control\nContribution to the codebase\nInspection of the package structure\nOnce cloned, open the .Rproj file in RStudio to set the working directory.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo install and run:\ndevtools::install()\n\nlibrary(cd2030.rmncah)\ndashboard()\n\n2.3.4 RTools for Windows\nTo compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nRTools can be downloaded from CRAN\n\n2.4 Data requirements\n\n2.4.1 Datasets required\nTo run the analysis efficiently, each country team will require to have a folder containing the following datasets:\n\nHealth facility data (.xlsx file)\nUN Estimates\nSurvey data\nUN mortality data\nFPET data\n\nThese datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.\n\n\n2.4.2 Country specific analysis parameters\nThe following (parameters) will be required to run the analysis",
+    "title": "2  Primeiros passos",
+    "section": "2.3 Instalação do pacote CD2030 RMNCAH",
+    "text": "2.3 Instalação do pacote CD2030 RMNCAH\nApós instalar o R e o RStudio, pode prosseguir com a instalação da aplicação Countdown2030 RMNCAH, que está alojada no GitHub sob o repositório cd2030.rnncah. A aplicação é implementada como um pacote R e suporta a geração interativa de dashboards via Shiny.\n\n2.3.1 Instalação via Consola R\nVersão Estável\n\nif (!requireNamespace(\"devtools\", quietly = TRUE)) install.packages(\"devtools\")\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah@v1.0.0\")\n\nVersão de Desenvolvimento\n\n\nif (!requireNamespace(\"devtools\", quietly = TRUE)) install.packages(\"devtools\")\ndevtools::install_github(\"aphrcwaro/cd2030.rmncah\")\n\n\n\n2.3.2 Lançamento da Aplicação\n\n\nlibrary(cd2030.rmncah)\ndashboard()\n\nO dashboard Shiny será iniciado automaticamente no seu navegador web padrão.\n\n\n\n\n\n\n\n\n\n\n\n2.3.3 Instalação Alternativa via GitHub Desktop ou Git ou download direto\nUtilizadores avançados com contas GitHub podem preferir clonar o repositório diretamente. Este método permite:\n\nControle de versão\nContribuição para o código\nContribuição para o código\nInspeção da estrutura do pacote\nUma vez clonado, abra o arquivo .Rproj no RStudio para definir o diretório de trabalho.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPara instalar e executar:\n\nlibrary(cd2030.rmncah)\ndashboard\n\n\n\n2.3.4 RTools para Windows\nPara compilar pacotes a partir do código-fonte, especialmente versões de desenvolvimento, o RTools deve ser instalado. Garanta a compatibilidade com a sua versão instalada do R:\n\nR 4.2.0 → Rtools42\nR 4.4.0 → Rtools44\nR 4.5.0 → Rtools45\n\nO RTools pode ser baixado do CRAN",
     "crumbs": [
       "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting started</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Primeiros passos</span>"
     ]
   },
   {
     "objectID": "pages/getting-started.pt.html#sec-data-requirements",
     "href": "pages/getting-started.pt.html#sec-data-requirements",
-    "title": "2  Getting started",
-    "section": "2.4 Data requirements",
-    "text": "2.4 Data requirements\n\n2.4.1 Datasets required\nTo run the analysis efficiently, each country team will require to have a folder containing the following datasets:\n\nHealth facility data (.xlsx file)\nUN Estimates\nSurvey data\nUN mortality data\nFPET data\n\nThese datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.\n\n\n2.4.2 Country specific analysis parameters\nThe following (parameters) will be required to run the analysis",
+    "title": "2  Primeiros passos",
+    "section": "2.4 Requisitos de Dados",
+    "text": "2.4 Requisitos de Dados\n\n2.4.1 Conjuntos de Dados Necessários\nPara executar a análise de forma eficiente, cada equipa de país precisará ter uma pasta contendo os seguintes conjuntos de dados:\n\nDados de unidades de saúde (arquivo .xlsx)\nEstimativas das Nações Unidas\nDados de inquéritos\nDados de mortalidade das Nações Unidas\nDados FPET\n\nEstes conjuntos de dados serão fornecidos às equipas de país pela equipa Countdown2030 antes do workshop.\n\n\n2.4.2 Parâmetros de análise específicos do país\nOs (parâmetros) seguintes serão necessários para executar a análise.",
     "crumbs": [
       "Sobre este Guia",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Getting started</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Primeiros passos</span>"
     ]
   },
   {
