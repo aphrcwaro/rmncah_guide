@@ -1,0 +1,10 @@
+---
+title: "Mortality Mapping"
+
+---
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
