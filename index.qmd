@@ -1,6 +1,4 @@
-------------------------------------------------------------------------
-
-------------------------------------------------------------------------
+# Welcome {.unnumbered}
 
 ```{r}
 #| echo: false
@@ -8,9 +6,7 @@
 source("_common.R")
 ```
 
-## Introduction to Countdown to 2030
-
-### Overview of the Countdown to 2030 (The Countdown)
+## Overview of the Countdown to 2030 {.unnumbered}
 
 The Countdown to 2030 for Women’s, Children’s and Adolescents’ Health (The Countdown) initiative is a global collaboration involving academics from national, regional, and international institutions, UN agencies, the World Bank, and civil society organizations. The initiative tracks progress in Reproductive, Maternal, Newborn, Child, and Adolescent Health and Nutrition (RMNCAH+N), fostering advocacy and accountability through rigorous data analysis.
 
@@ -22,12 +18,12 @@ The Countdown to 2030 for Women’s, Children’s and Adolescents’ Health (The
 
 For more on Countdown to 2030 initiative, visit: [The Countdown website](https://www.countdown2030.org/about)
 
-### About the `cd2030.rmncah` R Package
+## About the `cd2030.rmncah` R Package {.unnumbered}
 
 The cd2030.rmncah R package and Shiny App were developed to support evidence generation and analysis of RMNCAH indicators.
 
 Key features include: User-friendly interface for data management and analysis Tools for visualization and statistical summarization Automated report generation
 
-### Acknowledgments
+## Acknowledgments {.unnumbered}
 
 The Countdown acknowledges and appreciates the contribution of the following individual in developing the Stata codes that form the backbone of the `cd2030.rmncah` R package and Shiny App:

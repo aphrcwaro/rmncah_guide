@@ -1,0 +1,30 @@
+# Bienvenue {-}
+
+```{r}
+#| echo: false
+
+source("_common.R")
+```
+
+## Aperçu du Compte à rebours 2030 {-}
+
+L'initiative "Compte à rebours 2030 pour la Santé des Femmes, des Enfants et des Adolescents" (The Countdown) est une collaboration mondiale impliquant des universitaires d'institutions nationales, régionales et internationales, des agences des Nations Unies, la Banque Mondiale et des organisations de la société civile. L'initiative suit les progrès en matière de Santé Reproductive, Maternelle, Néonatale, Infantile et des Adolescents et Nutrition (SRMNIA+N), favorisant le plaidoyer et la responsabilisation grâce à une analyse rigoureuse des données.
+
+**Les principaux objectifs incluent :**
+
+- Renforcer l'analyse et le suivi des données dirigés par les pays
+- Favoriser l'innovation et la production de preuves par le biais de collaborations multi-pays
+- Améliorer la mesure et le suivi à l'échelle mondiale
+- Améliorer la communication des politiques et des programmes
+
+Pour en savoir plus sur l'initiative "Compte à rebours 2030", visitez : [Le site web The Countdown](https://www.countdown2030.org/about)
+
+## À propos du package R `cd2030.rmncah` {-}
+
+Le package R et l'application Shiny `cd2030.rmncah` ont été développés pour soutenir la production de preuves et l'analyse des indicateurs SRMNIA.
+
+Les principales fonctionnalités incluent : une interface conviviale pour la gestion et l'analyse des données, des outils de visualisation et de résumé statistique, et la génération automatisée de rapports.
+
+## Remerciements {-}
+
+Le Compte à rebours reconnaît et apprécie la contribution de l'individu suivant dans le développement des codes Stata qui constituent l'épine dorsale du package R et de l'application Shiny `cd2030.rmncah` :

@@ -1,6 +1,4 @@
----
-title: "Numerator Assessment"
----
+# Numerators Assessment {#numerators-assessment}
 
 ```{r}
 #| echo: false
@@ -8,13 +6,11 @@ title: "Numerator Assessment"
 source("_common.R")
 ```
 
-## Numerators Assessment {#numerators-assessment}
-
-### Rationale: Scientific basis for the analysis {#rationale-scientific-basis-for-the-analysis}
+## Rationale: Scientific basis for the analysis {#rationale-scientific-basis-for-the-analysis}
 
 Routinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.
 
-### Approach: Description of analytical steps {#approach-description-of-analytical-steps}
+## Approach: Description of analytical steps {#approach-description-of-analytical-steps}
 
 The analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators:
 

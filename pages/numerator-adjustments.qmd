@@ -1,7 +1,4 @@
----
-title: "Numerator Adjustments"
-
----
+# Numerator adjustments {#numerator-adjustments}
 
 ```{r}
 #| echo: false
@@ -9,13 +6,11 @@ title: "Numerator Adjustments"
 source("_common.R")
 ```
 
-## Numerator adjustments {#numerator-adjustments}
-
-### Rationale: Scientific basis for the analysis {#rationale-scientific-basis-for-the-analysis-1}
+## Rationale: Scientific basis for the analysis {#rationale-scientific-basis-for-the-analysis-1}
 
 The completeness of reporting may affect the analysis, especially if completeness is low or varies between years. Extreme outliers, such as an accidental extra zero in a number, can have a large impact, especially on subnational numbers. Following the assessments, several steps are necessary to obtain a clean data set for analysis. This implies adjusting for incomplete reporting and correcting for extreme outliers.
 
-### Approach: Description of analytical steps {#approach-description-of-analytical-steps-1}
+## Approach: Description of analytical steps {#approach-description-of-analytical-steps-1}
 
 If we do not consider reporting completeness that means we assume all non-reporting facilities provided zero services, which is not likely to be true. Adjustments depend on how much services (e.g., pregnancy care, vaccinations) were provided at non-reporting facilities compared to those that reported. The adjustment factor k - defined as the ratio of the volume of services provided by non-reporting facilities to the volume of services provided by reporting facilities - is used to adjust the reported numbers for incomplete reporting.
 

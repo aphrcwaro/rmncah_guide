@@ -1,13 +1,9 @@
----
-title: "General Introduction to CD2030 CAM Approach"
----
+# CD2030 CAM Approach
 
 ```{r}
 #| echo: false
 source ("_common.R")
 ```
-
-## General Introduction to CD2030 CAM Approach
 
 The CD2030 for Women’s, Children’s and Adolescents’ Health, GFF, UNICEF, WHO, WAHO and other partners are collaborating to strengthen country-led progress and performance reviews, such as annual health sector reviews and midterm reviews of investment cases. This guidebook is for Countdown country analytical teams to develop a set of national and subnational estimates for key RMNCAH-N indicators, including equity, using five-year time series of routine data and survey results.
 
@@ -17,40 +13,29 @@ Much attention is paid to obtaining a clean data set with the necessary correcti
 
 This guidebook is organized into seven sections, each focusing on a specific area of data analysis related to reproductive, maternal, newborn, child and adolescent health and nutrition (RMNCAH-N). The guidebook provides a comprehensive approach to analyzing routine health data and survey results, with an emphasis on data quality, coverage, equity, and health systems performance. The seven data analysis sections in this guidebook are:
 
-1.  Section 1: Health facility data quality assessment
-
-2.  Section 2: National  Analyses (Coverage & Equity)
-
-3.  Section 3: Subnational analysis (Coverage & Inequality)
-
-4.  Section 4: Maternal mortality, stillbirths and neonatal mortality
-
-5.  Section5: Curative health services utilization for sick children
-
-6.  Section 6: Health systems progress and performance
-
-7.  Section 7: Planning ahead for data use
+  1.  Section 1: Health facility data quality assessment
+  2.  Section 2: National  Analyses (Coverage & Equity)
+  3.  Section 3: Subnational analysis (Coverage & Inequality)
+  4.  Section 4: Maternal mortality, stillbirths and neonatal mortality
+  5.  Section5: Curative health services utilization for sick children
+  6.  Section 6: Health systems progress and performance
+  7.  Section 7: Planning ahead for data use
 
 These sections are designed to be used in a modular way, allowing countries to select the topics that are most relevant to their context and data availability.
 
 Each section has:
 
 -   **Why/Rationale -** the scientific basis for the analysis;
-
 -   **Approach**- a step-by-step guide on how to conduct the analysis; and the
-
 -   **Implementation -** the use of the R Shiny App for data visualization and interpretation.
 
 ## Data Sources
 
 The Countdown CAM approach uses a variety of data sources, including:
 
--   **Health facility data**: Routine health data collected from health facilities, including service coverage, health systems performance, and health service utilization.
-
+-   **Health facility data**: Routine health data collected from health facilities, including service coverage,   health systems performance, and health service utilization.
 -   **Surveys**: Nationally representative surveys, such as the Demographic and Health Surveys (DHS) and Multiple Indicator Cluster Surveys (MICS), which provide data on health indicators, equity, and health service utilization.
-
 -   **Administrative data**: Data collected by government agencies, such as vital registration systems and health management information systems (HMIS), which provide information on health outcomes and service delivery.
-
 -   **Other data sources**: Other relevant data sources, such as census data, population estimates, and health financing data, which provide additional context for the analysis.
 
 ## Expected outputs
