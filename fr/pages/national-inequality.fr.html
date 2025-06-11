@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-68d834354916604f5f41eae73f500b81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -385,19 +387,19 @@ ul.task-list li input[type="checkbox"] {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-coverage.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Sub-national coverage</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Coverage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-inequality.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Sub-national Inequality</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Inequality</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-global-coverage.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Subnational: Global coverage targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Global coverage targets</span></span></a>
   </div>
 </li>
       </ul>
@@ -497,9 +499,18 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table des matières</h2>
+   
+  <ul>
+<li><a href="#rationale-approach-and-implementation" id="toc-rationale-approach-and-implementation" class="nav-link active" data-scroll-target="#rationale-approach-and-implementation"><span class="header-section-number">9.1</span> Rationale, Approach and implementation</a></li>
+  <li><a href="#interpretation-of-equiplots" id="toc-interpretation-of-equiplots" class="nav-link" data-scroll-target="#interpretation-of-equiplots"><span class="header-section-number">9.2</span> Interpretation of equiplots</a></li>
+  </ul>
+<div class="toc-actions"><ul>
+<li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/pages/national-inequality.fr.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li>
+<li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
+</ul></div></nav>
+</div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../pages/national-coverage.fr.html">Analyses Nationales</a></li>
@@ -521,11 +532,43 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><p>National Inequality</p>
+</header><section id="rationale-approach-and-implementation" class="level2" data-number="9.1"><h2 data-number="9.1" class="anchored" data-anchor-id="rationale-approach-and-implementation">
+<span class="header-section-number">9.1</span> Rationale, Approach and implementation</h2>
+<p><strong>Rationale: Scientific basis for the analysis</strong></p>
+<p>Household surveys provide critical information on inequalities. Our focus is on three major dimensions of inequality: area of residence, wealth and education.</p>
+<p>For area of residence, we focus on urban/rural areas, for wealth, we use household wealth quintiles and for education we focus on education of the mother. Equiplots are used to assess whether the country has made progress since 2010 in reducing the poor rich gap or the gap between women with no education or low education and women with higher education.</p>
+<p>For wealth quintiles, it can be assessed what the type of inequality is, as all categories are of the same size:</p>
+<ol type="1">
+<li>If the richest are well ahead of all other wealth quintiles, this is top inequality and is sometimes also referred to as mass deprivation (only the rich escape)</li>
+<li>If the coverage differences are equidistant, this is a linear pattern where the increasing household wealth is linearly associated with higher coverage</li>
+<li>If the poorest are left behind, this is called bottom inequality, and means marginalization of the poorest. Each pattern requires a different strategy of health programming and targeting.</li>
+</ol></section><section id="interpretation-of-equiplots" class="level2" data-number="9.2"><h2 data-number="9.2" class="anchored" data-anchor-id="interpretation-of-equiplots">
+<span class="header-section-number">9.2</span> Interpretation of equiplots</h2>
+<p>The interpretation should focus on whether inequalities have reduced over time and to what extent global targets for coverage have been met. Consider your audience/s and what key messages and insights you want to get across.</p>
+<p>The following questions should guide and be answered by the interpretation:</p>
+<ol type="1">
+<li>What is the level of inequality in the most recent data point?</li>
+<li>How have inequalities changed over time?</li>
+<li>Is there any inequality pattern that can be observed?</li>
+<li>What will be the best approaches to reduce inequalities?</li>
+</ol>
+<p><strong>Implementation: Conducting analysis in the Shiny App</strong></p>
+<p>This will be analysed within the <strong>National analyses -&gt;Equity Assessment</strong> section in the Shiny App</p>
+<p>You expect to see output as below</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/2-nat-equity_1-3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Penta3 coverage Inequality by Wealth, Area and Maternal education"><img src="../images/2-nat-equity_1-3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Penta3 coverage Inequality by Wealth, Area and Maternal education"></a></p>
+</figure>
+</div>
+<figcaption>Penta3 coverage Inequality by Wealth, Area and Maternal education</figcaption></figure>
+</div>
+</div>
+</div>
 
 
-
-</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -954,7 +997,7 @@ ul.task-list li input[type="checkbox"] {
     </div>   
     <div class="nav-footer-center">
        
-    <div class="toc-actions"><ul>
+    <div class="toc-actions d-sm-block d-md-none"><ul>
 <li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/pages/national-inequality.fr.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li>
 <li><a href="https://github.com/aphrcwaro/cd2030.rmncah/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
 </ul></div>
@@ -963,6 +1006,37 @@ ul.task-list li input[type="checkbox"] {
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
   </div>
-</footer>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 </body>
 </html>

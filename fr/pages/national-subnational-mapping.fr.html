@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark-68d834354916604f5f41eae73f500b81.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="../site_libs/bootstrap/bootstrap-f8cb7fe94b71c4ea6759b609738bfe9c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script><link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -385,19 +387,19 @@ ul.task-list li input[type="checkbox"] {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-coverage.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Sub-national coverage</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>  <span class="chapter-title">Coverage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-inequality.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Sub-national Inequality</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>  <span class="chapter-title">Inequality</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-global-coverage.fr.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Subnational: Global coverage targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Global coverage targets</span></span></a>
   </div>
 </li>
       </ul>
@@ -501,7 +503,12 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table des matières</h2>
    
   <ul>
-<li><a href="#national-and-subnational-mapping-of-health-service-coverage" id="toc-national-and-subnational-mapping-of-health-service-coverage" class="nav-link active" data-scroll-target="#national-and-subnational-mapping-of-health-service-coverage"><span class="header-section-number">11.1</span> National and subnational mapping of health service coverage</a></li>
+<li>
+<a href="#national-and-sub-national-mapping-of-health-service-coverage" id="toc-national-and-sub-national-mapping-of-health-service-coverage" class="nav-link active" data-scroll-target="#national-and-sub-national-mapping-of-health-service-coverage"><span class="header-section-number">12</span> National and sub-national mapping of health service coverage</a>
+  <ul class="collapse">
+<li><a href="#rationale-approach-and-implementation" id="toc-rationale-approach-and-implementation" class="nav-link" data-scroll-target="#rationale-approach-and-implementation"><span class="header-section-number">12.1</span> Rationale, Approach and implementation</a></li>
+  </ul>
+</li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/pages/national-subnational-mapping.fr.qmd" class="toc-action"><i class="bi bi-github"></i>Modifier cette page</a></li>
@@ -529,11 +536,38 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="national-and-subnational-mapping-of-health-service-coverage" class="level2" data-number="11.1"><h2 data-number="11.1" class="anchored" data-anchor-id="national-and-subnational-mapping-of-health-service-coverage">
-<span class="header-section-number">11.1</span> National and subnational mapping of health service coverage</h2>
+</header><section id="national-and-sub-national-mapping-of-health-service-coverage" class="level1" data-number="12"><h1 data-number="12">
+<span class="header-section-number">12</span> National and sub-national mapping of health service coverage</h1>
+<section id="rationale-approach-and-implementation" class="level2" data-number="12.1"><h2 data-number="12.1" class="anchored" data-anchor-id="rationale-approach-and-implementation">
+<span class="header-section-number">12.1</span> Rationale, Approach and implementation</h2>
+<p><strong>Rationale: Scientific basis for the analysis</strong></p>
+<p>Mapping is a powerful approach for visualizing geographical inequalities in health indicators, particularly useful at regional, provincial, or district levels. It effectively summarizes disparities across many administrative units when these differences are substantial.</p>
+<p>Before developing a map, the following considerations are crucial:</p>
+<ol type="1">
+<li>Inspect the range of indicator values across administrative units before mapping.</li>
+<li>Check the map’s legend after creation and avoid using maps if legend intervals reflect only minor differences, as this could mislead readers about the magnitude of inequalities.</li>
+<li>While maps can also illustrate changes in geographical inequalities over time, it is important to ensure such changes are substantial enough to warrant visualization.</li>
+</ol>
+<p><strong>Approach: Description of analytical steps</strong></p>
+<p>The inequalities can be computed indicator by indicator. To obtain a general comprehensive overview of inequalities the Countdown introduced a Composite Coverage Index (CCI) which include family planning (demand satisfied with modern methods), maternal and newborn care (ANC 4<sup>th</sup> visit and institutional delivery coverage), immunization (BCG, penta/DTP3 and measles) and treatment seeking behaviour for sick children (ORS for diarrhoea, facility visits for respiratory illness).<sup><a href="#_ftn1">[1]</a></sup></p>
+<p><a href="#_ftnref1">[1]</a> Wehrmeister FC, Barros AJD, Hosseinpoor AR, Boerma T, Victora CG. Measuring universal health coverage in reproductive, maternal, newborn and child health: An update of the composite coverage index. PLoS One. 2020 Apr 29;15(4):e0232350.</p>
+<p><strong>Implementation: Conducting analysis in the Shiny App</strong></p>
+<p>This will be analysed within the <strong>National analyses</strong> -&gt;<strong>Subnational Mapping</strong> section in the Shiny App</p>
+<p>You expect to see output as below</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../images/2-nat-mapping.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Penta3 coverage Distribution by region"><img src="../images/2-nat-mapping.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Penta3 coverage Distribution by region"></a></p>
+</figure>
+</div>
+<figcaption>Penta3 coverage Distribution by region</figcaption></figure>
+</div>
+</div>
+</div>
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -971,6 +1005,37 @@ ul.task-list li input[type="checkbox"] {
 <p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
   </div>
-</footer>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 </body>
 </html>
