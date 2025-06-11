@@ -5,7 +5,7 @@ title: "Subnational: Global coverage targets"
 ```{r}
 #| echo: false
 
-source("_common.R")
+source(here::here("_common.R"))
 ```
 
 # Subnational Global coverage targets

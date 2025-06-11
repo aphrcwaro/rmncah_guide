@@ -3,7 +3,7 @@
 ```{r}
 #| echo: false
 
-source("_common.R")
+source(here::here("_common.R"))
 ```
 
 In the past, Countdown to 2030 (CD2030) analyses were conducted using Stata, relying on a series of `.do` files. These scripts have since been translated into an R package — **cd2030.rmncah** — and integrated into a user-friendly Shiny App. This application enables health data users to load data, conduct data quality assessments (DQA), perform analyses, and generate insightful outputs using pre-designed report templates.
@@ -93,7 +93,11 @@ dashboard()
 
 The Shiny dashboard will launch automatically in your default web browser.
 
-![](images/dashboard.jpg)
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","dashboard.jpg"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
 
 ### Alternative Installation via GitHub Desktop or Git or direct download
 
@@ -104,9 +108,28 @@ Advanced users with GitHub accounts may prefer to clone the repository directly.
 -   Inspection of the package structure
 -   Once cloned, open the .Rproj file in RStudio to set the working directory.
 
-| Github                      | Local Folder                 |
-|-----------------------------|------------------------------|
-| ![](images/github-repo.png) | ![](images/project-file.png) |
+::: columns
+::: {.column width="50%"}
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","github-repo.png"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+:::
+
+::: columns
+::: {.column width="50%"}
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","project-file.png"))
+# library(knitr)
+# opts_chunk$set(list(echo = FALSE, eval = FALSE))
+```
+
+:::
+
 
 To install and run:
 
