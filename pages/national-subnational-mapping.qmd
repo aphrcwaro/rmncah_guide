@@ -1,10 +1,39 @@
 ---
 title: "Sub-national Mapping"
 ---
+
 ```{r}
 #| echo: false
 
 source(here::here("_common.R")) 
 ```
 
-## National and subnational mapping of health service coverage
+# National and sub-national mapping of health service coverage
+
+## Rationale, Approach and implementation
+
+**Rationale: Scientific basis for the analysis**
+
+Mapping is a powerful approach for visualizing geographical inequalities in health indicators, particularly useful at regional, provincial, or district levels. It effectively summarizes disparities across many administrative units when these differences are substantial.
+
+Before developing a map, the following considerations are crucial:
+
+1.  Inspect the range of indicator values across administrative units before mapping.
+2.  Check the map’s legend after creation and avoid using maps if legend intervals reflect only minor differences, as this could mislead readers about the magnitude of inequalities.
+3.  While maps can also illustrate changes in geographical inequalities over time, it is important to ensure such changes are substantial enough to warrant visualization.
+
+**Approach: Description of analytical steps**
+
+The inequalities can be computed indicator by indicator. To obtain a general comprehensive overview of inequalities the Countdown introduced a Composite Coverage Index (CCI) which include family planning (demand satisfied with modern methods), maternal and newborn care (ANC 4^th^ visit and institutional delivery coverage), immunization (BCG, penta/DTP3 and measles) and treatment seeking behaviour for sick children (ORS for diarrhoea, facility visits for respiratory illness).^[\[1\]](#_ftn1)^
+
+[\[1\]](#_ftnref1) Wehrmeister FC, Barros AJD, Hosseinpoor AR, Boerma T, Victora CG. Measuring universal health coverage in reproductive, maternal, newborn and child health: An update of the composite coverage index. PLoS One. 2020 Apr 29;15(4):e0232350.
+
+**Implementation: Conducting analysis in the Shiny App**
+
+This will be analysed within the **National analyses** -\>**Subnational Mapping** section in the Shiny App
+
+You expect to see output as below
+
+```{r, out.width = "100%", fig.align = "center", echo=F, fig.cap = "Penta3 coverage Distribution by region"}
+knitr::include_graphics(here::here("images","2-nat-mapping.png"))
+```
