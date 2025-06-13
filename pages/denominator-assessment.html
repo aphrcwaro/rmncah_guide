@@ -371,7 +371,7 @@ window.Quarto = {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">National coverage of interventions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">Coverage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -383,19 +383,19 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-global-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Global Coverage Targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Global coverage targets for coverage of health services</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-subnational-mapping.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">Sub-national Mapping</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">“Sub-national Mapping</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-equity-assessment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">National Equity Assessment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">Equity Assessment (Equiplots)</span></span></a>
   </div>
 </li>
       </ul>
@@ -424,7 +424,7 @@ window.Quarto = {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-global-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Subnational: Global coverage targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Global coverage targets</span></span></a>
   </div>
 </li>
       </ul>
@@ -548,7 +548,7 @@ window.Quarto = {
 <a href="#implementation-in-the-shiny-app" id="toc-implementation-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-in-the-shiny-app"><span class="header-section-number">7.2</span> Implementation in the Shiny App</a>
   <ul class="collapse">
 <li><a href="#sec-denom-analysis-setup" id="toc-sec-denom-analysis-setup" class="nav-link" data-scroll-target="#sec-denom-analysis-setup"><span class="header-section-number">7.2.1</span> Analysis set up</a></li>
-  <li><a href="#sec-denom-assessment" id="toc-sec-denom-assessment" class="nav-link" data-scroll-target="#sec-denom-assessment"><span class="header-section-number">7.2.2</span> Denominator assessment</a></li>
+  <li><a href="#denominator-assessment" id="toc-denominator-assessment" class="nav-link" data-scroll-target="#denominator-assessment"><span class="header-section-number">7.2.2</span> Denominator assessment</a></li>
   <li><a href="#sec-denom-selection" id="toc-sec-denom-selection" class="nav-link" data-scroll-target="#sec-denom-selection"><span class="header-section-number">7.2.3</span> Denominator selection</a></li>
   </ul>
 </li>
@@ -563,9 +563,7 @@ window.Quarto = {
 <li class="breadcrumb-item"><a href="../pages/numerator-assessment.html">Data Quality Assessment</a></li>
 <li class="breadcrumb-item"><a href="../pages/denominator-assessment.html"><span class="chapter-number">7</span>  <span class="chapter-title">Denominator Assessment and selection</span></a></li>
 </ol></nav><div class="quarto-title">
-<h1 class="title">
-<span class="chapter-number">7</span>  <span class="chapter-title">Denominator Assessment and selection</span>
-</h1>
+<h1 class="title"><span id="sec-denom-assessment" class="quarto-section-identifier"><span class="chapter-number">7</span>  <span class="chapter-title">Denominator Assessment and selection</span></span></h1>
 </div>
 
 
@@ -719,24 +717,20 @@ window.Quarto = {
 <li>
 <p><strong>Population size:</strong><br>
 A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHOS2 projections.</p>
-<p><span class="math display">\[
-\text{Relative difference} = \left| \frac{\text{Pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{Pop}_{\text{UN}}} \right|
-\]</span></p>
+<p>$ = | | $</p>
 </li>
 <li><p><strong>Population growth during 2023–2024:</strong><br>
 Annual growth is computed using the natural logarithm as below.</p></li>
 </ol>
 <p><strong>Interpretation:</strong> A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.</p>
-<p><span class="math display">\[
-\ln \left( \frac{\text{Pop}_{2024}}{\text{Pop}_{2023}} \right)
-\]</span></p>
+<p>$ ( ) $</p>
 <ol type="1">
 <li><strong>Crude birth rate (CBR):</strong></li>
 </ol>
 <p>Defined as the number of live births per 1,000 population. We compare the DHIS2 CBR for 2023 with the UN estimate of the CBR for the same year.</p>
 <p><strong>Interpretation:</strong> If the difference is greater than 5 per 1,000 population, the DHIS2 may be problematic.</p>
 <p>DHIS2 CBR is defined as:</p>
-<p><span class="math display">\[ CBR = \frac{\text{Total Projected livebirths}}{\text{Total Population}} \times 1000 \]</span></p>
+<p>$ CBR = $</p>
 <p><strong>Interpretation:</strong> A difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.</p>
 <ol start="4" type="1">
 <li>
@@ -746,7 +740,7 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <p><strong>Interpretation:</strong> A <strong>negative CDR</strong> or a <strong>CDR &lt; 5 per 1,000</strong> indicates inconsistency and potential data problems.</p>
 </li>
 </ol>
-<p><span class="math display">\[CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}\]</span></p>
+<p><span class="math inline">\(CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}\)</span></p>
 </section><section id="part-2-best-denominator-selection" class="level3" data-number="7.1.2"><h3 data-number="7.1.2" class="anchored" data-anchor-id="part-2-best-denominator-selection">
 <span class="header-section-number">7.1.2</span> Part 2: Best Denominator Selection</h3>
 <p>The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.</p>
@@ -756,7 +750,7 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <li>For the sub-national level, no UN projections are available, so we will use 3 methods only.</li>
 </ul>
 <p>The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.</p>
-<p>Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the <a href="https://data.unicef.org/topic/child-survival/neonatal-mortality/">WHO website</a>. The default assumptions are as follows:</p>
+<p>Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the <a href="https://data.unicef.org/topic/child-survival/neonatal-mortality/">WHO website</a>. The default global assumptions are as follows:</p>
 <ul>
 <li>Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.</li>
 <li>Stillbirths or pregnancy loss between 28 weeks and birth: 2%.</li>
@@ -807,8 +801,10 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <li><p><strong>Post Neonatal Mortality (proportion)</strong> - Proportion of live births that die between 28 days and 11 months of life out of all live births. (Example: If 15 out of 1,000 live births died between 28 days and 11 months, the proportion is 0.015)</p></li>
 <li><p><strong>Stillbirth Rate (proportion)</strong> - Proportion of pregnancies that ended in stillbirth out of all reported pregnancy outcomes. (Example: If 10 out of 1,000 pregnancies ended in stillbirth, the proportion is 0.01)</p></li>
 <li><p><strong>Penta 1 Survey (%)</strong> - Percentage of infants aged 12–23 months who received the first dose of pentavalent vaccine.(Example: If 920 out of 1,000 infants received the first dose, the Penta 1 coverage is 92%.)</p></li>
-<li><p><strong>Survey coverage based percentages (based on the most recent survey)</strong></p></li>
 </ol>
+<ul>
+<li><strong>Survey coverage based percentages (based on the most recent survey)</strong></li>
+</ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -827,6 +823,8 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <li><p><strong>BCG</strong> - Percentage of infants aged 12–23 months who received the Bacillus Calmette-Guérin (BCG) vaccine. (Example: If 950 out of 1,000 infants received the BCG vaccine, the BCG coverage is 95%.)</p></li>
 <li><p><strong>Vaccines survey year</strong> - The calendar year in which the survey was conducted and from which vaccine coverage estimates (e.g., BCG, Penta1/3, Measles1) are drawn. (Example: If the survey was conducted in 2022, that is the vaccine survey year).</p></li>
 <li><p><strong>Survey data start year</strong> - The calendar year from which the survey data starts. This is used to determine the time period for which the survey data is relevant. Ideally, it is recommended to use the two most recent surveys for this analysis.(Example: If a country has survey data for 2008, 2013, 2018 and 2023; the Survey data start should be 2018 (two most recent)).</p></li>
+</ol>
+<ul>
 <li>
 <p><strong>Survey datasets</strong></p>
 <p>In addition to setting these parameters, you will be required to upload the following survey datasets (in addition to the health facility data loaded at the beginning of the analysis session).</p>
@@ -838,14 +836,15 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 </div>
 </div>
 </div>
-<ul>
+<ol type="1">
 <li>UN Estimates data</li>
 <li>UN Mortality data</li>
 <li>WUENIC estimates data</li>
 <li>Survey data (uploaded as a folder)</li>
-</ul>
+<li>FPET data</li>
+</ol>
 </li>
-</ol></section><section id="sec-denom-assessment" class="level3" data-number="7.2.2"><h3 data-number="7.2.2" class="anchored" data-anchor-id="sec-denom-assessment">
+</ul></section><section id="denominator-assessment" class="level3" data-number="7.2.2"><h3 data-number="7.2.2" class="anchored" data-anchor-id="denominator-assessment">
 <span class="header-section-number">7.2.2</span> Denominator assessment</h3>
 <p>The first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources.</p>
 <p><strong>Interpretation:</strong></p>
@@ -856,7 +855,7 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <li>The projected numbers of total population and live births are close to the UN population projection</li>
 <li>The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.</li>
 </ul>
-<p>The second part is to compare results from the different methods - both at the national and sub-national levels.<img src="images/1-dqa_dhis2_comparison.png" class="img-fluid"></p>
+<p>The second part is to compare results from the different methods - both at the national and sub-national levels.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -1314,8 +1313,8 @@ Annual growth is computed using the natural logarithm as below.</p></li>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/national-coverage.html" class="pagination-link" aria-label="National coverage of interventions">
-        <span class="nav-page-text"><span class="chapter-number">8</span>  <span class="chapter-title">National coverage of interventions</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/national-coverage.html" class="pagination-link" aria-label="Coverage">
+        <span class="nav-page-text"><span class="chapter-number">8</span>  <span class="chapter-title">Coverage</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

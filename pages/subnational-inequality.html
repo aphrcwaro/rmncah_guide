@@ -346,7 +346,7 @@ ul.task-list li input[type="checkbox"] {
 <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">National coverage of interventions</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>  <span class="chapter-title">Coverage</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -358,19 +358,19 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-global-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Global Coverage Targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>  <span class="chapter-title">Global coverage targets for coverage of health services</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-subnational-mapping.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">Sub-national Mapping</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>  <span class="chapter-title">“Sub-national Mapping</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/national-equity-assessment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">National Equity Assessment</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>  <span class="chapter-title">Equity Assessment (Equiplots)</span></span></a>
   </div>
 </li>
       </ul>
@@ -399,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../pages/subnational-global-coverage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Subnational: Global coverage targets</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>  <span class="chapter-title">Global coverage targets</span></span></a>
   </div>
 </li>
       </ul>
@@ -511,12 +511,8 @@ ul.task-list li input[type="checkbox"] {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table of contents</h2>
    
   <ul>
-<li>
-<a href="#sec-subnat-inequality" id="toc-sec-subnat-inequality" class="nav-link active" data-scroll-target="#sec-subnat-inequality"><span class="header-section-number">14.1</span> Sub-national Inequality</a>
-  <ul class="collapse">
-<li><a href="#rationale-approach-and-implementation" id="toc-rationale-approach-and-implementation" class="nav-link" data-scroll-target="#rationale-approach-and-implementation"><span class="header-section-number">14.1.1</span> Rationale, Approach and implementation</a></li>
-  </ul>
-</li>
+<li><a href="#rationale-approach-and-implementation" id="toc-rationale-approach-and-implementation" class="nav-link active" data-scroll-target="#rationale-approach-and-implementation"><span class="header-section-number">14.1</span> Rationale, Approach and implementation</a></li>
+  <li><a href="#implementation-conducting-analysis-in-the-shiny-app" id="toc-implementation-conducting-analysis-in-the-shiny-app" class="nav-link" data-scroll-target="#implementation-conducting-analysis-in-the-shiny-app"><span class="header-section-number">14.2</span> <strong>Implementation: Conducting analysis in the Shiny App</strong></a></li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/aphrcwaro/cd2030.rmncah/edit/main/pages/subnational-inequality.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li>
@@ -544,10 +540,8 @@ ul.task-list li input[type="checkbox"] {
   
 
 
-</header><section id="sec-subnat-inequality" class="level2" data-number="14.1"><h2 data-number="14.1" class="anchored" data-anchor-id="sec-subnat-inequality">
-<span class="header-section-number">14.1</span> Sub-national Inequality</h2>
-<section id="rationale-approach-and-implementation" class="level3" data-number="14.1.1"><h3 data-number="14.1.1" class="anchored" data-anchor-id="rationale-approach-and-implementation">
-<span class="header-section-number">14.1.1</span> Rationale, Approach and implementation</h3>
+</header><section id="rationale-approach-and-implementation" class="level2" data-number="14.1"><h2 data-number="14.1" class="anchored" data-anchor-id="rationale-approach-and-implementation">
+<span class="header-section-number">14.1</span> Rationale, Approach and implementation</h2>
 <p><strong>Rationale: Scientific basis for the analysis</strong></p>
 <p>Reducing geographic inequality is essential for equitable health systems and achieving the SDGs. Subnational inequalities reveal inconsistencies in service delivery and highlight systemic barriers to healthcare access. Tracking inequality indicators helps assess whether health systems are becoming more equitable and whether targeted interventions are working.</p>
 <p><strong>Approach: Description of analytical steps</strong></p>
@@ -559,7 +553,9 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p><strong><em>Summary of district and regional performance</em></strong></p>
 <p>Progress towards international and national targets can be measured by computing the percentage of regions and districts that have achieved these targets. The goal is for all regions and districts to have met the target. Higher percentages mean less inequality.</p>
-<p><strong>Implementation: Conducting analysis in the Shiny App</strong></p>
+</section><section id="implementation-conducting-analysis-in-the-shiny-app" class="level2" data-number="14.2"><h2 data-number="14.2" class="anchored" data-anchor-id="implementation-conducting-analysis-in-the-shiny-app">
+<span class="header-section-number">14.2</span> <strong>Implementation: Conducting analysis in the Shiny App</strong>
+</h2>
 <p>Navigate to the <strong>Subnational Analysis</strong> tab <strong>=&gt;Subnational Inequality</strong> and inspect the plotted regional and district results by year, with the median absolute distance from the median (MADM, see screenshot below), as the summary measure to assess if inequalities have reduced.</p>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -574,7 +570,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
     if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -991,8 +987,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../pages/subnational-global-coverage.html" class="pagination-link" aria-label="Subnational: Global coverage targets">
-        <span class="nav-page-text"><span class="chapter-number">15</span>  <span class="chapter-title">Subnational: Global coverage targets</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../pages/subnational-global-coverage.html" class="pagination-link" aria-label="Global coverage targets">
+        <span class="nav-page-text"><span class="chapter-number">15</span>  <span class="chapter-title">Global coverage targets</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

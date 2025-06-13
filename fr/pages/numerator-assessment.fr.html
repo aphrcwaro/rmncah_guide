@@ -541,16 +541,19 @@ window.Quarto = {
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Table des matières</h2>
    
   <ul>
-<li><a href="#sec-dqa-assess-science" id="toc-sec-dqa-assess-science" class="nav-link active" data-scroll-target="#sec-dqa-assess-science"><span class="header-section-number">5.1</span> Rationale, Approach and implementation</a></li>
+<li><a href="#sec-dqa-assess-science" id="toc-sec-dqa-assess-science" class="nav-link active" data-scroll-target="#sec-dqa-assess-science"><span class="header-section-number">5.1</span> Raisonnement, Approche et Implémentation</a></li>
+  <li><a href="#raisonnement-base-scientifique-de-lanalyse" id="toc-raisonnement-base-scientifique-de-lanalyse" class="nav-link" data-scroll-target="#raisonnement-base-scientifique-de-lanalyse"><span class="header-section-number">5.2</span> Raisonnement: Base scientifique de l’analyse</a></li>
+  <li><a href="#approche-description-des-%C3%A9tapes-analytiques" id="toc-approche-description-des-étapes-analytiques" class="nav-link" data-scroll-target="#approche-description-des-étapes-analytiques"><span class="header-section-number">5.3</span> Approche: Description des étapes analytiques</a></li>
+  <li><a href="#impl%C3%A9mentation-r%C3%A9alisation-de-lanalyse-dans-lapplication-shiny" id="toc-implémentation-réalisation-de-lanalyse-dans-lapplication-shiny" class="nav-link" data-scroll-target="#implémentation-réalisation-de-lanalyse-dans-lapplication-shiny"><span class="header-section-number">5.4</span> Implémentation: Réalisation de l’analyse dans l’Application Shiny</a></li>
   <li>
-<a href="#dqa-metrics-calculation-and-interpretation" id="toc-dqa-metrics-calculation-and-interpretation" class="nav-link" data-scroll-target="#dqa-metrics-calculation-and-interpretation"><span class="header-section-number">5.2</span> DQA Metrics calculation and interpretation</a>
+<a href="#calcul-et-interpr%C3%A9tation-des-m%C3%A9triques-de-laqd" id="toc-calcul-et-interprétation-des-métriques-de-laqd" class="nav-link" data-scroll-target="#calcul-et-interprétation-des-métriques-de-laqd"><span class="header-section-number">5.5</span> Calcul et interprétation des métriques de l’AQD</a>
   <ul class="collapse">
-<li><a href="#sec-dqa-reporting-rate" id="toc-sec-dqa-reporting-rate" class="nav-link" data-scroll-target="#sec-dqa-reporting-rate"><span class="header-section-number">5.2.1</span> Reporting Completeness</a></li>
-  <li><a href="#sec-dqa-data-completeness" id="toc-sec-dqa-data-completeness" class="nav-link" data-scroll-target="#sec-dqa-data-completeness"><span class="header-section-number">5.2.2</span> Data Completeness</a></li>
-  <li><a href="#sec-dqa-outlier" id="toc-sec-dqa-outlier" class="nav-link" data-scroll-target="#sec-dqa-outlier"><span class="header-section-number">5.2.3</span> Outlier Detection</a></li>
-  <li><a href="#sec-dqa-consistency" id="toc-sec-dqa-consistency" class="nav-link" data-scroll-target="#sec-dqa-consistency"><span class="header-section-number">5.2.4</span> Internal Consistency</a></li>
-  <li><a href="#sec-dqa-overall-score" id="toc-sec-dqa-overall-score" class="nav-link" data-scroll-target="#sec-dqa-overall-score"><span class="header-section-number">5.2.5</span> Overall DQA Score</a></li>
-  <li><a href="#dqa-report-and-interpretation" id="toc-dqa-report-and-interpretation" class="nav-link" data-scroll-target="#dqa-report-and-interpretation"><span class="header-section-number">5.2.6</span> <strong>DQA Report and interpretation</strong></a></li>
+<li><a href="#sec-dqa-reporting-rate" id="toc-sec-dqa-reporting-rate" class="nav-link" data-scroll-target="#sec-dqa-reporting-rate"><span class="header-section-number">5.5.1</span> Reporting Completeness</a></li>
+  <li><a href="#sec-dqa-data-completeness" id="toc-sec-dqa-data-completeness" class="nav-link" data-scroll-target="#sec-dqa-data-completeness"><span class="header-section-number">5.5.2</span> Data Completeness</a></li>
+  <li><a href="#sec-dqa-outlier" id="toc-sec-dqa-outlier" class="nav-link" data-scroll-target="#sec-dqa-outlier"><span class="header-section-number">5.5.3</span> Outlier Detection</a></li>
+  <li><a href="#sec-dqa-consistency" id="toc-sec-dqa-consistency" class="nav-link" data-scroll-target="#sec-dqa-consistency"><span class="header-section-number">5.5.4</span> Internal Consistency</a></li>
+  <li><a href="#sec-dqa-overall-score" id="toc-sec-dqa-overall-score" class="nav-link" data-scroll-target="#sec-dqa-overall-score"><span class="header-section-number">5.5.5</span> Overall DQA Score</a></li>
+  <li><a href="#dqa-report-and-interpretation" id="toc-dqa-report-and-interpretation" class="nav-link" data-scroll-target="#dqa-report-and-interpretation"><span class="header-section-number">5.5.6</span> <strong>DQA Report and interpretation</strong></a></li>
   </ul>
 </li>
   </ul>
@@ -579,16 +582,19 @@ window.Quarto = {
 
 
 </header><section id="sec-dqa-assess-science" class="level2" data-number="5.1"><h2 data-number="5.1" class="anchored" data-anchor-id="sec-dqa-assess-science">
-<span class="header-section-number">5.1</span> Rationale, Approach and implementation</h2>
-<p><strong>Rationale: Scientific basis for the analysis</strong></p>
-<p>Routinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.</p>
-<p><strong>Approach: Description of analytical steps</strong></p>
-<p>The analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators: <em>Reporting completeness</em>, <em>Outlier detection</em>,<em>Internal Consistency</em> <em>Data completeness</em>, <em>Ratios calculation</em>, <em>Overall quality score</em></p>
-<p><strong>Implementation: Conducting analysis in the Shiny App</strong></p>
-</section><section id="dqa-metrics-calculation-and-interpretation" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="dqa-metrics-calculation-and-interpretation">
-<span class="header-section-number">5.2</span> DQA Metrics calculation and interpretation</h2>
-<section id="sec-dqa-reporting-rate" class="level3" data-number="5.2.1"><h3 data-number="5.2.1" class="anchored" data-anchor-id="sec-dqa-reporting-rate">
-<span class="header-section-number">5.2.1</span> Reporting Completeness</h3>
+<span class="header-section-number">5.1</span> Raisonnement, Approche et Implémentation</h2>
+</section><section id="raisonnement-base-scientifique-de-lanalyse" class="level2" data-number="5.2"><h2 data-number="5.2" class="anchored" data-anchor-id="raisonnement-base-scientifique-de-lanalyse">
+<span class="header-section-number">5.2</span> Raisonnement: Base scientifique de l’analyse</h2>
+<p>Les données de routine rapportées par les établissements de santé constituent une source de données importante pour les indicateurs de santé au niveau des établissements et de la population. Ces données sont rapportées par les établissements de santé sur des événements tels que les immunisations administrées ou les naissances vivantes assistées. Comme pour toute donnée, la qualité est un problème. Les données doivent être vérifiées pour évaluer l’exhaustivité des rapports par les établissements de santé, identifier les valeurs aberrantes extrêmes et la cohérence interne. Une méthode de rapport standardisée pour la qualité des données permet d’évaluer les progrès au fil du temps.</p>
+</section><section id="approche-description-des-étapes-analytiques" class="level2" data-number="5.3"><h2 data-number="5.3" class="anchored" data-anchor-id="approche-description-des-étapes-analytiques">
+<span class="header-section-number">5.3</span> Approche: Description des étapes analytiques</h2>
+<p>L’analyse des données mensuelles par district pour 2019-2024 est utilisée pour évaluer la qualité annuelle des données à l’aide des indicateurs standard suivants : Complétude des rapports, Détection des valeurs aberrantes, Cohérence interne, Complétude des données, Calcul des ratios, Score global de qualité.</p>
+</section><section id="implémentation-réalisation-de-lanalyse-dans-lapplication-shiny" class="level2" data-number="5.4"><h2 data-number="5.4" class="anchored" data-anchor-id="implémentation-réalisation-de-lanalyse-dans-lapplication-shiny">
+<span class="header-section-number">5.4</span> Implémentation: Réalisation de l’analyse dans l’Application Shiny</h2>
+</section><section id="calcul-et-interprétation-des-métriques-de-laqd" class="level2" data-number="5.5"><h2 data-number="5.5" class="anchored" data-anchor-id="calcul-et-interprétation-des-métriques-de-laqd">
+<span class="header-section-number">5.5</span> Calcul et interprétation des métriques de l’AQD</h2>
+<section id="sec-dqa-reporting-rate" class="level3" data-number="5.5.1"><h3 data-number="5.5.1" class="anchored" data-anchor-id="sec-dqa-reporting-rate">
+<span class="header-section-number">5.5.1</span> Reporting Completeness</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
@@ -652,8 +658,8 @@ Completeness of Monthly Facility Reporting
 </div>
 </div>
 <p>The app will automatically compute the overall data quality score based on the metrics described above. The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score. []</p>
-</section><section id="sec-dqa-data-completeness" class="level3" data-number="5.2.2"><h3 data-number="5.2.2" class="anchored" data-anchor-id="sec-dqa-data-completeness">
-<span class="header-section-number">5.2.2</span> Data Completeness</h3>
+</section><section id="sec-dqa-data-completeness" class="level3" data-number="5.5.2"><h3 data-number="5.5.2" class="anchored" data-anchor-id="sec-dqa-data-completeness">
+<span class="header-section-number">5.5.2</span> Data Completeness</h3>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -662,8 +668,8 @@ Completeness of Monthly Facility Reporting
 </div>
 </div>
 </div>
-</section><section id="sec-dqa-outlier" class="level3" data-number="5.2.3"><h3 data-number="5.2.3" class="anchored" data-anchor-id="sec-dqa-outlier">
-<span class="header-section-number">5.2.3</span> Outlier Detection</h3>
+</section><section id="sec-dqa-outlier" class="level3" data-number="5.5.3"><h3 data-number="5.5.3" class="anchored" data-anchor-id="sec-dqa-outlier">
+<span class="header-section-number">5.5.3</span> Outlier Detection</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
@@ -710,8 +716,8 @@ Extreme Outliers
 </table>
 </div>
 </div>
-</section><section id="sec-dqa-consistency" class="level3" data-number="5.2.4"><h3 data-number="5.2.4" class="anchored" data-anchor-id="sec-dqa-consistency">
-<span class="header-section-number">5.2.4</span> Internal Consistency</h3>
+</section><section id="sec-dqa-consistency" class="level3" data-number="5.5.4"><h3 data-number="5.5.4" class="anchored" data-anchor-id="sec-dqa-consistency">
+<span class="header-section-number">5.5.4</span> Internal Consistency</h3>
 <div class="cell">
 <div class="cell-output-display">
 <table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
@@ -803,8 +809,8 @@ Consistency of Annual Reporting
 </div>
 </div>
 </div>
-</section><section id="sec-dqa-overall-score" class="level3" data-number="5.2.5"><h3 data-number="5.2.5" class="anchored" data-anchor-id="sec-dqa-overall-score">
-<span class="header-section-number">5.2.5</span> Overall DQA Score</h3>
+</section><section id="sec-dqa-overall-score" class="level3" data-number="5.5.5"><h3 data-number="5.5.5" class="anchored" data-anchor-id="sec-dqa-overall-score">
+<span class="header-section-number">5.5.5</span> Overall DQA Score</h3>
 <p>In this section, the overall DQA score is calculated by considering the mean scores within some preselected data quality metrics as below.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -846,8 +852,8 @@ Summary of Performance
 </div>
 </div>
 </div>
-</section><section id="dqa-report-and-interpretation" class="level3" data-number="5.2.6"><h3 data-number="5.2.6" class="anchored" data-anchor-id="dqa-report-and-interpretation">
-<span class="header-section-number">5.2.6</span> <strong>DQA Report and interpretation</strong>
+</section><section id="dqa-report-and-interpretation" class="level3" data-number="5.5.6"><h3 data-number="5.5.6" class="anchored" data-anchor-id="dqa-report-and-interpretation">
+<span class="header-section-number">5.5.6</span> <strong>DQA Report and interpretation</strong>
 </h3>
 <p>The first report - DQA - is generated using the <code>Generate Report</code> button.</p>
 <p>The interpretation for this section should seek to answer the following questions:</p>
