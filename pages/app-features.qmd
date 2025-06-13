@@ -70,9 +70,8 @@ The main panel is the central workspace where the analysis result, visualization
 
 1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
 
-   ![](images/0-features-page-title.png){fig-align="center"}
-   
+![](images/0-features-page-title.png){fig-align="center"}
+
 2.  **Action Buttons**: Provides context-specific actions:
     -   **Generate Report**: Downloads a report specific to the current page or analysis.
     -   **Get Help**: Provides context-sensitive help and documentation for the current page.
-    
