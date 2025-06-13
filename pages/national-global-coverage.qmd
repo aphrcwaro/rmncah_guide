@@ -8,28 +8,4 @@ title: "Global Coverage Targets"
 source(here::here("_common.R"))
 ```
 
-# Global coverage targets for coverage of health services
-
-## **Rationale, Approach and implementation**
-
-Global initiatives such as EPMM, ENAP, and IA2030 define universal coverage goals to be achieved in every country nationally as well as subnationally. Tracking sub-national performance against these targets holds countries accountable and promotes equity.
-
-Three global targets for coverage indicators are of particular interest:
-
-1.  ANC4: 80% of districts have at least 70% coverage (EPMM/ENAP)
-2.  SBA or institutional delivery: 80% of districts have at least 80% coverage (EPMM/ENAP)
-3.  Penta3/DTP3: at least 80% coverage in every district or equivalent administrative unit with three doses of diphtheria-tetanus-pertussis containing vaccines (DTP/pentavalent vaccine).
-
-Progress towards international and national targets can be measured by computing the percentage of regions and districts that have achieved these targets. The goal is for all regions and districts to have met the target. Higher percentages mean less inequality.
-
-The key statistical measure for sub-national inequalities are:
-
--   Percent of sub-national units with coverage above a specific target or threshold: this indicator provides information on the extent to which a country has been successful in reaching universal coverage at the sub-national level.
-
-**Implementation: Conducting analysis in the Shiny App**
-
-Navigate to the National Analysis tab -\> Coverage Target and select the sub-national unit of interest (Admin Level 1 or District). Select the indicator group (Maternal Health or Vaccine indicators) and and inspect the percentage of Regions or districts (depending on choice of Admin level) that have achieved the global coverage targets.
-
-```{r out.width = "100%", fig.align = "center", echo=F, fig.cap = "Percentage ofAdmin Level 1 subnational units with >90% coverage for Vaccine indicators (BCG, Measle1 and Penta3"}
-knitr::include_graphics(here::here("images","2-nat-cov-target.png"))
-```
+## Global coverage targets for coverage of health services

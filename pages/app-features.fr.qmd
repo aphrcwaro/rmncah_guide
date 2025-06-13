@@ -20,7 +20,10 @@ The Title Bar, located at the top of the app, provides key information controls.
 
 1.  **Contextual Information**: Displays the current analysis context, such as the country of analysis (e.g., "Madagascar - Countdown Analysis").
 
-![](images/0-features-context.png){fig-align="center"}
+```{r, out.width= "100%", fig.align= "center", echo=FALSE, fig.cap = "Subnational Coverage Inequality for ANC4"}
+  knitr::include_graphics(here::here("images", "0-features-context.png"))
+
+```
 
 2.  **Cache Management**
 
@@ -58,7 +61,10 @@ The Sidebar is located on the left side of the app and contains the main navigat
 
 4.  **Analysis Set-up**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.
 
-![](images/2-analysis_setup.png){fig-align="center"}
+```{r, out.width= "100%", fig.align= "center", echo=FALSE, fig.cap = "Subnational Coverage Inequality for ANC4"}
+  knitr::include_graphics(here::here("images", ""))
+
+```
 
 5.  **National Analysis**: Provides tools for analyzing national-level data, including coverage and equity analysis.
 
@@ -70,9 +76,8 @@ The main panel is the central workspace where the analysis result, visualization
 
 1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
 
-   ![](images/0-features-page-title.png){fig-align="center"}
-   
+![](images/0-features-page-title.png){fig-align="center"}
+
 2.  **Action Buttons**: Provides context-specific actions:
     -   **Generate Report**: Downloads a report specific to the current page or analysis.
     -   **Get Help**: Provides context-sensitive help and documentation for the current page.
-    
