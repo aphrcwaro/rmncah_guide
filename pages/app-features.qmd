@@ -1,6 +1,4 @@
----
-title: "App Features"
----
+# App Features
 
 ```{r}
 #| echo: false
@@ -20,9 +18,17 @@ The Title Bar, located at the top of the app, provides key information controls.
 
 1.  **Contextual Information**: Displays the current analysis context, such as the country of analysis (e.g., "Madagascar - Countdown Analysis").
 
-![](images/0-features-context.png){fig-align="center"}
+```{r, out.width= "100%", fig.align= "center", echo=FALSE}
+  knitr::include_graphics(here::here("images", "0-sidebar_navigation.png"))
+
+```
 
 2.  **Cache Management**
+
+    ```{r, out.width= "100%", fig.align= "center", echo=FALSE}
+      knitr::include_graphics(here::here("images", "0-cache-setting.png"))
+
+    ```
 
     -   **Set Cache Directory:** This button allows you to specify a directory for saving intermediate results and progress.
 
@@ -33,13 +39,16 @@ The Title Bar, located at the top of the app, provides key information controls.
         -   The Cache button is enabled only once valid data has been uploaded into the App
         -   Changing the file path of the Cache mid analysis would require you to set the cache again, losing any saved progress after the last save.
 
-3.  **Download Report**: This button allows you to generate the final report. The available download formats are Word and PDF. ![](images/0-features-download.png){fig-align="center"}
-
 ## Sidebar
 
 The Sidebar is located on the left side of the app and contains the main navigation elements.It provides navigation through the analysis workflow. The sections are arranged sequentially to guide you through the process.
 
 ### Sidebar Navigation
+
+```{r, out.width= "100%", fig.align= "center", echo=FALSE}
+  knitr::include_graphics(here::here("images", "0-sidebar_navigation.png"))
+
+```
 
 1.  **Introduction**: Provides a brief overview of the app's purpose and functionality.
 
@@ -54,13 +63,22 @@ The Sidebar is located on the left side of the app and contains the main navigat
     -   Calculate Ratios
     -   Overall Score
 
-![](images/1-dqa_reporting_rates.png){fig-align="center"}
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","1-dqa_reporting_rates.png"))
+```
 
 4.  **Analysis Set-up**: Allows you to configure the analysis by selecting the data sources (UN Estimates, WUENIC estimates, and survey data). It also allows you to map the sub-national survey and mapping data to the uploaded data.
 
-![](images/2-analysis_setup.png){fig-align="center"}
+```{r, out.width= "100%", fig.align= "center", echo=FALSE}
+  knitr::include_graphics(here::here("images", "1-dqa_analysis_setup.png"))
+
+```
 
 5.  **National Analysis**: Provides tools for analyzing national-level data, including coverage and equity analysis.
+6.  **Sub-National Analysis:** For all sub-national analyses
+7.  **Mortality Analysis:** For all mortality analyses
+8.  **Service Utilization:** ForCurative health services utilization for sick children analyses
+9.  **Health System Performance:** Health systems progress and performance analysis
 
 ## Main Panel(Body Content)
 
@@ -70,8 +88,17 @@ The main panel is the central workspace where the analysis result, visualization
 
 1.  **Page Title**: Displays the current module or analysis step (e.g., "Reporting Rate").
 
-![](images/0-features-page-title.png){fig-align="center"}
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","1-dqa_reporting_rates.png"))
+```
 
 2.  **Action Buttons**: Provides context-specific actions:
-    -   **Generate Report**: Downloads a report specific to the current page or analysis.
-    -   **Get Help**: Provides context-sensitive help and documentation for the current page.
+    -   **Download Report**: Helps you to download two reports: **Synthesis report** and the **Subnational one paper report**
+
+    -   **Generate Report**: Downloads a report specific to the analysis section.
+
+        NB: This button is green in colour and only appears in the sections where the user can download the section reports.
+
+    -   **Get Help**: Provides context-specific help and documentation for the current page.
+
+    -   **Download Plot / Download Data:** Allows the user to download the displayed output and the data associated with the output, respectively.

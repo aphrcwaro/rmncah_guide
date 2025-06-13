@@ -62,14 +62,14 @@ kable(dqa_table1, align = "l", booktabs = TRUE, escape = FALSE) %>%
 
 Within the Shiny App, you can select the indicator of interest, the reporting rate cutoff point (performance Threshold)- the default value has been set at 90% reporting rate.
 
-You can also choose the level of you analysis (Admin Level (Regions) or District level). Below is an output for ANC reporting rate at THE Admin Level 1.
+You can also choose the level of you analysis (Admin Level (Regions) or District level). Below is an output for ANC reporting rate at the Admin Level 1.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","1-dqa_reporting_rates.png"))
 # library(knitr)
 ```
 
-The app will automatically compute the overall data quality score based on the metrics described above. The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score. \[\]
+The app will also produce a report with the results of the data quality assessment, including the numerators and denominators for each indicator, as well as the overall data quality score.
 
 ### Data Completeness {#sec-dqa-data-completeness}
 
@@ -109,6 +109,13 @@ kable(dqa_table2, align = "l", booktabs = TRUE, escape = FALSE) %>%
     footnote_as_chunk = TRUE,
     escape = FALSE
   )
+```
+
+The Shiny App allows users to visually investigate which sub-national units have outliers and for which months. This way, they can factor in their country context in determining whether indeed it is a data quality issue or not.
+
+```{r, out.width = "100%", fig.align = "center", echo=F}
+knitr::include_graphics(here::here("images","1-dqa_outliers.png"))
+# library(knitr)
 ```
 
 ### Internal Consistency {#sec-dqa-consistency}
@@ -201,7 +208,7 @@ kable(dqa_table, align = "l", booktabs = TRUE, escape = FALSE) %>%
   row_spec(1, extra_css = "border-bottom: 1px solid;") 
 ```
 
-It is in this section that the first section report is downloaded capturing the key DQA indicators as shown below.
+The app will automatically compute the overall data quality score based on the metrics described above. It is in this section that the first section report is downloaded capturing the key DQA indicators as shown below.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","1-dqa_overall_score.png"))

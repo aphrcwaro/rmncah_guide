@@ -1,4 +1,4 @@
-# National coverage of interventions
+# Coverage
 
 ```{r}
 #| echo: false
@@ -10,7 +10,7 @@ source(here::here("_common.R"))
 
 **Rationale: Scientific basis for the analysis**
 
-Coverage of interventions is a critical and direct output of health systems. Regular tracking of coverage at national and subnational levels has become the mainstay of monitoring progress in national health plans and international initiatives. Reproductive, maternal, newborn, child and adolescent health indicators with targets are the most common indicators of national health plans and global monitoring. Both health facility data and household surveys can provide coverage statistics, and an integrated analytical approach is desirable.
+Coverage of interventions is a critical and direct output of health systems. Regular tracking of coverage at national and sub-national levels has become the mainstay of monitoring progress in national health plans and international initiatives. Reproductive, maternal, newborn, child and adolescent health indicators with targets are the most common indicators of national health plans and global monitoring. Both health facility data and household surveys can provide coverage statistics, and an integrated analytical approach is desirable.
 
 **Approach: Description of analytical steps**
 
@@ -83,22 +83,22 @@ Sometimes, an indicator may reach an unlikely high coverage at the national leve
 [^national-coverage-1]: Surveys can provide coverage of IFA supplementation, as here the unit of data analysis is individual pregnant women.
 
 ```{r, out.width= "100%", fig.align= "center", echo=FALSE, fig.cap = "Subnational Coverage Inequality for ANC4"}
-  knitr::include_graphics(here::here("images", "2-national-anc-cov.png"))
+  knitr::include_graphics(here::here("images", "2-nat-fpet.png"))
 ```
 
 ### Delivery care {#sec-nat-cov-delivery}
 
 All countries have at least one delivery care indicator with a target in the national plan. The global ENAP/EPMM coverage target for 2025 is at least 90% global average coverage, and 90% of countries at least 80% coverage of skilled birth attendance (SBA). For postnatal care (PNC) within 2 days the global coverage target is 80% and the 90% of countries with at least 60% coverage.
 
-*Institutional (live) birth coverage and SBA* are closely related, as almost all deliveries with a skilled attendant occur in health facilities. From the analytical point of view, institutional birth coverage is preferred because it is a more objective measure and avoids issues with the definition of what constitutes skilled birth. SBA is often preferred from the health care perspective, as it includes an element of quality: obviously, an institutional delivery without skilled attendance is not desirable, and in some countries home SBA may be part of the health care delivery strategy. attendance. Either indicator works well to capture delivery care.
+***Institutional (live) birth coverage and SBA*** are closely related, as almost all deliveries with a skilled attendant occur in health facilities. From the analytical point of view, institutional birth coverage is preferred because it is a more objective measure and avoids issues with the definition of what constitutes skilled birth. SBA is often preferred from the health care perspective, as it includes an element of quality: obviously, an institutional delivery without skilled attendance is not desirable, and in some countries home SBA may be part of the health care delivery strategy. attendance. Either indicator works well to capture delivery care.
 
-*Caesarean section* is a live saving intervention and an important indicator. A general rule of thumb is, put forward by WHO, that in a population the need for Caesarean section is in the range of 10-15% of all deliveries. If the Caesarean section rate is below 10%, that means that there is unmet need. If the Caesarean section rate is over 10-15%, that implies that there most likely overuse of Caesarean section. It may however also imply that there is still unmet need among certain population groups (e.g. the poorest women or rural women) in combination with overuse in other subgroups of the population (such as urban and richer women).
+***Caesarean section*** is a live saving intervention and an important indicator. A general rule of thumb is, put forward by WHO, that in a population the need for Caesarean section is in the range of 10-15% of all deliveries. If the Caesarean section rate is below 10%, that means that there is unmet need. If the Caesarean section rate is over 10-15%, that implies that there most likely overuse of Caesarean section. It may however also imply that there is still unmet need among certain population groups (e.g. the poorest women or rural women) in combination with overuse in other subgroups of the population (such as urban and richer women).
 
-*Postnatal care (PNC) within 48 hours* is provided to the mother/women and newborn. Country systems may have different ways of recording the type of PNC and also surveys are known to have data issues with PNC for the mother or the baby.[^national-coverage-2] Some countries use multiple definitions of timing of the PNC visit (e.g., within the first week).
+***Postnatal care (PNC) within 48 hours*** is provided to the mother/women and newborn. Country systems may have different ways of recording the type of PNC and also surveys are known to have data issues with PNC for the mother or the baby.[^national-coverage-2] Some countries use multiple definitions of timing of the PNC visit (e.g., within the first week).
 
 [^national-coverage-2]: Amouzou A, Hazel E, Vaz L, Sanni Y, Moran A. Discordance in postnatal care between mothers and newborns: Measurement artifact or missed opportunity? J Glob Health. 2020 Jun;10(1):010505.
 
-*Low birthweight* is a critical indicator of neonatal health. It is most meaningful if the distinction between prematurity and small-for-gestational age is made, but most facility reporting systems and most surveys do not have such data. All babies are supposed to have been weighed right after birth and the percent of newborns weighing less than 2500 grams is usually reported in the DHIS2 system. As general guidance for the interpretation of the data, low birthweight prevalence in sub-Saharan Africa was estimated at 13.9% (95% credibility interval: 12.4-15.7%) for 2020.[^national-coverage-3]
+***Low birthweight*** is a critical indicator of neonatal health. It is most meaningful if the distinction between prematurity and small-for-gestational age is made, but most facility reporting systems and most surveys do not have such data. All babies are supposed to have been weighed right after birth and the percent of newborns weighing less than 2500 grams is usually reported in the DHIS2 system. As general guidance for the interpretation of the data, low birthweight prevalence in sub-Saharan Africa was estimated at 13.9% (95% credibility interval: 12.4-15.7%) for 2020.[^national-coverage-3]
 
 [^national-coverage-3]: Okwaraji YB, et al. National, regional, and global estimates of low birthweight in 2020, with trends from 2000: a systematic analysis. Lancet. 2024 Mar 16;403(10431):1071-1080.
 
@@ -123,5 +123,5 @@ FPET uses statistical modelling that incorporates all available data from survey
 [^national-coverage-5]: https://www.track20.org/pages/data_analysis/publications/methodological/family_planning_estimation_tool.php
 
 ```{r, out.width = "100%", fig.align = "center", echo=FALSE, fig.cap = "FP among currently married women 15-49 years"}
-  knitr::include_graphics(here::here("images", "2-national-anc-cov.png"))
+  knitr::include_graphics(here::here("images", "2-nat-cov-fp.png"))
 ```

@@ -1,10 +1,6 @@
----
-title: "Maternal Mortality"
----
+# Maternal Mortality
 
-## Maternal Mortality
-
-### Rationale, Approach and implementation
+## Rationale, Approach and implementation
 
 **Rationale: Scientific basis for the analysis**
 
@@ -88,7 +84,7 @@ Interpretation:
 
 -   If the ratio is lower than 7: under-reporting of stillbirths is likely greater than under-reporting of maternal deaths
 -   If the ratio is equal or greater than 30: under-reporting of maternal deaths is likely to be the main issue, under-reporting of stillbirth less serious than for maternal deaths.
--   If the ratio is between 7 and 30: under-reporting of maternal deaths and under-reporting of stillbirths are both possible, or reporting of both is of good quality (this requires that the level is also in the expected range  - component 1).
+-   If the ratio is between 7 and 30: under-reporting of maternal deaths and under-reporting of stillbirths are both possible, or reporting of both is of good quality (this requires that the level is also in the expected range - component 1).
 
 ![Ratio of stillbirths to maternal deaths in health facilities, based on the reported data in DHIS2, 2019-2024, national and regions](images/5-mortality_ratio_sbr_mmr.png){fig-align="center"}
 

@@ -1,7 +1,4 @@
----
-title: "Mortality Mapping"
-
----
+# Mortality Mapping
 
 ```{r}
 #| echo: false

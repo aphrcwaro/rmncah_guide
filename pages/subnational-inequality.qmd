@@ -1,6 +1,4 @@
----
-title: "Inequality"
----
+# Inequality
 
 ```{r}
 #| echo: false
@@ -8,9 +6,7 @@ title: "Inequality"
 source(here::here("_common.R"))
 ```
 
-## Sub-national Inequality {#sec-subnat-inequality}
-
-### Rationale, Approach and implementation
+## Rationale, Approach and implementation
 
 **Rationale: Scientific basis for the analysis**
 
@@ -30,7 +26,7 @@ The key statistical measures for sub-national inequalities are:
 
 Progress towards international and national targets can be measured by computing the percentage of regions and districts that have achieved these targets. The goal is for all regions and districts to have met the target. Higher percentages mean less inequality.
 
-**Implementation: Conducting analysis in the Shiny App**
+## **Implementation: Conducting analysis in the Shiny App**
 
 Navigate to the **Subnational Analysis** tab **=\>Subnational Inequality** and inspect the plotted regional and district results by year, with the median absolute distance from the median (MADM, see screenshot below), as the summary measure to assess if inequalities have reduced.
 
