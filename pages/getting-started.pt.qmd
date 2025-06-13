@@ -66,7 +66,7 @@ knitr::include_graphics(here::here("images","rstudio.png"))
 
 ## Instalação do pacote CD2030 RMNCAH {#sec-instal-cd2030-rmncah}
 
-Após instalar o R e o RStudio, pode prosseguir com a instalação da aplicação Countdown2030 RMNCAH, que está alojada no GitHub sob o repositório [`cd2030.rnncah`]([https://github.com/aphrcwaro/cd2030.rmncah](https://github.com/aphrcwaro/cd2030.rmncah)). A aplicação é implementada como um pacote R e suporta a geração interativa de dashboards via Shiny.
+Após instalar o R e o RStudio, pode prosseguir com a instalação da aplicação Countdown2030 RMNCAH, que está alojada no GitHub sob o repositório [`cd2030.rnncah`](%5Bhttps://github.com/aphrcwaro/cd2030.rmncah%5D(https://github.com/aphrcwaro/cd2030.rmncah)). A aplicação é implementada como um pacote R e suporta a geração interativa de dashboards via Shiny.
 
 ### Instalação via Consola R
 
@@ -112,27 +112,23 @@ Utilizadores avançados com contas GitHub podem preferir clonar o repositório d
 -   Inspeção da estrutura do pacote
 -   Uma vez clonado, abra o arquivo .Rproj no RStudio para definir o diretório de trabalho.
 
-::: columns
+::::: columns
 ::: {.column width="50%"}
-
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","github-repo.png"))
 # library(knitr)
 # opts_chunk$set(list(echo = FALSE, eval = FALSE))
 ```
-
 :::
 
 ::: {.column width="50%"}
-
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","project-file.png"))
 # library(knitr)
 # opts_chunk$set(list(echo = FALSE, eval = FALSE))
 ```
-
 :::
-:::
+:::::
 
 Para instalar e executar:
 

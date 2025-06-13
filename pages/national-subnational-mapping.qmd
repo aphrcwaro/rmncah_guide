@@ -1,6 +1,4 @@
----
-title: "Sub-national Mapping"
----
+# "Sub-national Mapping
 
 ```{r}
 #| echo: false
@@ -8,4 +6,4 @@ title: "Sub-national Mapping"
 source(here::here("_common.R")) 
 ```
 
-## National and subnational mapping of health service coverage
+## National and sub-national mapping of health service coverage

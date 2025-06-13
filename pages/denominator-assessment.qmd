@@ -1,4 +1,4 @@
-# Denominator Assessment and selection
+# Denominator Assessment and selection {#sec-denom-assessment}
 
 ## Rationale, Approach and Implementation
 
@@ -60,18 +60,14 @@ Differences may occur, but large discrepancies suggest issues with DHIS2 populat
 1.  **Population size:**\
     A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHOS2 projections.
 
-    $$
-    \text{Relative difference} = \left| \frac{\text{Pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{Pop}_{\text{UN}}} \right|
-    $$
+    \$ \text{Relative difference} = \left\| \frac{\text{Pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{Pop}_{\text{UN}}} \right\| \$
 
 2.  **Population growth during 2023--2024:**\
     Annual growth is computed using the natural logarithm as below.
 
 **Interpretation:** A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.
 
-$$
-\ln \left( \frac{\text{Pop}_{2024}}{\text{Pop}_{2023}} \right)
-$$
+\$ \ln \left( \frac{\text{Pop}_{2024}}{\text{Pop}_{2023}} \right) \$
 
 1.  **Crude birth rate (CBR):**
 
@@ -81,7 +77,7 @@ Defined as the number of live births per 1,000 population. We compare the DHIS2 
 
 DHIS2 CBR is defined as:
 
-$$ CBR = \frac{\text{Total Projected livebirths}}{\text{Total Population}} \times 1000 $$
+\$ CBR = \frac{\text{Total Projected livebirths}}{\text{Total Population}} \times 1000 \$
 
 **Interpretation:** A difference greater than 5 per 1,000 population compared to the UN estimate suggests a data quality issue.
 
@@ -93,7 +89,7 @@ $$ CBR = \frac{\text{Total Projected livebirths}}{\text{Total Population}} \time
 
     **Interpretation:** A **negative CDR** or a **CDR \< 5 per 1,000** indicates inconsistency and potential data problems.
 
-$$CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}$$
+$CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}$
 
 ### Part 2: Best Denominator Selection
 
@@ -107,7 +103,7 @@ For the national level, we evaluate 4 denominator methods. The first two are pro
 
 The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.
 
-Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the [WHO website](https://data.unicef.org/topic/child-survival/neonatal-mortality/). The default assumptions are as follows:
+Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the [WHO website](https://data.unicef.org/topic/child-survival/neonatal-mortality/). The default global assumptions are as follows:
 
 -   Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.
 -   Stillbirths or pregnancy loss between 28 weeks and birth: 2%.
@@ -177,7 +173,7 @@ knitr::include_graphics(here::here("images","1-dqa_denom_rates.png"))
 
 7.  **Penta 1 Survey (%)** - Percentage of infants aged 12–23 months who received the first dose of pentavalent vaccine.(Example: If 920 out of 1,000 infants received the first dose, the Penta 1 coverage is 92%.)
 
-8.  **Survey coverage based percentages (based on the most recent survey)**
+-   **Survey coverage based percentages (based on the most recent survey)**
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","1-dqa_survey_setup.png"))
@@ -204,7 +200,7 @@ knitr::include_graphics(here::here("images","1-dqa_survey_setup.png"))
 
 9.  **Survey data start year** - The calendar year from which the survey data starts. This is used to determine the time period for which the survey data is relevant. Ideally, it is recommended to use the two most recent surveys for this analysis.(Example: If a country has survey data for 2008, 2013, 2018 and 2023; the Survey data start should be 2018 (two most recent)).
 
-10. **Survey datasets**
+-   **Survey datasets**
 
     In addition to setting these parameters, you will be required to upload the following survey datasets (in addition to the health facility data loaded at the beginning of the analysis session).
 
@@ -213,12 +209,13 @@ knitr::include_graphics(here::here("images","1-dqa_survey_setup.png"))
 
     ```
 
-    -   UN Estimates data
-    -   UN Mortality data
-    -   WUENIC estimates data
-    -   Survey data (uploaded as a folder)
+    1.  UN Estimates data
+    2.  UN Mortality data
+    3.  WUENIC estimates data
+    4.  Survey data (uploaded as a folder)
+    5.  FPET data
 
-### Denominator assessment {#sec-denom-assessment}
+### Denominator assessment
 
 The first part is to assess the accuracy and consistency of the projected population numbers in the DHIS-2 by comparing them to external sources.
 
@@ -231,7 +228,7 @@ The interpretation should focus on the extent to which the DHIS2 projections are
 -   The projected numbers of total population and live births are close to the UN population projection
 -   The DHIS2 population projections are consistent with UN estimates for crude birth rate and crude death rate.
 
-The second part is to compare results from the different methods - both at the national and sub-national levels.![](images/1-dqa_dhis2_comparison.png)
+The second part is to compare results from the different methods - both at the national and sub-national levels.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","1-dqa_dhis2_comparison.png"))

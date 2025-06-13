@@ -1,6 +1,6 @@
----
-title: "Global Coverage Targets"
----
+
+Global Coverage Targets"
+
 
 ```{r}
 #| echo: false
@@ -9,3 +9,8 @@ source(here::here("_common.R"))
 ```
 
 ## Global coverage targets for coverage of health services
+
+```{r, out.width= "100%", fig.align= "center", echo=FALSE, fig.cap = "Subnational Coverage Inequality for ANC4"}
+  knitr::include_graphics(here::here("images", "2-nat-cov-targets.png"))
+```
+

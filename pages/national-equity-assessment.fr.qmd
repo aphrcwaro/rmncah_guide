@@ -1,5 +1,9 @@
----
-title: "National Equity Assessment"
----
 
 # National Equity Assessment
+
+```{r}
+#| echo: false
+
+source(here::here("_common.R"))
+```
+

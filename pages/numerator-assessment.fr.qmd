@@ -6,19 +6,19 @@
 source(here::here("_common.R"))
 ```
 
-## Rationale, Approach and implementation {#sec-dqa-assess-science}
+## Raisonnement, Approche et Implémentation {#sec-dqa-assess-science}
 
-**Rationale: Scientific basis for the analysis**
+## Raisonnement: Base scientifique de l'analyse
 
-Routinely reported health facility data are an important data source for health indicators at facility and population level. The data are reported by health facilities on events such as immunizations given, or live births attended. As with any data, quality is an issue. Data needs to be checked to consider completeness of reporting by health facilities, identify extreme outliers and internal consistency. A standard reporting method for data quality allows assessment of progress over time.
+Les données de routine rapportées par les établissements de santé constituent une source de données importante pour les indicateurs de santé au niveau des établissements et de la population. Ces données sont rapportées par les établissements de santé sur des événements tels que les immunisations administrées ou les naissances vivantes assistées. Comme pour toute donnée, la qualité est un problème. Les données doivent être vérifiées pour évaluer l'exhaustivité des rapports par les établissements de santé, identifier les valeurs aberrantes extrêmes et la cohérence interne. Une méthode de rapport standardisée pour la qualité des données permet d'évaluer les progrès au fil du temps.
 
-**Approach: Description of analytical steps**
+## Approche: Description des étapes analytiques
 
-The analysis of the monthly data by district for 2019-2024 is used to assess annual data quality using the following standard indicators: *Reporting completeness*, *Outlier detection*,*Internal Consistency* *Data completeness*, *Ratios calculation*, *Overall quality score*
+L'analyse des données mensuelles par district pour 2019-2024 est utilisée pour évaluer la qualité annuelle des données à l'aide des indicateurs standard suivants : Complétude des rapports, Détection des valeurs aberrantes, Cohérence interne, Complétude des données, Calcul des ratios, Score global de qualité.
 
-**Implementation: Conducting analysis in the Shiny App**
+## Implémentation: Réalisation de l'analyse dans l'Application Shiny
 
-## DQA Metrics calculation and interpretation
+## Calcul et interprétation des métriques de l'AQD
 
 ```{r setup, include=FALSE}
 library(knitr) 

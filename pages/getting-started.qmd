@@ -15,8 +15,11 @@ The tool facilitates in-depth inspection of data quality and supports subnationa
 To use this innovative digital health analytics tool, the following are required:
 
 -   Install the latest versions of **R** and **RStudio**
--   Install the **cd2030.rmncah** R package installation instructions ([available here](denominator-assessment.qmd#sec-instal-cd2030-rmncah))
--   Ensure access to all required ([datasets](#sec-data-requirements)) and ([parameters](denominator-assessment.qmd#sec-denom-analysis-setup))
+
+-   Install the **cd2030.rmncah** R package latest version-noted by the superscript suffix in the name of the App
+
+    Ensure access to all required ([datasets](#sec-data-requirements)) and ([parameters](denominator-assessment.qmd#sec-denom-analysis-setup))
+
 -   Install **RTools** (for Windows users, to support package compilation)
 
 ## Installing R and RStudio {#sec-instal-r}
@@ -138,15 +141,15 @@ library(cd2030.rmncah)
 dashboard()
 ```
 
-### RTools for Windows
+### `RTools` for Windows
 
-To compile packages from source, especially development versions, RTools must be installed. Ensure compatibility with your installed R version:
+To compile packages from source, especially development versions, RTools must be installed. Ensure the Rtools selected corresponds and is compatibile with your installed R version.:
 
 -   **R 4.2.0** → Rtools42
 -   **R 4.4.0** → Rtools44
 -   **R 4.5.0** → Rtools45
 
-RTools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
+Rtools can be downloaded from [CRAN](https://cran.r-project.org/bin/windows/Rtools/)
 
 ## Data requirements {#sec-data-requirements}
 
