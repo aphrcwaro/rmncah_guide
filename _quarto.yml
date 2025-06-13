@@ -93,17 +93,12 @@ book:
       part-pt: Mortalidade
       chapters:
         - pages/maternal-mortality.qmd
-        - pages/maternal-mortality.qmd
-        - pages/mortality-mapping.qmd
-        - pages/mortality-completeness.qmd
-
-
+       
     - part: Service Utilization
       part-fr: Utilisation des services
       part-pt: Utilização dos Serviços
       chapters: 
-        - pages/national-utilization.qmd
-        - pages/subnational-utilization-inequality.qmd
+        - pages/service-utilization.qmd
         
     - part: Health System Perfomance
       part-fr: Performance du système de santé
@@ -111,7 +106,7 @@ book:
       chapters:
         - pages/health-systems-analyses.qmd
         - pages/health-systems-inputs.qmd
-        - pages/health-systems-outputs.qmd
+        - pages/health-systems-outputs-by-inputs.qmd
         - pages/private-sector-analyses.qmd
 
     - pages/planning-ahead.qmd
