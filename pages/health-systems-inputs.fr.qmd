@@ -11,9 +11,9 @@ source (here::here("_common.R"))
 
 First, the assessment focuses on the quality of data for the health system indicators at national and sub-national levels. For selected indicators, the assessment should focus on:
 
-1.  1\) comparison with global data for selected indicators (national level only)
+1.  Comparison with global data for selected indicators (national level only)
 
-2.  2\) plausibility of indicator values by subnational units – major outliers? Improbable patterns?
+2.  Plausibility of indicator values by subnational units – major outliers? Improbable patterns?
 
 3.  In addition, it is useful to explore the associations of the health system indicators with each other (e.g. workforce and beds), if only to detect inconsistencies by admin1 (province, region, county).
 

@@ -50,7 +50,7 @@ Extreme outliers, as defined in the previous section, will be corrected by imput
 **Table 2: Summary of adjustments made to the raw health facility data in preparation of a clean data set for the endline analysis**
 
 | **Problem** | **Action** | **Adjustment** |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | Low reporting rates: identifying low rates that were adjusted | If below 75% (default), data were imputed | Median monthly value for the district year was imputed for the month with low reporting |
 | Incomplete reporting by districts, variable over time, affecting trend assessment | If reporting rates were \>=75% and \<= 100% default), an assumption was made about the volume of services provided by the non-reporting facilities | Adjustment factor k value was used to adjust for incomplete reporting k default value 0.25 (replace if different value used; state if used for all reporting forms or different k factors between forms) |
 | Extreme outliers can greatly affect coverage trend assessments | If a monthly value was greater or smaller than 5 times the median absolute deviation (MAD) from district monthly median value, an adjustment was made | Extreme monthly outliers are corrected and given the district median value for the same year |

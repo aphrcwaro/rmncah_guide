@@ -18,7 +18,7 @@ It has the following subsections:
 
 -   Private sector and RMNCAH-N services
 
-## Rationale, Approach and implementation
+## Rationale, approach and implementation
 
 **Rationale: Scientific basis for the analysis**
 

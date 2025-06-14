@@ -32,7 +32,7 @@ The following can be examined:
 
 -   The interpretation should be based on knowledge of the actual situation in the regions.
 
-2.  ***Association between health workforce (core health professionals per 10,000) and outpatient visits among children under 5, by region***
+2.  ***Association between health workforce (core health professionals per 10,000) and outpatient visits among children under 5, by admin1***
 
 -   We expect that regions with lower health workforce density have lower OPD utilization rates for children, and those with higher density have higher admission rates. This would show as a positive slope of a linear regression line, as in the figure below.
 
@@ -48,7 +48,7 @@ The following can be examined:
 
 -   The interpretation should be based on knowledge of the actual situation in the regions.
 
-3.  ***Association between health workforce (core health professionals per 10,000) and institutional live birth coverage, by region***
+3.  ***Association between health workforce (core health professionals per 10,000) and institutional live birth coverage, by admin1***
 
 -   For delivery coverage, data by region from either a recent household survey or the most recent DHIS2 data derived estimate can be used.
 
