@@ -38,7 +38,7 @@ It has the following subsections:
 
 The analysis for these subsections is conducted within the Health System Performance section of the Shiny App as shown here:
 
-```{r, out.width = "100%", fig.align = "center", echo=F, fig.cap = "Percentage ofAdmin Level 1 subnational units with >90% coverage for Vaccine indicators (BCG, Measle1 and Penta3"}
+```{r, out.width = "100%", fig.align = "center", echo=F}
 
 knitr::include_graphics(here::here("images","6-hs_hs_performance.png"))
 

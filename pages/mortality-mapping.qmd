@@ -1,7 +1,0 @@
-# Mortality Mapping
-
-```{r}
-#| echo: false
-
-source(here::here("_common.R"))
-```
