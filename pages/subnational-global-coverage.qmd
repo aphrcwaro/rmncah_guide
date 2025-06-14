@@ -1,0 +1,7 @@
+```{r}
+#| echo: false
+
+source(here::here("_common.R"))
+```
+
+# Global coverage targets {#sec-subnat-cov-target}
