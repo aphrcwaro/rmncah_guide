@@ -21,7 +21,7 @@ A critical step is a systematic assessment of data quality issues, which forms t
 The definitions for institutional, community and population maternal mortality and for stillbirths are:
 
 | **Indicator** | **Numerator** | **Denominator** |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | Institutional maternal mortality ratio (iMMR) | Number of maternal deaths in health facilities[^maternal-mortality-1] | Number of live births in health facilities \* 100,000 |
 | Population maternal mortality (MMR) | Number of maternal deaths in the population | Number of live births in the population \* 100,000 |
 | Community maternal mortality ratio (comer) | Number of maternal deaths in the community | Number of live births in the community \* 100,000 |
