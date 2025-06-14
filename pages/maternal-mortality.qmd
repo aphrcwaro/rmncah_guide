@@ -1,4 +1,4 @@
-# Maternal Mortality
+# Institutional Mortality
 
 ## Rationale, Approach and implementation
 
@@ -21,7 +21,7 @@ A critical step is a systematic assessment of data quality issues, which forms t
 The definitions for institutional, community and population maternal mortality and for stillbirths are:
 
 | **Indicator** | **Numerator** | **Denominator** |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | Institutional maternal mortality ratio (iMMR) | Number of maternal deaths in health facilities[^maternal-mortality-1] | Number of live births in health facilities \* 100,000 |
 | Population maternal mortality (MMR) | Number of maternal deaths in the population | Number of live births in the population \* 100,000 |
 | Community maternal mortality ratio (comer) | Number of maternal deaths in the community | Number of live births in the community \* 100,000 |
@@ -57,7 +57,7 @@ Several considerations need to be made:
 -   A map with the iMMR by region/province would be a useful addition to guide the interpretation of the data, especially focusing on potential data quality issues.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
-knitr::include_graphics(here::here("images","5-mortality_mmr_inst_map.png"))
+knitr::include_graphics(here::here("images","5-mmr_inst_map.png"))
 
 ```
 
