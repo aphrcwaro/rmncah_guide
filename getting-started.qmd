@@ -118,7 +118,9 @@ To run the analysis efficiently, each country team will require to have a folder
 
 4.  UN mortality data
 
-5.  FPET data These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.
+5.  FPET data
+
+These datasets will be provided to the country teams by the Countdown2030 team prior to the workshop.
 
 ### Country specific analysis parameters
 
