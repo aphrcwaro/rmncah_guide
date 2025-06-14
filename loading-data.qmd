@@ -49,7 +49,7 @@ Step 2: Upload the File
 ## **Common Errors and How to Fix Them**
 
 | **Error Message** | **Cause** | **Solution** |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | "Unsupported file format" | File type not supported | Save your file as .xls, .xlsx, .dta, or .rds. |
 | "The following required columns are missing from the data: opv1" | Missing essential columns in the data | Add the missing column(s) to your dataset and ensure their values are valid. |
 | "The following sheets are missing: Service_data_1, Service_data_2, Service_data_3, Reporting_completeness, Population_data, Admin_data" | Missing one or more required sheets in the file | Add the missing sheets to your file and ensure they conform to the template. |
