@@ -88,13 +88,15 @@ In the first part, we assess the **quality of the DHIS2 population projections**
 
             (both expressed per 1,000 population). A **negative CDR** or a **CDR \< 5 per 1,000** indicates inconsistency and potential data problems.
 
+### Denominators assessment
+
 The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.
 
-For the national level, we evaluate 4 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional two are facility data- based methods ( ***ANC1-derived*** and ***penta1-derived*** denominators).
+For the national level, we evaluate 5 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional three are facility data- based methods ( ***ANC1-derived***, ***penta1-derived, and penta1-derived adjusted for population growth*** denominators).
 
 **Note**
 
--   For the sub-national level, no UN projections are available, so we will use 3 methods only.
+-   For the sub-national level, no UN projections are available, so we will access 4 methods only.
 
 The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.
 
@@ -104,15 +106,19 @@ Starting with pregnancies, the number of live births is closely associated with 
 
 -   Stillbirths or pregnancy loss between 28 weeks and birth: 2%.
 
--   Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.
+-   Twinning rate: 1.5%.
+
+These first three steps above give the number of live births computed from pregnancies.
 
 -   Neonatal mortality: 3% (or 30 per 1,000 live births).
 
 -   Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).
 
-The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: ***institutional live births*** and ***penta3***. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys -- the results will be the same).
+### Denominators based on estimated live births from DHIS2 and UN population sources
 
-### Facility data derived denominators
+The idea is to use the estimated live birth from the two sources of population (DHIS2 and UN) and using the different parameters to derive the different denominators as listed in Table 3 above.
+
+### Denominators derived from routine Health Facility data
 
 The basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).
 
@@ -140,9 +146,13 @@ The number of live births can be obtained from ANC1 and DPT1 by making assumptio
 
 -   at 3% neonatal mortality this implies 101,164 \* (1-0.03) = 98,129 children eligible for DPT1/penta1.
 
+### Selection of the best performing denominator
+
+The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: ***institutional live births*** and ***penta3***. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys -- the results will be the same).
+
 ## Implementation: Conducting analysis in the Shiny App
 
-Shiny App
+**Shiny App**
 
 To get outputs for this analysis first, one need to set up their analysis by inputting key information at the **Analysis Set up** section in the Shiny App.
 
