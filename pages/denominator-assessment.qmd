@@ -4,7 +4,7 @@
 
 **Rationale: Scientific basis for the analysis**
 
-Service coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions/provinces and districts).
+Service coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions and districts).
 
 **Approach: Description of analytical steps**
 
@@ -20,7 +20,7 @@ Each indicator has its own denominator, as shown in the table below.
 **Table 3: Selected indicators with numerators and denominators**
 
 | **Indicators** | **Numerator** | **Denominator** |
-|:---|:---|:---|
+|:-----------------------|:-----------------------|:-----------------------|
 | **SERVICE UTILIZATION** |  |  |
 | Outpatient visits, children under 5, per year (N) | N of OPD visits for under-5 | Total mid-year population under 5 |
 | Inpatient admissions, children under 5, per year (N) | N of admissions for under-5 | Total mid-year population under 5 |
@@ -41,7 +41,7 @@ Each indicator has its own denominator, as shown in the table below.
 | Estimated modern use of contraceptives | Couple years of protection | Total N of women 15-49 years |
 | FP coverage (demand satisfied) | N of women using modern methods | Total N of women in need of FP |
 
-### Part 1: Quality Assesment of Population projections in DHIS2
+### Part 1: Quality assessment of population projections in DHIS2
 
 In the first part, we assess the **quality of the DHIS2 population projections** at national level:
 
@@ -58,7 +58,7 @@ $$then the crude birth rates (defined as the number of live births in DHIS2 proj
 Differences may occur, but large discrepancies suggest issues with DHIS2 population projections. The comparison is done for four indicators. Abnormal values are flagged:
 
 1.  **Population size:**\
-    A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHOS2 projections.
+    A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHIS2 projections.
 
     \$ \text{Relative difference} = \left\| \frac{\text{Pop}_{\text{DHIS2}} - \text{pop}_{\text{UN}}}{\text{Pop}_{\text{UN}}} \right\| \$
 
@@ -69,7 +69,7 @@ Differences may occur, but large discrepancies suggest issues with DHIS2 populat
 
 \$ \ln \left( \frac{\text{Pop}_{2024}}{\text{Pop}_{2023}} \right) \$
 
-1.  **Crude birth rate (CBR):**
+3.  **Crude birth rate (CBR):**
 
 Defined as the number of live births per 1,000 population. We compare the DHIS2 CBR for 2023 with the UN estimate of the CBR for the same year.
 
@@ -91,15 +91,15 @@ DHIS2 CBR is defined as:
 
 $CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}$
 
-### Part 2: Best Denominator Selection
+### Part 2: Denominator Selection
 
 The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.
 
-For the national level, we evaluate 4 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional two are facility data- based methods ( ***ANC1-derived*** and ***penta1-derived*** denominators).
+For the national level, we evaluate 5 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional three are facility data- based methods ( ***ANC1-derived***, ***penta1-derived*** and **penta1-derived adjusted for population growth** denominators).
 
 **Note:**
 
--   For the sub-national level, no UN projections are available, so we will use 3 methods only.
+-   For the sub-national level, no UN projections are available, so we will use 4 methods only.
 
 The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.
 
@@ -107,13 +107,24 @@ Starting with pregnancies, the number of live births is closely associated with 
 
 -   Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.
 -   Stillbirths or pregnancy loss between 28 weeks and birth: 2%.
--   Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.
+-   Twinning rate: 1.5%.
+
+These first three steps give the number of live births computed from pregnancies.
+
 -   Neonatal mortality: 3% (or 30 per 1,000 live births).
 -   Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).
 
 The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: ***institutional live births*** and ***penta3***. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys - the results will be the same).
 
-### Facility data derived denominators
+### Denominators derived from population estimates
+
+Here we will use the estimated live births from two sources as mentioned above;
+
+-   The UN population projections
+
+-   Population projections from DHIS2 database
+
+### Denominators derived from the routine health facility data
 
 The basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).
 
@@ -186,7 +197,7 @@ knitr::include_graphics(here::here("images","1-dqa_survey_setup.png"))
 
 2.  **Institutional delivery** - Percentage of live births that occurred in a health facility. (Example: If 850 out of 1,000 live births were in a health facility, the institutional delivery coverage is 85%.)
 
-3.  **Lowbirth weight** - Percentage of live births that were low birth weight (less than 2,500 grams). (Example: If 100 out of 1,000 live births were low birth weight, the low birth weight coverage is 10%.)
+3.  **Low birth weight** - Percentage of live births that were low birth weight (less than 2,500 grams). (Example: If 100 out of 1,000 live births were low birth weight, the low birth weight coverage is 10%.)
 
 4.  **Caesarean section** - Percentage of live births that were delivered by caesarean section. (Example: If 150 out of 1,000 live births were by C-section, the C-section coverage is 15%.)
 
