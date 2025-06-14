@@ -2,106 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/index.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.941Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/general-intro.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/getting-started.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/app-features.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.941Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/loading-data.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/numerator-assessment.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/numerator-adjustments.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/denominator-assessment.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.941Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-coverage.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-inequality.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-global-coverage.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-subnational-mapping.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-equity-assessment.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/subnational-coverage.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.944Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/subnational-inequality.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.944Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/subnational-global-coverage.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.944Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/maternal-mortality.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
-    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/mortality-mapping.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
-  </url>
-  <url>
-    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/mortality-completeness.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
-  </url>
-  <url>
-    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/national-utilization.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
-  </url>
-  <url>
-    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/subnational-utilization-inequality.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/service-utilization.html</loc>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/health-systems-analyses.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/health-systems-inputs.html</loc>
-    <lastmod>2025-06-13T12:07:09.889Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
-    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/health-systems-outputs.html</loc>
-    <lastmod>2025-06-13T12:07:09.890Z</lastmod>
+    <loc>https://aphrcwaro.github.io/rmncah_guide/pages/health-systems-outputs-by-inputs.html</loc>
+    <lastmod>2025-06-14T04:27:05.942Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/private-sector-analyses.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
   <url>
     <loc>https://aphrcwaro.github.io/rmncah_guide/pages/planning-ahead.html</loc>
-    <lastmod>2025-06-13T12:07:09.891Z</lastmod>
+    <lastmod>2025-06-14T04:27:05.943Z</lastmod>
   </url>
 </urlset>
