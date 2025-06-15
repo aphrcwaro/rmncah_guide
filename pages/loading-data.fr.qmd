@@ -8,7 +8,7 @@
 source(here::here("_common.R"))
 ```
 
-This section explains how to structure and upload data into the app, ensuring compatibility with the **Countdown Health facility data format**
+This section explains how to structure and upload data into the app, ensuring compatibility with the app set-up
 
 Please note that should you update your data during the workshop, ensure it is in the correct format before uploading to avoid errors.
 
@@ -16,7 +16,7 @@ Please note that should you update your data during the workshop, ensure it is i
 
 The app supports uploading the following file types:
 
--   .xls, .xlsx (Excel files)- The raw health facility dataset in the **Countdown format**
+-   .xls, .xlsx (Excel files)- The raw health facility dataset using the **Countdown data extraction template**
 
 -   .dta (Stata files) - Master dataset downloaded from the app after validation/adjustment
 
@@ -26,7 +26,7 @@ The app supports uploading the following file types:
 
 **Step 1: Prepare Your data file**
 
-Ensure your data is cleaned and structured according to the **The Countdown Health facility data format** by:
+Ensure your data is cleaned and structured according to the **The Countdown Health facility data (HFD) format** by:
 
 -   Using the provided **HFD Standardized Template** to format your data \> correctly.
 

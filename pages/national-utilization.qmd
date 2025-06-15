@@ -1,5 +1,3 @@
-
-
 # National Utilization {#national-utilization}
 
 ```{r}
@@ -9,4 +7,5 @@ source(here::here("_common.R"))
 ```
 
 ## Rationale, Approach and Implementation {#sec-national-utilization-science}
+
 **Rationale: Scientific basis for the analysis**
