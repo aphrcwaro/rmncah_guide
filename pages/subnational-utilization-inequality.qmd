@@ -1,6 +1,3 @@
-
-
-
 # Sub-national Utilization Inequality {#subnational-utilization-inequality}
 
 ```{r}
@@ -10,4 +7,5 @@ source(here::here("_common.R"))
 ```
 
 ## Rationale, Approach and Implementation {#sec-subnational-utilization-science}
+
 **Rationale: Scientific basis for the analysis**

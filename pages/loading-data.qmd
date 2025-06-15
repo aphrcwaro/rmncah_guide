@@ -8,7 +8,7 @@
 source(here::here("_common.R"))
 ```
 
-This section explains how to structure and upload data into the app, ensuring compatibility with the **Countdown Health facility data format**
+This section explains how to structure and upload data into the app, ensuring compatibility with the **Countdown Health facility data extraction template**
 
 Please note that should you update your data during the workshop, ensure it is in the correct format before uploading to avoid errors.
 
@@ -16,7 +16,7 @@ Please note that should you update your data during the workshop, ensure it is i
 
 The app supports uploading the following file types:
 
--   `.xls`, `.xlsx` (Excel files)- The raw health facility dataset in the **Countdown format**
+-   `.xls`, `.xlsx` (Excel files)- The raw health facility dataset in the **Countdown data template**
 
 -   `.dta` (Stata files) - Master dataset downloaded from the app after validation/adjustment
 
@@ -24,9 +24,9 @@ The app supports uploading the following file types:
 
 ## **How to Upload Data**
 
-**Step 1: Prepare Your data file**
+**Step 1: Prepare your data file**
 
-Ensure your data is cleaned and structured according to the **The Countdown Health facility data format** by:
+Ensure your data is cleaned and structured according to the **Countdown Health facility data (HFD)** template by:
 
 -   Using the provided **HFD Standardized Template** to format your data correctly.
 
@@ -40,7 +40,7 @@ Step 2: Upload the File
 
 3.  For subsequent re-uploads (after the initial uploading of the `.xls`, `.xlsx`, `.dta` files and saving your progress in .rds file using the `Save Cache` button), do not re-upload the `.xls`, .`xlsx`, or `.dta` but the saved `.rds` file if you want to retain any changes made in your analytical files
 
-4.  The app will validate your file against the **Countdown format**.
+4.  The app will validate your file against the **Countdown template**.
 
     -   If successful, a confirmation message will appear: ***"Upload successful: Your file is ready for analysis."***
 
@@ -49,7 +49,7 @@ Step 2: Upload the File
 ## **Common Errors and How to Fix Them**
 
 | **Error Message** | **Cause** | **Solution** |
-|:-----------------------|:-----------------------|:-----------------------|
+|:---|:---|:---|
 | "Unsupported file format" | File type not supported | Save your file as .xls, .xlsx, .dta, or .rds. |
 | "The following required columns are missing from the data: opv1" | Missing essential columns in the data | Add the missing column(s) to your dataset and ensure their values are valid. |
 | "The following sheets are missing: Service_data_1, Service_data_2, Service_data_3, Reporting_completeness, Population_data, Admin_data" | Missing one or more required sheets in the file | Add the missing sheets to your file and ensure they conform to the template. |
@@ -61,7 +61,7 @@ Step 2: Upload the File
 
 ## **Tips for a Successful Upload**
 
--   Always use the latest **The Countdown Health facility data format** \> template to structure your data.
+-   Always use the latest the **Countdown Health facility data template** \> template to structure your data.
 
 -   Double-check column names, formats, and content before uploading.
 
