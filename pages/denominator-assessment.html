@@ -515,9 +515,10 @@ window.Quarto = {
 <li>
 <a href="#rationale-approach-and-implementation" id="toc-rationale-approach-and-implementation" class="nav-link active" data-scroll-target="#rationale-approach-and-implementation"><span class="header-section-number">7.1</span> Rationale, Approach and Implementation</a>
   <ul class="collapse">
-<li><a href="#part-1-quality-assesment-of-population-projections-in-dhis2" id="toc-part-1-quality-assesment-of-population-projections-in-dhis2" class="nav-link" data-scroll-target="#part-1-quality-assesment-of-population-projections-in-dhis2"><span class="header-section-number">7.1.1</span> Part 1: Quality Assesment of Population projections in DHIS2</a></li>
-  <li><a href="#part-2-best-denominator-selection" id="toc-part-2-best-denominator-selection" class="nav-link" data-scroll-target="#part-2-best-denominator-selection"><span class="header-section-number">7.1.2</span> Part 2: Best Denominator Selection</a></li>
-  <li><a href="#facility-data-derived-denominators" id="toc-facility-data-derived-denominators" class="nav-link" data-scroll-target="#facility-data-derived-denominators"><span class="header-section-number">7.1.3</span> Facility data derived denominators</a></li>
+<li><a href="#part-1-quality-assessment-of-population-projections-in-dhis2" id="toc-part-1-quality-assessment-of-population-projections-in-dhis2" class="nav-link" data-scroll-target="#part-1-quality-assessment-of-population-projections-in-dhis2"><span class="header-section-number">7.1.1</span> Part 1: Quality assessment of population projections in DHIS2</a></li>
+  <li><a href="#part-2-denominator-selection" id="toc-part-2-denominator-selection" class="nav-link" data-scroll-target="#part-2-denominator-selection"><span class="header-section-number">7.1.2</span> Part 2: Denominator Selection</a></li>
+  <li><a href="#denominators-derived-from-population-estimates" id="toc-denominators-derived-from-population-estimates" class="nav-link" data-scroll-target="#denominators-derived-from-population-estimates"><span class="header-section-number">7.1.3</span> Denominators derived from population estimates</a></li>
+  <li><a href="#denominators-derived-from-the-routine-health-facility-data" id="toc-denominators-derived-from-the-routine-health-facility-data" class="nav-link" data-scroll-target="#denominators-derived-from-the-routine-health-facility-data"><span class="header-section-number">7.1.4</span> Denominators derived from the routine health facility data</a></li>
   </ul>
 </li>
   <li>
@@ -556,7 +557,7 @@ window.Quarto = {
 </header><section id="rationale-approach-and-implementation" class="level2" data-number="7.1"><h2 data-number="7.1" class="anchored" data-anchor-id="rationale-approach-and-implementation">
 <span class="header-section-number">7.1</span> Rationale, Approach and Implementation</h2>
 <p><strong>Rationale: Scientific basis for the analysis</strong></p>
-<p>Service coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions/provinces and districts).</p>
+<p>Service coverage is defined as the population who received the service divided by the population who need the services (also referred to as target population). The numerators of coverage statistics (e.g., number of live births in health facilities) are derived from the health facility data and need to be adjusted as shown in the previous section. The denominator of the coverage statistics (e.g., number of live births in the population) needs to be estimated for national and sub-national levels (regions and districts).</p>
 <p><strong>Approach: Description of analytical steps</strong></p>
 <p>The objective of the health facility denominator analysis is twofold:</p>
 <ol type="1">
@@ -675,8 +676,8 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<section id="part-1-quality-assesment-of-population-projections-in-dhis2" class="level3" data-number="7.1.1"><h3 data-number="7.1.1" class="anchored" data-anchor-id="part-1-quality-assesment-of-population-projections-in-dhis2">
-<span class="header-section-number">7.1.1</span> Part 1: Quality Assesment of Population projections in DHIS2</h3>
+<section id="part-1-quality-assessment-of-population-projections-in-dhis2" class="level3" data-number="7.1.1"><h3 data-number="7.1.1" class="anchored" data-anchor-id="part-1-quality-assessment-of-population-projections-in-dhis2">
+<span class="header-section-number">7.1.1</span> Part 1: Quality assessment of population projections in DHIS2</h3>
 <p>In the first part, we assess the <strong>quality of the DHIS2 population projections</strong> at national level:</p>
 <ul>
 <li><strong>Check the internal consistency of the DHIS2 population growth over time:</strong></li>
@@ -692,7 +693,7 @@ window.Quarto = {
 <ol type="1">
 <li>
 <p><strong>Population size:</strong><br>
-A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHOS2 projections.</p>
+A relative difference between DHIS2 and UN-projected population size greater than 5% should be considered a data quality issue with the DHIS2 projections.</p>
 <p>$ = | | $</p>
 </li>
 <li><p><strong>Population growth during 2023–2024:</strong><br>
@@ -700,7 +701,7 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 </ol>
 <p><strong>Interpretation:</strong> A difference greater than 0.3% (absolute) between DHIS2 and UN estimates is concerning.</p>
 <p>$ ( ) $</p>
-<ol type="1">
+<ol start="3" type="1">
 <li><strong>Crude birth rate (CBR):</strong></li>
 </ol>
 <p>Defined as the number of live births per 1,000 population. We compare the DHIS2 CBR for 2023 with the UN estimate of the CBR for the same year.</p>
@@ -717,26 +718,35 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 </li>
 </ol>
 <p><span class="math inline">\(CDR = CBR - \text{Population growth rate} ; \text{(both expressed per 1,000 population )}\)</span></p>
-</section><section id="part-2-best-denominator-selection" class="level3" data-number="7.1.2"><h3 data-number="7.1.2" class="anchored" data-anchor-id="part-2-best-denominator-selection">
-<span class="header-section-number">7.1.2</span> Part 2: Best Denominator Selection</h3>
+</section><section id="part-2-denominator-selection" class="level3" data-number="7.1.2"><h3 data-number="7.1.2" class="anchored" data-anchor-id="part-2-denominator-selection">
+<span class="header-section-number">7.1.2</span> Part 2: Denominator Selection</h3>
 <p>The second part is to select the best performing denominator for population coverage estimates with facility data. First, we compare the results for different denominators at the national level.</p>
-<p>For the national level, we evaluate 4 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional two are facility data- based methods ( <strong><em>ANC1-derived</em></strong> and <strong><em>penta1-derived</em></strong> denominators).</p>
+<p>For the national level, we evaluate 5 denominator methods. The first two are projection methods (DHIS2 estimate and UN estimate), and the additional three are facility data- based methods ( <strong><em>ANC1-derived</em></strong>, <strong><em>penta1-derived</em></strong> and <strong>penta1-derived adjusted for population growth</strong> denominators).</p>
 <p><strong>Note:</strong></p>
 <ul>
-<li>For the sub-national level, no UN projections are available, so we will use 3 methods only.</li>
+<li>For the sub-national level, no UN projections are available, so we will use 4 methods only.</li>
 </ul>
 <p>The maternal and newborn health denominators are closely related and can be computed from each other by making assumptions.</p>
 <p>Starting with pregnancies, the number of live births is closely associated with the number of pregnancies, which are usually identified within the health system at the first antenatal visit which in most countries is around 4-5 months of pregnancy (according to the surveys). Country specific values are preferred where available and can be obtained from the <a href="https://data.unicef.org/topic/child-survival/neonatal-mortality/">WHO website</a>. The default global assumptions are as follows:</p>
 <ul>
 <li>Pregnancy loss between 4 and 7 months (28 weeks of pregnancy): 3%.</li>
 <li>Stillbirths or pregnancy loss between 28 weeks and birth: 2%.</li>
-<li>Twinning rate: 1.5%. These first three steps give the number of live births computed from pregnancies.</li>
+<li>Twinning rate: 1.5%.</li>
+</ul>
+<p>These first three steps give the number of live births computed from pregnancies.</p>
+<ul>
 <li>Neonatal mortality: 3% (or 30 per 1,000 live births).</li>
 <li>Post neonatal mortality (between 1-11 months): 2.4% (or 24 per 1,000 live births).</li>
 </ul>
 <p>The selection of the best performing denominator method is based on a comparison of the performance of the DHIS2 projection and facility-data derived methods for two indicators: <strong><em>institutional live births</em></strong> and <strong><em>penta3</em></strong>. The gold standard is the population coverage rates from a recent survey, for a year as close as possible. The absolute difference between survey and facility-based coverage at national and sub-national levels is used to select the best performing indicator. (This can also be expressed as the number of standard errors from the survey value but this requires including the standard errors from the surveys - the results will be the same).</p>
-</section><section id="facility-data-derived-denominators" class="level3" data-number="7.1.3"><h3 data-number="7.1.3" class="anchored" data-anchor-id="facility-data-derived-denominators">
-<span class="header-section-number">7.1.3</span> Facility data derived denominators</h3>
+</section><section id="denominators-derived-from-population-estimates" class="level3" data-number="7.1.3"><h3 data-number="7.1.3" class="anchored" data-anchor-id="denominators-derived-from-population-estimates">
+<span class="header-section-number">7.1.3</span> Denominators derived from population estimates</h3>
+<p>Here we will use the estimated live births from two sources as mentioned above;</p>
+<ul>
+<li><p>The UN population projections</p></li>
+<li><p>Population projections from DHIS2 database</p></li>
+</ul></section><section id="denominators-derived-from-the-routine-health-facility-data" class="level3" data-number="7.1.4"><h3 data-number="7.1.4" class="anchored" data-anchor-id="denominators-derived-from-the-routine-health-facility-data">
+<span class="header-section-number">7.1.4</span> Denominators derived from the routine health facility data</h3>
 <p>The basic idea is that if the coverage of an indicator is high (e.g., over 90%), then the number of events reported by health facilities has to be close to the target population. In other words, the denominators or target population can be derived from the numbers in DHIS2. The best candidate indicators for this approach are ANC1 and DPT/penta1 (BCG also possible in some countries if re-vaccinations are recorded separately).</p>
 <p>This approach requires the following:</p>
 <p>A recent population-based survey is used to obtain an estimate of population level coverage of ANC1 or penta1. For example, ANC1 coverage is 95% of pregnant women.</p>
@@ -792,7 +802,7 @@ Annual growth is computed using the natural logarithm as below.</p></li>
 <ol type="1">
 <li><p><strong>ANC4</strong> -Percentage of women aged 15–49 with a live birth who received four or more antenatal care visits during their last pregnancy. (Example: If 680 out of 1,000 women had ≥4 ANC visits, ANC4 coverage is 68%.)</p></li>
 <li><p><strong>Institutional delivery</strong> - Percentage of live births that occurred in a health facility. (Example: If 850 out of 1,000 live births were in a health facility, the institutional delivery coverage is 85%.)</p></li>
-<li><p><strong>Lowbirth weight</strong> - Percentage of live births that were low birth weight (less than 2,500 grams). (Example: If 100 out of 1,000 live births were low birth weight, the low birth weight coverage is 10%.)</p></li>
+<li><p><strong>Low birth weight</strong> - Percentage of live births that were low birth weight (less than 2,500 grams). (Example: If 100 out of 1,000 live births were low birth weight, the low birth weight coverage is 10%.)</p></li>
 <li><p><strong>Caesarean section</strong> - Percentage of live births that were delivered by caesarean section. (Example: If 150 out of 1,000 live births were by C-section, the C-section coverage is 15%.)</p></li>
 <li><p><strong>Penta 3</strong> - Percentage of infants aged 12–23 months who received the third dose of pentavalent vaccine. (Example: If 850 out of 1,000 infants received the third dose, the Penta 3 coverage is 85%.)</p></li>
 <li><p><strong>Measles1</strong> - Percentage of infants aged 12–23 months who received the first dose of measles vaccine. (Example: If 900 out of 1,000 infants received the first dose, the Measles1 coverage is 90%.)</p></li>

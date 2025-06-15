@@ -187,7 +187,7 @@
     "href": "pages/loading-data.fr.html",
     "title": "4  Loading Health facility data",
     "section": "",
-    "text": "4.1 Supported File Formats\nThis section explains how to structure and upload data into the app, ensuring compatibility with the Countdown Health facility data format\nPlease note that should you update your data during the workshop, ensure it is in the correct format before uploading to avoid errors.\nThe app supports uploading the following file types:",
+    "text": "4.1 Supported File Formats\nThis section explains how to structure and upload data into the app, ensuring compatibility with the app set-up\nPlease note that should you update your data during the workshop, ensure it is in the correct format before uploading to avoid errors.\nThe app supports uploading the following file types:",
     "crumbs": [
       "À propos de ce guide",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
@@ -198,7 +198,7 @@
     "href": "pages/loading-data.fr.html#supported-file-formats",
     "title": "4  Loading Health facility data",
     "section": "",
-    "text": ".xls, .xlsx (Excel files)- The raw health facility dataset in the Countdown format\n.dta (Stata files) - Master dataset downloaded from the app after validation/adjustment\n.rds (R Cached datafile) - The file containing the preloaded dataset, user adjustments and analysis parameters that has been &gt; saved in the Cache directory. This will be the last saved file.",
+    "text": ".xls, .xlsx (Excel files)- The raw health facility dataset using the Countdown data extraction template\n.dta (Stata files) - Master dataset downloaded from the app after validation/adjustment\n.rds (R Cached datafile) - The file containing the preloaded dataset, user adjustments and analysis parameters that has been &gt; saved in the Cache directory. This will be the last saved file.",
     "crumbs": [
       "À propos de ce guide",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
@@ -209,7 +209,7 @@
     "href": "pages/loading-data.fr.html#how-to-upload-data",
     "title": "4  Loading Health facility data",
     "section": "4.2 How to Upload Data",
-    "text": "4.2 How to Upload Data\nStep 1: Prepare Your data file\nEnsure your data is cleaned and structured according to the The Countdown Health facility data format by:\n\nUsing the provided HFD Standardized Template to format your data &gt; correctly.\nSaving the file in a supported format: .xls, .xlsx, .dta, or .rds.\n\nStep 2: Upload the File\n\nNavigate to the Upload Data section of the app.\nDrag and drop your file into the upload box, or click Browse &gt; to select it manually in your directory.\nFor subsequent re-uploads (after the initial uploading of the .xls, &gt; .xlsx, .dta files and saving your progress in .rds file using the &gt; Cache Directory button), do not reupload the .xls, .xlsx, .dta but &gt; the saved .rds file if you want to retain any changes made in your &gt; analytical files\nThe app will validate your file against the Countdown format.\n\nIf successful, a confirmation message will appear: “Upload &gt; successful: Your file is ready for analysis.”\nIf errors are detected, an error message will indicate the &gt; issue.",
+    "text": "4.2 How to Upload Data\nStep 1: Prepare Your data file\nEnsure your data is cleaned and structured according to the The Countdown Health facility data (HFD) format by:\n\nUsing the provided HFD Standardized Template to format your data &gt; correctly.\nSaving the file in a supported format: .xls, .xlsx, .dta, or .rds.\n\nStep 2: Upload the File\n\nNavigate to the Upload Data section of the app.\nDrag and drop your file into the upload box, or click Browse &gt; to select it manually in your directory.\nFor subsequent re-uploads (after the initial uploading of the .xls, &gt; .xlsx, .dta files and saving your progress in .rds file using the &gt; Cache Directory button), do not reupload the .xls, .xlsx, .dta but &gt; the saved .rds file if you want to retain any changes made in your &gt; analytical files\nThe app will validate your file against the Countdown format.\n\nIf successful, a confirmation message will appear: “Upload &gt; successful: Your file is ready for analysis.”\nIf errors are detected, an error message will indicate the &gt; issue.",
     "crumbs": [
       "À propos de ce guide",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Loading Health facility data</span>"
@@ -616,7 +616,7 @@
     "href": "pages/health-systems-inputs.fr.html#health-systems-inputs",
     "title": "19  Health systems inputs",
     "section": "",
-    "text": "1) comparison with global data for selected indicators (national level only)\n2) plausibility of indicator values by subnational units – major outliers? Improbable patterns?\nIn addition, it is useful to explore the associations of the health system indicators with each other (e.g. workforce and beds), if only to detect inconsistencies by admin1 (province, region, county).\nIt is also useful to assess the association of the health system performance between different administrative levels (e.g., admin 1 and district) to detect outliers or inconsistencies.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCore health professionals per 10,000 population\n\n\n\n\n\n\n\nNumber of health facilities per 10,000 population",
+    "text": "Comparison with global data for selected indicators (national level only)\nPlausibility of indicator values by subnational units – major outliers? Improbable patterns?\nIn addition, it is useful to explore the associations of the health system indicators with each other (e.g. workforce and beds), if only to detect inconsistencies by admin1 (province, region, county).\nIt is also useful to assess the association of the health system performance between different administrative levels (e.g., admin 1 and district) to detect outliers or inconsistencies.\n\n\n\n\n\n\n\n\n\n\n\n\n\nCore health professionals per 10,000 population\n\n\n\n\n\n\n\nNumber of health facilities per 10,000 population",
     "crumbs": [
       "Performance du système de santé",
       "<span class='chapter-number'>19</span>  <span class='chapter-title'>Health systems inputs</span>"
