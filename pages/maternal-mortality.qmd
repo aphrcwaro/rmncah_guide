@@ -141,16 +141,16 @@ In a formula:[^maternal-mortality-5]
 
 Finally, the completeness of facility reporting is reported iMMR (e.g. based on DHIS2) divided by the expected iMMR. For instance, if the reported MMR was 100 and the expected MMR 160, then the level of completeness of reporting is $$100/160 * 100% = 62.5%.$$
 
-Below is an example of the estimated completeness of facility reporting of maternal deaths using different scenarios. The figure shows the results on completeness of reporting with three levels of population MMR (lower bound, median or best estimate, upper bound) and three community to institutional mortality ratios (0.5-2.5), shown on the X-axis.
+Below is an example of the estimated completeness of facility reporting of maternal deaths using different scenarios. The figure shows the results on completeness of reporting with three levels of population MMR (lower bound, median or best estimate, upper bound) and three community to institutional mortality ratios (0.5-2.0), shown on the X-axis.
 
-Not all scenarios are equally relevant to each country. For instance, if there is evidence that the population MMR is lower than the UN median, pick the scenario with the lowest MMR (the blue line). If it is considered that community MMR could be 1.5-2.0 times higher than institutional MMR, then the completeness estimate is 59-64%. The choices are arbitrary, but it is useful to consider if the range of estimates of completeness of facility reporting can be narrowed down by using the most plausible scenario. As default values, the ratios of 1.0, 2.0 and 3.0 are used.
+Not all scenarios are equally relevant to each country. For instance, if there is evidence that the population MMR is lower than the UN median, pick the scenario with the lowest MMR (the red line). If it is considered that community MMR could be 1.5-2.0 times higher than institutional MMR, then the completeness estimate is 62-69%. The choices are arbitrary, but it is useful to consider if the range of estimates of completeness of facility reporting can be narrowed down by using the most plausible scenario. As default values, the ratios of 1.0, 2.0 and 3.0 are used.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","5-mortality_mmr_completeness.png"))
 
 ```
 
-A similar approach can be used for stillbirths using all births instead of live births. The UN global stillbirth estimates for 2021 with uncertainty ranges can be used (lower and upper bound are 90% uncertainty intervals from the model). There is little research on the community to institutional stillbirth ratio (partly because community level stillbirth reporting is more uncertain) but it is likely that the ratios are lower than for maternal mortality, as institutional mortality levels are much higher for stillbirth rates than for MMR. A range of 0.5-1.5 may be used for the estimation of the level of completeness of facility reporting.
+A similar approach can be used for stillbirths using all births instead of live births. The UN global stillbirth estimates for 2021 with uncertainty ranges can be used (lower and upper bound are 90% uncertainty intervals from the model). There is little research on the community to institutional stillbirth ratio (partly because community level stillbirth reporting is more uncertain) but it is likely that the ratios are lower than for maternal mortality, as institutional mortality levels are much higher for stillbirth rates than for MMR. A range of 0.5-2.0 may be used for the estimation of the level of completeness of facility reporting.
 
 ```{r, out.width = "100%", fig.align = "center", echo=F}
 knitr::include_graphics(here::here("images","5-mortality_sbr_completeness.png"))
