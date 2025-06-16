@@ -6,17 +6,17 @@ published-title: "Last Updated"
 
 lightbox: true
 
-# babelquarto:
-#   languagecodes:
-#   - name: fr
-#     text: "Français"
-#   - name: pt
-#     text: "Português"
-#   - name: en
-#     text: "English"
-# 
-#   mainlanguage: 'en'
-#   languages: ['fr', 'pt']
+babelquarto:
+  languagecodes:
+  - name: fr
+    text: "Français"
+  - name: pt
+    text: "Português"
+  - name: en
+    text: "English"
+
+  mainlanguage: 'en'
+  languages: ['fr', 'pt']
 
 title-fr: "Réunion d'analyse par pays (CAM) 2025 - Guide d'analyse"
 title-pt: "Reunião de Análise por País (CAM) 2025 - Guia de Análise"

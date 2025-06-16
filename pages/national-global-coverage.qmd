@@ -35,3 +35,4 @@ Navigate to the **Subnational Analysis** tab **=\>Subnational Inequality** and i
 ```{r, out.width= "100%", fig.align= "center", echo=FALSE, fig.cap = "Subnational Coverage Inequality for ANC4"}
   knitr::include_graphics(here::here("images", "2-nat-cov-targets.png"))
 ```
+
