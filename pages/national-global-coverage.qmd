@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-Global Coverage Targets"
-=======
 
 # Global Coverage Targets
->>>>>>> Stashed changes
 
 ```{r}
 #| echo: false

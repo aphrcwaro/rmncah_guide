@@ -36,3 +36,9 @@ Key features include:
 - [Français PDF](Downloads/CAM2025_Guide_FR.pdf)
 - [Português PDF](Downloads/CAM2025_Guide_PT.pdf)
 
+## 📥 Download the Guidebook (PDF)
+
+- [🇬🇧 English PDF](_book/CAM2025_Guide_EN.pdf)
+- [🇫🇷 Français PDF](_book/CAM2025_Guide_FR.pdf)
+- [🇵🇹 Português PDF](_book/CAM2025_Guide_PT.pdf)
+
