@@ -30,6 +30,9 @@ Key features include:
 
 -   Automated report generation
 
-## Acknowledgments {.unnumbered}
+## 📥 Download the Guidebook (PDF)
 
-The Countdown acknowledges and appreciates the contribution of the following individual in developing the Stata codes that form the backbone of the `cd2030.rmncah` R package and Shiny App:
+- [English PDF](Downloads/Country-Analysis-Meeting (CAM) 2025:Analysis-Guide.pdf)
+- [Français PDF](Downloads/CAM2025_Guide_FR.pdf)
+- [Português PDF](Downloads/CAM2025_Guide_PT.pdf)
+

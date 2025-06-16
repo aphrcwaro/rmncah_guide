@@ -1,4 +1,4 @@
-# "Sub-national Mapping
+# Sub-national Mapping
 
 ```{r}
 #| echo: false

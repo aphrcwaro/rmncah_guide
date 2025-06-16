@@ -6,18 +6,18 @@ published-title: "Last Updated"
 
 lightbox: true
 
-babelquarto:
-  languagecodes:
-  - name: fr
-    text: "Français"
-  - name: pt
-    text: "Português"
-  - name: en
-    text: "English"
+# babelquarto:
+#   languagecodes:
+#   - name: fr
+#     text: "Français"
+#   - name: pt
+#     text: "Português"
+#   - name: en
+#     text: "English"
+# 
+#   mainlanguage: 'en'
+#   languages: ['fr', 'pt']
 
-  mainlanguage: 'en'
-  languages: ['fr', 'pt']
-  
 title-fr: "Réunion d'analyse par pays (CAM) 2025 - Guide d'analyse"
 title-pt: "Reunião de Análise por País (CAM) 2025 - Guia de Análise"
   
@@ -27,11 +27,22 @@ bibliography: references.bib
   
 format:
   html:
-    theme: 
+    theme:
       light: cosmo
       dark: darkly
     code-link: true
     author-meta: "Peter Kaberia"
+    
+    # pdf:
+    # documentclass: book
+    # toc: true
+    # number-sections: true
+    # include-in-header: preamble.tex 
+  docx:
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    reference-doc: quarto.docx
 
 book:
   title: "Country Analysis Meeting (CAM) 2025 - Analysis Guide"
